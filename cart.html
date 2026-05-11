@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DANHA 장바구니 | 코디 단위로 한 번에 결제">
+  <title>DANHA · 장바구니</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/cart.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./scripts/site.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <a class="a11y-skip-link" href="#main">본문 바로가기</a>
+
+    <aside class="top-band" aria-label="프로모션 안내">
+      <div class="top-band__inner">
+        <p class="top-band__text" id="top-band-text" aria-live="polite">단하 뉴 시즌 오픈 · 첫 구매 10% · 스타일 테스트 완료 시 추가 쿠폰</p>
+        <button type="button" class="top-band__close" id="top-band-close" aria-label="프로모션 배너 닫기">닫기</button>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo"><a href="./index.html">DANHA</a></p>
+        <nav class="header__nav" aria-label="주요 메뉴">
+          <div class="nav-item">
+            <a href="./shop.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">쇼핑</a>
+            <div class="mega" role="region" aria-label="쇼핑 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">카테고리</p>
+                  <a href="./shop.html?cat=top">상의</a>
+                  <a href="./shop.html?cat=skirt">스커트</a>
+                  <a href="./shop.html?cat=onepiece">원피스</a>
+                  <a href="./shop.html?cat=outer">아우터</a>
+                  <a href="./shop.html?cat=set">셋업</a>
+                  <a href="./shop.html?cat=acc">액세서리</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">스타일</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                  <a href="./style.html?mood=travel">여행 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">소재</p>
+                  <a href="./shop.html?fabric=linen">린넨 블렌드</a>
+                  <a href="./shop.html?fabric=silk">소프트 실크</a>
+                  <a href="./shop.html?fabric=cotton">데일리 코튼</a>
+                  <a href="./shop.html?fabric=light">라이트 웨이트</a>
+                </div>
+                <a class="mega__featured" href="./lookbook.html">
+                  <img src="./images/lookbook.jpg" alt="단하 룩북 미리보기">
+                  <span class="mega__featured-label">추천</span>
+                  <strong>데일리 헤리티지 룩</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./style.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스타일</a>
+            <div class="mega mega--compact" role="region" aria-label="스타일 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">빠른 진입</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">무드</p>
+                  <a href="./style.html?mood=cafe">카페 가는 날</a>
+                  <a href="./style.html?mood=rainy">비 오는 날</a>
+                  <a href="./style.html?mood=travel">여행 가는 날</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./lookbook.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">룩북</a>
+            <div class="mega mega--compact" role="region" aria-label="룩북 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">에디션</p>
+                  <a href="./lookbook.html">룩북 홈</a>
+                  <a href="./lookbook.html#editorial">에디토리얼</a>
+                  <a href="./lookbook.html#campaign">캠페인</a>
+                  <a href="./lookbook.html#scene">씬</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">함께 보기</p>
+                  <a href="./style-test.html">스타일 테스트</a>
+                  <a href="./shop.html">쇼핑 바로가기</a>
+                  <a href="./style.html">스타일 가이드</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./story.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스토리</a>
+            <div class="mega mega--compact" role="region" aria-label="스토리 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">읽을거리</p>
+                  <a href="./story.html">스토리 홈</a>
+                  <a href="./story.html#season">시즌 노트</a>
+                  <a href="./story.html#chapters">챕터</a>
+                  <a href="./story.html#campaign">캠페인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">연결</p>
+                  <a href="./brand.html">브랜드</a>
+                  <a href="./lookbook.html">룩북</a>
+                  <a href="./style.html">스타일</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./brand.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">브랜드</a>
+            <div class="mega mega--compact" role="region" aria-label="브랜드 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">소개</p>
+                  <a href="./brand.html">브랜드 홈</a>
+                  <a href="./brand.html#identity">단하가 보는 한복</a>
+                  <a href="./brand.html#values">4가지 가치</a>
+                  <a href="./brand.html#timeline">타임라인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">더 알아보기</p>
+                  <a href="./brand.html#sustain">지속가능성</a>
+                  <a href="./brand.html#contact">문의</a>
+                  <a href="./story.html">스토리</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__utils" aria-label="빠른 기능">
+          <a href="./shop.html" aria-label="검색">검색</a>
+          <a href="./shop.html" aria-label="위시리스트">위시</a>
+          <a href="./cart.html" aria-label="장바구니" aria-current="page">장바구니 (3)</a>
+        </div>
+        <button class="mobile-toggle" type="button" aria-label="모바일 메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">메뉴</button>
+      </div>
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+          <details>
+            <summary>쇼핑</summary>
+            <a href="./shop.html">전체</a>
+            <a href="./shop.html?cat=top">상의</a>
+            <a href="./shop.html?cat=skirt">스커트</a>
+            <a href="./shop.html?cat=onepiece">원피스</a>
+            <a href="./shop.html?cat=outer">아우터</a>
+            <a href="./shop.html?cat=set">셋업</a>
+            <a href="./shop.html?cat=acc">액세서리</a>
+          </details>
+          <details>
+            <summary>스타일</summary>
+            <a href="./style.html?type=office">오피스 무드</a>
+            <a href="./style.html?type=date">데이트 무드</a>
+            <a href="./style.html?type=daily">데일리 무드</a>
+            <a href="./style.html?mood=cafe">카페 가는 날</a>
+            <a href="./style.html?mood=rainy">비 오는 날</a>
+            <a href="./style.html?mood=travel">여행 가는 날</a>
+          </details>
+          <details>
+            <summary>룩북</summary>
+            <a href="./lookbook.html">룩북 홈</a>
+            <a href="./lookbook.html#editorial">에디토리얼</a>
+            <a href="./lookbook.html#campaign">캠페인</a>
+            <a href="./lookbook.html#scene">씬</a>
+          </details>
+          <details>
+            <summary>스토리</summary>
+            <a href="./story.html">스토리 홈</a>
+            <a href="./story.html#season">시즌 노트</a>
+            <a href="./story.html#chapters">챕터</a>
+            <a href="./story.html#campaign">캠페인</a>
+            <a href="./brand.html">브랜드</a>
+          </details>
+          <details>
+            <summary>브랜드</summary>
+            <a href="./brand.html">브랜드 홈</a>
+            <a href="./brand.html#identity">단하가 보는 한복</a>
+            <a href="./brand.html#values">4가지 가치</a>
+            <a href="./brand.html#timeline">타임라인</a>
+            <a href="./brand.html#contact">문의</a>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-dim" id="mobile-dim" hidden></div>
+
+    <main id="main">
+
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <div class="container breadcrumb__inner">
+          <a href="./index.html">홈</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="page">장바구니</span>
+        </div>
+      </nav>
+
+      <!-- ===== 1. PAGE HERO ===== -->
+      <section class="page-hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="page-hero__row">
+            <div class="text-wrap text-wrap--full">
+              <p class="eyebrow">My Cart · 24SS</p>
+              <h1 id="hero-title" class="title page-hero__title">장바구니</h1>
+            </div>
+            <p class="page-hero__count">담은 상품 <strong>3</strong>개 · 세트 혜택 <strong>11%</strong> 자동 적용 중</p>
+          </div>
+
+          <ol class="cart-progress" aria-label="구매 단계">
+            <li class="cart-progress__step cart-progress__step--current">
+              <span class="cart-progress__no">1</span>
+              <span class="cart-progress__name">장바구니</span>
+            </li>
+            <li class="cart-progress__step cart-progress__step--inactive">
+              <span class="cart-progress__no">2</span>
+              <span class="cart-progress__name">주문 / 결제</span>
+            </li>
+            <li class="cart-progress__step cart-progress__step--inactive">
+              <span class="cart-progress__no">3</span>
+              <span class="cart-progress__name">결제 완료</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== 2. CART MAIN (list + summary) ===== -->
+      <section class="page-cart" aria-labelledby="cart-title">
+        <div class="container">
+          <h2 id="cart-title" class="sr-only">담은 상품</h2>
+          <div class="cart-stage">
+
+            <!-- LEFT: Item List -->
+            <div>
+              <div class="cart-toolbar">
+                <div class="cart-toolbar__left">
+                  <input type="checkbox" class="cart-item__check" id="select-all" checked>
+                  <label for="select-all">전체 선택 (3 / 3)</label>
+                </div>
+                <div class="cart-toolbar__right">
+                  <button type="button">선택 삭제</button>
+                  <button type="button">품절 삭제</button>
+                </div>
+              </div>
+
+              <ul class="cart-list" role="list">
+                <li>
+                  <article class="cart-item">
+                    <input type="checkbox" class="cart-item__check" checked aria-label="상품 선택">
+                    <div class="cart-item__media">
+                      <img src="./images/MD1.jpg" alt="모던 저고리 재킷">
+                    </div>
+                    <div class="cart-item__body">
+                      <div class="cart-item__head">
+                        <h3 class="cart-item__name">모던 저고리 재킷</h3>
+                        <button type="button" class="cart-item__remove" aria-label="상품 삭제">×</button>
+                      </div>
+                      <p class="cart-item__option">
+                        SIZE: M · COLOR: 아이보리
+                        <button type="button" class="cart-item__option-edit">옵션 변경</button>
+                      </p>
+                      <span class="cart-item__benefit">세트 10% 할인 적용 중</span>
+                      <div class="cart-item__bottom">
+                        <div class="cart-item__qty">
+                          <div class="qty-stepper" role="group" aria-label="수량">
+                            <button type="button" class="qty-btn" aria-label="수량 감소">−</button>
+                            <span aria-live="polite">1</span>
+                            <button type="button" class="qty-btn" aria-label="수량 증가">+</button>
+                          </div>
+                        </div>
+                        <div class="cart-item__price">
+                          <del>₩168,000</del>
+                          <strong>₩154,000</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+
+                <li>
+                  <article class="cart-item">
+                    <input type="checkbox" class="cart-item__check" checked aria-label="상품 선택">
+                    <div class="cart-item__media">
+                      <img src="./images/md2.jpg" alt="실크 랩 스커트">
+                    </div>
+                    <div class="cart-item__body">
+                      <div class="cart-item__head">
+                        <h3 class="cart-item__name">실크 랩 스커트</h3>
+                        <button type="button" class="cart-item__remove" aria-label="상품 삭제">×</button>
+                      </div>
+                      <p class="cart-item__option">
+                        SIZE: FREE · COLOR: 로즈
+                        <button type="button" class="cart-item__option-edit">옵션 변경</button>
+                      </p>
+                      <span class="cart-item__benefit">세트 10% 할인 적용 중</span>
+                      <div class="cart-item__bottom">
+                        <div class="cart-item__qty">
+                          <div class="qty-stepper" role="group" aria-label="수량">
+                            <button type="button" class="qty-btn" aria-label="수량 감소">−</button>
+                            <span aria-live="polite">1</span>
+                            <button type="button" class="qty-btn" aria-label="수량 증가">+</button>
+                          </div>
+                        </div>
+                        <div class="cart-item__price">
+                          <del>₩190,000</del>
+                          <strong>₩172,000</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+
+                <li>
+                  <article class="cart-item">
+                    <input type="checkbox" class="cart-item__check" checked aria-label="상품 선택">
+                    <div class="cart-item__media">
+                      <img src="./images/tradition3.jpg" alt="모던 클래식 로퍼">
+                    </div>
+                    <div class="cart-item__body">
+                      <div class="cart-item__head">
+                        <h3 class="cart-item__name">모던 클래식 로퍼</h3>
+                        <button type="button" class="cart-item__remove" aria-label="상품 삭제">×</button>
+                      </div>
+                      <p class="cart-item__option">
+                        SIZE: 235 · COLOR: 블랙
+                        <button type="button" class="cart-item__option-edit">옵션 변경</button>
+                      </p>
+                      <span class="cart-item__benefit">세트 10% 할인 적용 중</span>
+                      <div class="cart-item__bottom">
+                        <div class="cart-item__qty">
+                          <div class="qty-stepper" role="group" aria-label="수량">
+                            <button type="button" class="qty-btn" aria-label="수량 감소">−</button>
+                            <span aria-live="polite">1</span>
+                            <button type="button" class="qty-btn" aria-label="수량 증가">+</button>
+                          </div>
+                        </div>
+                        <div class="cart-item__price">
+                          <del>₩109,000</del>
+                          <strong>₩98,000</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <!-- RIGHT: Summary (sticky) -->
+            <aside class="cart-summary" aria-labelledby="summary-title">
+              <h2 id="summary-title" class="cart-summary__title">결제 요약</h2>
+              <div class="cart-summary__rows">
+                <p class="cart-summary__row">
+                  <span>상품 합계</span>
+                  <span>₩467,000</span>
+                </p>
+                <p class="cart-summary__row cart-summary__row--saving">
+                  <span>세트 10% 할인</span>
+                  <span>−₩43,000</span>
+                </p>
+                <p class="cart-summary__row cart-summary__row--saving">
+                  <span>첫 구매 5%</span>
+                  <span>−₩21,200</span>
+                </p>
+                <p class="cart-summary__row">
+                  <span>배송비</span>
+                  <span>무료</span>
+                </p>
+              </div>
+              <div class="cart-summary__total">
+                <span>최종 결제</span>
+                <strong>₩402,800</strong>
+              </div>
+              <p class="cart-summary__benefit">
+                <strong>₩64,200 절약</strong> · 적립 예정 ₩8,056 (2%)<br>
+                23:00 이전 결제 시 당일 출고
+              </p>
+              <div class="cart-summary__cta">
+                <a class="btn btn--primary" href="#cta-title">주문 / 결제하기</a>
+                <a class="btn btn--secondary" href="./shop.html">쇼핑 계속하기</a>
+              </div>
+              <div class="cart-summary__pay" aria-label="결제 수단">
+                <span class="cart-summary__pay-chip">카드</span>
+                <span class="cart-summary__pay-chip">무이자 3개월</span>
+                <span class="cart-summary__pay-chip">카카오페이</span>
+                <span class="cart-summary__pay-chip">네이버페이</span>
+                <span class="cart-summary__pay-chip">토스</span>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. RECOMMEND ===== -->
+      <section class="page-recommend" aria-labelledby="recommend-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Together · 함께 사면 좋아요</p>
+                <h2 id="recommend-title" class="title">이 코디에 한 점만 더하면</h2>
+                <p class="desc">담은 3개와 가장 잘 어울리는 추천. 동반 구매 시 추가 5% 자동 할인.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ul class="card-list recommend-grid" role="list">
+                <li class="card" data-href="./detail.html?id=6">
+                  <div class="card__media">
+                    <img src="./images/style4.jpg" alt="펄 포인트 백">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">+5% 추가</span>
+                    <h3 class="card__title">펄 포인트 백</h3>
+                    <p class="card__price">₩76,000</p>
+                    <p class="card__reason">단색 룩에 한 포인트를 주는 액세서리.</p>
+                    <p class="card__meta">동반 구매율 1위 · 코디 점수 +6</p>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=11">
+                  <div class="card__media">
+                    <img src="./images/shirts.jpg" alt="레이어드 카라 상의">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">+5% 추가</span>
+                    <h3 class="card__title">레이어드 카라 상의</h3>
+                    <p class="card__price">₩109,000</p>
+                    <p class="card__reason">이너 변경만으로 무드 전환이 쉬운 아이템.</p>
+                    <p class="card__meta">레이어 무드 · 환절기 활용 90%</p>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=22">
+                  <div class="card__media">
+                    <img src="./images/style5.jpg" alt="셔링 포인트 스커트">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">+5% 추가</span>
+                    <h3 class="card__title">셔링 포인트 스커트</h3>
+                    <p class="card__price">₩158,000</p>
+                    <p class="card__reason">랩 스커트와 유사 무드 · 톤 매칭이 쉬움.</p>
+                    <p class="card__meta">교차 매치 +33% · 핏 안정</p>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=5">
+                  <div class="card__media">
+                    <img src="./images/ver4.jpg" alt="업사이클 에코백">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">+5% 추가</span>
+                    <h3 class="card__title">업사이클 에코백</h3>
+                    <p class="card__price">₩38,000</p>
+                    <p class="card__reason">출근가방 1순위 · 노트북+텀블러 OK.</p>
+                    <p class="card__meta">평점 4.9 · M(13") / XL(15")</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. BENEFIT ===== -->
+      <section class="page-benefit" aria-labelledby="benefit-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Your Benefit</p>
+                <h2 id="benefit-title" class="title">지금 적용 가능한 혜택</h2>
+                <p class="desc">자동 적용된 혜택과 추가로 받을 수 있는 혜택까지.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="benefit-grid">
+                <article class="benefit-card">
+                  <p class="benefit-card__label">SET DISCOUNT · 적용 중</p>
+                  <p class="benefit-card__value">10% OFF</p>
+                  <p class="benefit-card__hint">3개 이상 동반 구매 자동 적용</p>
+                </article>
+                <article class="benefit-card">
+                  <p class="benefit-card__label">FIRST BUY · 적용 중</p>
+                  <p class="benefit-card__value">+5% 쿠폰</p>
+                  <p class="benefit-card__hint">신규 회원 전용 · 자동 적용</p>
+                </article>
+                <article class="benefit-card">
+                  <p class="benefit-card__label">FREE SHIPPING</p>
+                  <p class="benefit-card__value">5만원 이상</p>
+                  <p class="benefit-card__hint">도서산간 별도 · 익일 도착 가능</p>
+                </article>
+                <article class="benefit-card">
+                  <p class="benefit-card__label">POINTS · 적립 예정</p>
+                  <p class="benefit-card__value">₩8,056</p>
+                  <p class="benefit-card__hint">결제 금액의 2% 자동 적립</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. FAQ ===== -->
+      <section class="page-faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Cart FAQ</p>
+                <h2 id="faq-title" class="title">결제 전에 자주 묻는 것</h2>
+                <p class="desc">출고·교환·환불 5가지만 정리.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="faq-list">
+                <details open>
+                  <summary>장바구니에 담은 상품의 가격이 변동될 수 있나요?</summary>
+                  <p>네. 시즌 종료 또는 프로모션 변경 시 가격이 달라질 수 있습니다. 최종 가격은 결제 단계에서 확정되며, 이미 적용된 세트 할인과 쿠폰은 결제 직전까지 유지됩니다.</p>
+                </details>
+                <details>
+                  <summary>여러 상품을 따로 받을 수 있나요?</summary>
+                  <p>가능합니다. 결제 단계에서 "분할 배송 신청"을 선택하시면 출고 가능한 상품부터 우선 발송됩니다. 분할 배송 시 추가 배송비는 발생하지 않습니다.</p>
+                </details>
+                <details>
+                  <summary>옵션을 잘못 골랐어요. 결제 후 변경 가능한가요?</summary>
+                  <p>출고 전이라면 옵션 변경이 가능합니다. 카카오 채널 또는 contact@danhaseoul.com으로 주문번호와 변경 옵션을 알려주세요. 출고 후에는 교환 절차로 진행됩니다.</p>
+                </details>
+                <details>
+                  <summary>적립금과 쿠폰을 동시에 사용할 수 있나요?</summary>
+                  <p>네. 결제 단계에서 두 혜택 모두 적용 가능합니다. 단, 첫 구매 5% 쿠폰은 1회 사용 후 자동 소멸하며, 적립금은 5,000원 이상부터 사용 가능합니다.</p>
+                </details>
+                <details>
+                  <summary>품절 상품이 카트에 남아있어요.</summary>
+                  <p>품절 상품은 자동 표기되며, 위 "품절 삭제" 버튼으로 일괄 정리 가능합니다. RESTOCK 알림을 신청하시면 재입고 시 카카오 채널로 즉시 안내드립니다.</p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. PAGE CTA ===== -->
+      <section class="page-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-board">
+            <div class="text-wrap text-wrap--wide">
+              <p class="eyebrow">Decision Closer · Checkout</p>
+              <h2 id="cta-title" class="title">고민 끝났다면,<br>지금 결제로 이어가세요</h2>
+              <p class="desc">담은 3개에 세트 10% + 첫 구매 5%까지 자동 적용. 결제까지 평균 2분 이내. 옵션 확인만 한 번 더 해주세요.</p>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="#summary-title">결제하기 · ₩402,800</a>
+                <a class="btn btn--secondary" href="./shop.html">쇼핑 더 보기</a>
+              </div>
+            </div>
+            <div class="cta-stat-grid" role="list" aria-label="결정 보조 지표">
+              <article class="cta-stat" role="listitem">
+                <p class="cta-stat__label">세트 절약</p>
+                <p class="cta-stat__value">₩64,200</p>
+                <p class="cta-stat__hint">단품 합계 대비</p>
+              </article>
+              <article class="cta-stat" role="listitem">
+                <p class="cta-stat__label">예상 출고</p>
+                <p class="cta-stat__value">오늘</p>
+                <p class="cta-stat__hint">23:00 이전 결제 시</p>
+              </article>
+              <article class="cta-stat" role="listitem">
+                <p class="cta-stat__label">적립 예정</p>
+                <p class="cta-stat__value">₩8,056</p>
+                <p class="cta-stat__hint">결제 금액의 2%</p>
+              </article>
+              <article class="cta-stat" role="listitem">
+                <p class="cta-stat__label">결제 시간</p>
+                <p class="cta-stat__value">평균 2분</p>
+                <p class="cta-stat__hint">간편결제 5종 지원</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-logo">DANHA</p>
+            <p class="footer__brand-copy">전통의 실루엣을 오늘의 일상 속으로 연결하는 모던 한복 브랜드</p>
+            <ul class="footer__brand-meta">
+              <li>상호: 주식회사 단하 | 대표: 김남경</li>
+              <li>전화: 02-6952-8383 | contact@danhaseoul.com</li>
+              <li>주소: 서울시 종로구 팔판길 39-7 메종단하</li>
+              <li>사업자등록번호: 380-87-03073</li>
+            </ul>
+          </div>
+          <nav class="footer__col" aria-label="쇼핑">
+            <p class="footer__col-title">SHOP</p>
+            <ul class="footer__links">
+              <li><a href="./shop.html">전체 상품</a></li>
+              <li><a href="./shop.html?cat=top">상의</a></li>
+              <li><a href="./shop.html?cat=skirt">스커트</a></li>
+              <li><a href="./shop.html?cat=outer">아우터</a></li>
+              <li><a href="./shop.html?cat=set">셋업</a></li>
+              <li><a href="./shop.html?cat=acc">액세서리</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="컴퍼니">
+            <p class="footer__col-title">COMPANY</p>
+            <ul class="footer__links">
+              <li><a href="./brand.html">브랜드 소개</a></li>
+              <li><a href="./story.html">스토리</a></li>
+              <li><a href="./lookbook.html">룩북</a></li>
+              <li><a href="./style-test.html">스타일 테스트</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="소셜">
+            <p class="footer__col-title">SOCIAL</p>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer">Kakao Channel</a></li>
+              <li><a href="mailto:contact@danhaseoul.com">Email</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__newsletter">
+            <p class="footer__col-title">NEWSLETTER</p>
+            <p class="footer__newsletter-copy">시즌 룩과 캠페인 비하인드를 가장 먼저.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer__newsletter-input" placeholder="이메일을 입력하세요" aria-label="뉴스레터 이메일">
+              <button type="submit" class="footer__newsletter-submit">구독</button>
+            </form>
+            <p class="footer__newsletter-note">언제든 해지 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>© 2026 DANHA. All rights reserved.</p>
+          <ul class="footer__legal">
+            <li><a href="./brand.html#policy">이용약관</a></li>
+            <li><a href="./brand.html#policy"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="./brand.html#policy">사업자정보확인</a></li>
+          </ul>
+          <span aria-label="국가 / 통화">KR / KRW</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

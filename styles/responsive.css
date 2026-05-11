@@ -1,0 +1,247 @@
+/* ============================================================
+   DANHA HOME — responsive.css
+   breakpoints: 1280 / 1024 / 768 / 480
+   ============================================================ */
+
+@media (max-width: 1280px) {
+  :root { --container-pad: 32px; --space-section: 100px; }
+  .section--hero .title { font-size: 52px; }
+  .chapter__num { font-size: 140px; }
+  .footer__grid { grid-template-columns: 1.6fr 1fr 1fr 1fr 1.2fr; gap: 24px; }
+  .lookbook-preview-grid { height: 480px; }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --container-pad: 24px;
+    --space-section: 80px;
+    --space-content: 32px;
+    --font-xl: 32px;
+  }
+
+  /* content stack */
+  .content { flex-direction: column; }
+  .content--reverse { flex-direction: column; }
+
+  /* header */
+  .header__nav { display: none; }
+  .header__utils { gap: 14px; }
+  .mobile-toggle { display: inline-block; }
+
+  /* hero */
+  .section--hero { min-height: 560px; }
+  .section--hero .title { font-size: 40px; }
+  .section--hero .container { padding-top: 80px; padding-bottom: 80px; }
+
+  /* grids */
+  .card-list--col-4 { grid-template-columns: repeat(2, 1fr); }
+  .card-list--col-3 { grid-template-columns: repeat(2, 1fr); }
+  .section--entry .card-list,
+  .section--styletest .card-list,
+  .section--more .card-list { grid-template-columns: repeat(2, 1fr); }
+  .section--recommended .card-list { grid-template-columns: repeat(2, 1fr); }
+
+  .rank-list { grid-template-columns: 1fr; }
+  .rank-expand__list { grid-template-columns: 1fr; }
+
+  .lookbook-flow { grid-template-columns: 1fr; }
+  .complete-grid { grid-template-columns: 1fr; }
+  .fitguide-grid { grid-template-columns: 1fr; }
+  .scene-grid { grid-template-columns: 1fr; }
+  .styleplay-grid { grid-template-columns: repeat(2, 1fr); }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .review-grid { grid-template-columns: 1fr; }
+  .stylemix-mini-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* featured collage */
+  .featured-collage { height: 480px; }
+
+  /* collage break (스토리·룩북 캠페인 / 메인 콜라주 공통) */
+  .page-campaign .collage-grid,
+  .section--collage .collage-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    min-height: 0;
+    height: auto;
+    gap: clamp(12px, 2vw, 18px);
+  }
+  .page-campaign .collage-main,
+  .section--collage .collage-main {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    grid-row-end: auto;
+    height: clamp(300px, 42vw, 400px);
+    min-height: 280px;
+  }
+  .page-campaign .collage-note,
+  .section--collage .collage-note {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    height: auto;
+    min-height: 0;
+  }
+  .page-campaign .collage-grid > .collage-thumb:nth-child(2),
+  .section--collage .collage-grid > .collage-thumb:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3;
+    min-height: 200px;
+  }
+  .page-campaign .collage-grid > .collage-thumb:nth-child(4),
+  .section--collage .collage-grid > .collage-thumb:nth-child(4) {
+    grid-column: 2;
+    grid-row: 3;
+    min-height: 200px;
+  }
+
+  /* lookbook preview */
+  .lookbook-preview-grid { grid-template-columns: 1fr; height: auto; }
+  .lookbook-preview-grid figure { height: 360px; }
+
+  /* chapter */
+  .section--chapter .content { flex-direction: row; align-items: center; }
+  .chapter__num { font-size: 100px; }
+  .section--chapter .title { font-size: 32px; }
+
+  /* final */
+  .final-board { padding: 40px 28px; }
+  .final-head { grid-template-columns: 1fr; }
+  .final-body { grid-template-columns: 1fr; }
+  .final-trust { grid-template-columns: repeat(2, 1fr); }
+
+  /* footer */
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+  .footer__brand { grid-column: 1 / 3; }
+  .footer__newsletter { grid-column: 1 / 3; }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-pad: 20px;
+    --space-section: 64px;
+    --space-content: 24px;
+    --font-xl: 28px;
+    --font-lg: 22px;
+  }
+
+  body {
+    font-size: 13px;
+    background-attachment: scroll;
+    background-image: linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-soft) 100%);
+  }
+
+  /* kitsch layer — reduce on small screens */
+  .section--hero::before { opacity: 0.32; }
+  .chip:hover,
+  .chip--solid:hover { transform: none; box-shadow: none; }
+  .quick-filter button:hover,
+  .filter-preset:hover,
+  .board-tab:hover { box-shadow: none; transform: none; }
+
+  main::before { opacity: 0.28; }
+  .section__head .eyebrow::before { opacity: 0.4; transform: rotate(45deg) scale(0.92); }
+  .review-card::after { opacity: 0.3; }
+  .collage-note::before { opacity: 0.38; }
+  .mega__featured::before { opacity: 0.55; }
+
+  /* hero */
+  .section--hero { min-height: 480px; }
+  .section--hero .title { font-size: 32px; }
+
+  /* card list */
+  .card-list--col-2 { grid-template-columns: 1fr; }
+
+  /* btn group */
+  .btn-group { flex-direction: column; align-items: stretch; }
+  .btn { width: 100%; }
+
+  /* section head */
+  .section__head--row { flex-direction: column; align-items: flex-start; }
+
+  /* breadcrumb — 서브페이지 상단 여백 축소 */
+  .breadcrumb {
+    padding: var(--space-16) 0 var(--space-8);
+    letter-spacing: 0.04em;
+  }
+  .breadcrumb::after {
+    margin-top: var(--space-8);
+    width: min(140px, 45vw);
+    height: 2px;
+  }
+
+  /* featured collage */
+  .featured-collage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+  .featured-collage img:nth-child(1),
+  .featured-collage img:nth-child(2),
+  .featured-collage img:nth-child(3) {
+    grid-column: 1;
+    grid-row: auto;
+    aspect-ratio: 4 / 5;
+  }
+
+  /* chapter */
+  .section--chapter { padding: 64px 0; }
+  .section--chapter .content { flex-direction: column; gap: 24px; }
+  .chapter__num { font-size: 80px; }
+  .section--chapter .title { font-size: 26px; }
+
+  /* stylemix mini */
+  .stylemix-mini-grid { grid-template-columns: 1fr; }
+
+  /* 캠페인 콜라주: 좁은 화면에서 썸네일 세로 스택 (카드 간격 유지) */
+  .page-campaign .collage-grid > .collage-thumb:nth-child(2),
+  .section--collage .collage-grid > .collage-thumb:nth-child(2) {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    min-height: 220px;
+  }
+  .page-campaign .collage-grid > .collage-thumb:nth-child(4),
+  .section--collage .collage-grid > .collage-thumb:nth-child(4) {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    min-height: 220px;
+  }
+
+  /* category */
+  .category-grid { grid-template-columns: 1fr; }
+
+  /* styletest */
+  .styletest-intro { padding: 32px 24px; }
+  .styletest-steps { flex-direction: column; gap: 12px; }
+
+  /* final */
+  .final-metrics { grid-template-columns: 1fr; }
+  .final-trust { grid-template-columns: 1fr; }
+  .final-countdown__num { font-size: 24px; }
+
+  /* footer */
+  .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer__brand { grid-column: 1; }
+  .footer__newsletter { grid-column: 1; }
+  .footer__newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .footer__newsletter-submit {
+    width: 100%;
+    transform: none;
+  }
+  .footer__newsletter-submit:hover { transform: none; }
+  .footer__bottom-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .footer__legal li + li::before { margin: 0 12px; }
+
+  /* mega menu off */
+  .mega { display: none; }
+}
+
+@media (max-width: 480px) {
+  :root { --container-pad: 16px; }
+  .section--hero .title { font-size: 26px; }
+  .styleplay-grid { grid-template-columns: 1fr; }
+  .header__inner { height: 60px; }
+  .mobile-panel { top: 60px; }
+  .mobile-dim { inset: 60px 0 0 0; }
+}

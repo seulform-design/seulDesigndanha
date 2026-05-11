@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DANHA 스타일 테스트 | 3초 무드 매칭">
+  <title>DANHA · 스타일 테스트</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/style-test.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./scripts/site.js" defer></script>
+  <script src="./scripts/style-test.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <a class="a11y-skip-link" href="#main">본문 바로가기</a>
+
+    <aside class="top-band" aria-label="프로모션 안내">
+      <div class="top-band__inner">
+        <p class="top-band__text" id="top-band-text" aria-live="polite">단하 뉴 시즌 오픈 · 첫 구매 10% · 스타일 테스트 완료 시 추가 쿠폰</p>
+        <button type="button" class="top-band__close" id="top-band-close" aria-label="프로모션 배너 닫기">닫기</button>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo"><a href="./index.html">DANHA</a></p>
+        <nav class="header__nav" aria-label="주요 메뉴">
+          <div class="nav-item">
+            <a href="./shop.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">쇼핑</a>
+            <div class="mega" role="region" aria-label="쇼핑 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">카테고리</p>
+                  <a href="./shop.html?cat=top">상의</a>
+                  <a href="./shop.html?cat=skirt">스커트</a>
+                  <a href="./shop.html?cat=onepiece">원피스</a>
+                  <a href="./shop.html?cat=outer">아우터</a>
+                  <a href="./shop.html?cat=set">셋업</a>
+                  <a href="./shop.html?cat=acc">액세서리</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">스타일</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                  <a href="./style.html?mood=travel">여행 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">소재</p>
+                  <a href="./shop.html?fabric=linen">린넨 블렌드</a>
+                  <a href="./shop.html?fabric=silk">소프트 실크</a>
+                  <a href="./shop.html?fabric=cotton">데일리 코튼</a>
+                  <a href="./shop.html?fabric=light">라이트 웨이트</a>
+                </div>
+                <a class="mega__featured" href="./lookbook.html">
+                  <img src="./images/lookbook.jpg" alt="단하 룩북 미리보기">
+                  <span class="mega__featured-label">추천</span>
+                  <strong>데일리 헤리티지 룩</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./style.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스타일</a>
+            <div class="mega mega--compact" role="region" aria-label="스타일 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">빠른 진입</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">무드</p>
+                  <a href="./style.html?mood=cafe">카페 가는 날</a>
+                  <a href="./style.html?mood=rainy">비 오는 날</a>
+                  <a href="./style.html?mood=travel">여행 가는 날</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./lookbook.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">룩북</a>
+            <div class="mega mega--compact" role="region" aria-label="룩북 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">에디션</p>
+                  <a href="./lookbook.html">룩북 홈</a>
+                  <a href="./lookbook.html#editorial">에디토리얼</a>
+                  <a href="./lookbook.html#campaign">캠페인</a>
+                  <a href="./lookbook.html#scene">씬</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">함께 보기</p>
+                  <a href="./style-test.html">스타일 테스트</a>
+                  <a href="./shop.html">쇼핑 바로가기</a>
+                  <a href="./style.html">스타일 가이드</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./story.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스토리</a>
+            <div class="mega mega--compact" role="region" aria-label="스토리 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">읽을거리</p>
+                  <a href="./story.html">스토리 홈</a>
+                  <a href="./story.html#season">시즌 노트</a>
+                  <a href="./story.html#chapters">챕터</a>
+                  <a href="./story.html#campaign">캠페인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">연결</p>
+                  <a href="./brand.html">브랜드</a>
+                  <a href="./lookbook.html">룩북</a>
+                  <a href="./style.html">스타일</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./brand.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">브랜드</a>
+            <div class="mega mega--compact" role="region" aria-label="브랜드 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">소개</p>
+                  <a href="./brand.html">브랜드 홈</a>
+                  <a href="./brand.html#identity">단하가 보는 한복</a>
+                  <a href="./brand.html#values">4가지 가치</a>
+                  <a href="./brand.html#timeline">타임라인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">더 알아보기</p>
+                  <a href="./brand.html#sustain">지속가능성</a>
+                  <a href="./brand.html#contact">문의</a>
+                  <a href="./story.html">스토리</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__utils" aria-label="빠른 기능">
+          <a href="./shop.html" aria-label="검색">검색</a>
+          <a href="./shop.html" aria-label="위시리스트">위시</a>
+          <a href="./cart.html" aria-label="장바구니">장바구니</a>
+        </div>
+        <button class="mobile-toggle" type="button" aria-label="모바일 메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">메뉴</button>
+      </div>
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+          <details>
+            <summary>쇼핑</summary>
+            <a href="./shop.html">전체</a>
+            <a href="./shop.html?cat=top">상의</a>
+            <a href="./shop.html?cat=skirt">스커트</a>
+            <a href="./shop.html?cat=onepiece">원피스</a>
+            <a href="./shop.html?cat=outer">아우터</a>
+            <a href="./shop.html?cat=set">셋업</a>
+            <a href="./shop.html?cat=acc">액세서리</a>
+          </details>
+          <details>
+            <summary>스타일</summary>
+            <a href="./style.html?type=office">오피스 무드</a>
+            <a href="./style.html?type=date">데이트 무드</a>
+            <a href="./style.html?type=daily">데일리 무드</a>
+            <a href="./style.html?mood=cafe">카페 가는 날</a>
+            <a href="./style.html?mood=rainy">비 오는 날</a>
+            <a href="./style.html?mood=travel">여행 가는 날</a>
+          </details>
+          <details>
+            <summary>룩북</summary>
+            <a href="./lookbook.html">룩북 홈</a>
+            <a href="./lookbook.html#editorial">에디토리얼</a>
+            <a href="./lookbook.html#campaign">캠페인</a>
+            <a href="./lookbook.html#scene">씬</a>
+          </details>
+          <details>
+            <summary>스토리</summary>
+            <a href="./story.html">스토리 홈</a>
+            <a href="./story.html#season">시즌 노트</a>
+            <a href="./story.html#chapters">챕터</a>
+            <a href="./story.html#campaign">캠페인</a>
+            <a href="./brand.html">브랜드</a>
+          </details>
+          <details>
+            <summary>브랜드</summary>
+            <a href="./brand.html">브랜드 홈</a>
+            <a href="./brand.html#identity">단하가 보는 한복</a>
+            <a href="./brand.html#values">4가지 가치</a>
+            <a href="./brand.html#timeline">타임라인</a>
+            <a href="./brand.html#contact">문의</a>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-dim" id="mobile-dim" hidden></div>
+
+    <main id="main">
+
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <div class="container breadcrumb__inner">
+          <a href="./index.html">홈</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="page">스타일 테스트 | 3초 매칭</span>
+        </div>
+      </nav>
+
+      <!-- ===== 1. PAGE HERO ===== -->
+      <section class="page-hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="text-wrap text-wrap--wide">
+            <p class="eyebrow">Style Test · 3초 매칭</p>
+            <h1 id="hero-title" class="title page-hero__title">너한테 어울리는 스타일<br>아직 몰라?</h1>
+            <p class="desc">딱 3초면 충분해. 3문항만 답하면 결과 타입과 추천 코디까지 바로 나와. 로그인 없이 OK · 완료 시 추가 쿠폰까지.</p>
+          </div>
+          <ul class="page-hero__meta" aria-label="테스트 지표">
+            <li><strong>3</strong><span>문항</span></li>
+            <li><strong>3sec</strong><span>완료까지</span></li>
+            <li><strong>4</strong><span>결과 타입</span></li>
+            <li><strong>+5%</strong><span>추가 쿠폰</span></li>
+          </ul>
+          <span class="step-indicator" aria-label="총 3단계 안내">
+            총 3단계 · 평균 3초
+            <span class="step-indicator__bar step-indicator__bar--step0" aria-hidden="true"></span>
+          </span>
+        </div>
+      </section>
+
+      <!-- ===== 2. DIRECTOR ===== -->
+      <section class="page-director" aria-labelledby="director-title">
+        <div class="container">
+          <article class="director-note">
+            <p class="director-note__label">Why 3 Questions</p>
+            <div>
+              <h2 id="director-title" class="director-note__title">왜 3문항만 묻냐면</h2>
+              <p class="director-note__body">길어지면 끝까지 안 해. 그래서 무드 · 상황 · 핏 3가지만 골랐어. 3개 답이 16조합을 만들고, 그 안에서 4가지 대표 타입이 나와. 끝까지 답하는 흐름이 더 가치 있다고 봤어.</p>
+              <span class="director-note__signoff">DESIGN DIRECTOR · 윤지하</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== 3. TEST FORM ===== -->
+      <section class="page-test" aria-labelledby="test-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Questions</p>
+                <h2 id="test-title" class="title">오늘 무드 골라봐</h2>
+                <p class="desc">3개 다 고르면 결과 바로 나와.</p>
+              </div>
+            </div>
+            <div class="test-board">
+              <article class="question" data-q="1">
+                <p class="question__label"><strong>1</strong>오늘 원하는 무드는?</p>
+                <div class="options" role="group" aria-label="Q1 무드 선택">
+                  <button type="button" data-test-group="mood" data-test-value="미니멀">미니멀</button>
+                  <button type="button" data-test-group="mood" data-test-value="로맨틱">로맨틱</button>
+                  <button type="button" data-test-group="mood" data-test-value="클래식">클래식</button>
+                  <button type="button" data-test-group="mood" data-test-value="키치">키치</button>
+                </div>
+              </article>
+
+              <article class="question" data-q="2">
+                <p class="question__label"><strong>2</strong>주로 입을 상황은?</p>
+                <div class="options" role="group" aria-label="Q2 상황 선택">
+                  <button type="button" data-test-group="scene" data-test-value="오피스">오피스</button>
+                  <button type="button" data-test-group="scene" data-test-value="데이트">데이트</button>
+                  <button type="button" data-test-group="scene" data-test-value="데일리">데일리</button>
+                  <button type="button" data-test-group="scene" data-test-value="여행">여행</button>
+                </div>
+              </article>
+
+              <article class="question" data-q="3">
+                <p class="question__label"><strong>3</strong>선호하는 핏 실루엣은?</p>
+                <div class="options" role="group" aria-label="Q3 핏 선택">
+                  <button type="button" data-test-group="fit" data-test-value="레귤러">레귤러</button>
+                  <button type="button" data-test-group="fit" data-test-value="플로우">플로우</button>
+                  <button type="button" data-test-group="fit" data-test-value="롱 실루엣">롱 실루엣</button>
+                  <button type="button" data-test-group="fit" data-test-value="크롭">크롭</button>
+                </div>
+              </article>
+
+              <div class="test-cta-group">
+                <button type="button" id="test-submit" class="btn btn--primary">결과 보기</button>
+                <a class="link-cta" href="./style.html">결과 없이 스타일 둘러보기 →</a>
+              </div>
+
+              <div class="result-box" aria-live="polite">
+                <p class="result-box__label">YOUR RESULT</p>
+                <p id="test-result" class="result-box__text">아직 결과 없어. 위 3개 다 고르면 바로 추천 나와.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. EXAMPLE TYPES ===== -->
+      <section class="page-types" aria-labelledby="types-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Example Types</p>
+                <h2 id="types-title" class="title">결과는 이런 식으로</h2>
+                <p class="desc">조합에 따라 어떤 타입이 나오는지 미리 봐.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="types-grid">
+                <article class="type-card">
+                  <p class="type-card__tag">TYPE A</p>
+                  <h3 class="type-card__title">Soft Daily</h3>
+                  <p class="type-card__desc">편하게 입는데 예쁜 스타일. 평일 아침 가장 빠르게 결정되는 무드.</p>
+                  <p class="type-card__meta">셔츠 · 와이드 · 로퍼</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?type=daily">예시 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html">아이템 비교</a>
+                  </div>
+                </article>
+                <article class="type-card">
+                  <p class="type-card__tag">TYPE B</p>
+                  <h3 class="type-card__title">Clean Office</h3>
+                  <p class="type-card__desc">단정하지만 확실한 분위기. 회의실 첫 인상을 책임지는 무드.</p>
+                  <p class="type-card__meta">블라우스 · 플레어 · 스니커즈</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?type=date">예시 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?cat=skirt">아이템 비교</a>
+                  </div>
+                </article>
+                <article class="type-card">
+                  <p class="type-card__tag">TYPE C</p>
+                  <h3 class="type-card__title">Modern Classic</h3>
+                  <p class="type-card__desc">정돈된 어깨선과 미디 밸런스가 균형을 잡는 오피스 무드.</p>
+                  <p class="type-card__meta">재킷 · 스커트 · 로퍼</p>
+                  <div class="btn-group">
+                    <a class="btn btn--primary btn--sm" href="./style.html?type=office">예시 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?cat=top">아이템 비교</a>
+                  </div>
+                </article>
+                <article class="type-card">
+                  <p class="type-card__tag">TYPE D</p>
+                  <h3 class="type-card__title">Soft Kitsch</h3>
+                  <p class="type-card__desc">포인트 액세서리 한 점으로 무드를 바꾸는 시즌 룩.</p>
+                  <p class="type-card__meta">매듭 블라우스 · 미니백 · 로퍼</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?mood=y2k">예시 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?mood=y2k">아이템 비교</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. FAQ ===== -->
+      <section class="page-faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Test FAQ</p>
+                <h2 id="faq-title" class="title">테스트 자주 묻는 것</h2>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="faq-list">
+                <details open>
+                  <summary>결과는 저장되나요?</summary>
+                  <p>로그인 없이도 브라우저에 임시 저장되어 다음 방문 시 동일한 결과를 다시 볼 수 있습니다. 회원이라면 마이페이지에 영구 저장되며 위시리스트와 함께 동기화됩니다.</p>
+                </details>
+                <details>
+                  <summary>결과가 마음에 들지 않으면 다시 할 수 있나요?</summary>
+                  <p>가능합니다. "다시 테스트" 버튼을 누르면 처음부터 다시 시작합니다. 무드는 매일 바뀔 수 있다는 전제 하에 설계되어 있습니다.</p>
+                </details>
+                <details>
+                  <summary>추가 쿠폰은 어떻게 받나요?</summary>
+                  <p>3문항 모두 응답 후 결과 화면이 노출되는 순간 자동 발급됩니다. 회원의 경우 쿠폰함에 즉시 등록되며, 비회원은 결제 단계에서 자동 적용됩니다.</p>
+                </details>
+                <details>
+                  <summary>결과를 친구와 공유할 수 있나요?</summary>
+                  <p>결과 카드 하단의 카카오톡 / 인스타그램 공유 버튼으로 공유 가능합니다. 받은 친구가 같은 타입을 선택하면 양쪽 모두 추가 적립이 발생합니다.</p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. PAGE CTA ===== -->
+      <section class="page-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-board">
+            <p class="eyebrow">Decision Closer</p>
+            <h2 id="cta-title" class="title">테스트가 끝났다면,<br>결과로 이어가세요</h2>
+            <p class="desc">고른 타입에 맞는 코디부터 먼저 보여줄게. 마음에 들면 그대로 담아.</p>
+            <ul class="cta-proof" aria-label="혜택 안내">
+              <li>완료 시 +5% 쿠폰 자동 발급</li>
+              <li>결과 타입 코디 즉시 노출</li>
+              <li>로그인 없이 결과 저장</li>
+            </ul>
+            <div class="btn-group btn-group--center">
+              <a class="btn btn--primary" href="./style.html">결과 타입으로 스타일 보기</a>
+              <a class="btn btn--secondary" href="./lookbook.html">바로 룩북 보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-logo">DANHA</p>
+            <p class="footer__brand-copy">전통의 실루엣을 오늘의 일상 속으로 연결하는 모던 한복 브랜드</p>
+            <ul class="footer__brand-meta">
+              <li>상호: 주식회사 단하 | 대표: 김남경</li>
+              <li>전화: 02-6952-8383 | contact@danhaseoul.com</li>
+              <li>주소: 서울시 종로구 팔판길 39-7 메종단하</li>
+              <li>사업자등록번호: 380-87-03073</li>
+            </ul>
+          </div>
+          <nav class="footer__col" aria-label="쇼핑">
+            <p class="footer__col-title">SHOP</p>
+            <ul class="footer__links">
+              <li><a href="./shop.html">전체 상품</a></li>
+              <li><a href="./shop.html?cat=top">상의</a></li>
+              <li><a href="./shop.html?cat=skirt">스커트</a></li>
+              <li><a href="./shop.html?cat=outer">아우터</a></li>
+              <li><a href="./shop.html?cat=set">셋업</a></li>
+              <li><a href="./shop.html?cat=acc">액세서리</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="컴퍼니">
+            <p class="footer__col-title">COMPANY</p>
+            <ul class="footer__links">
+              <li><a href="./brand.html">브랜드 소개</a></li>
+              <li><a href="./story.html">스토리</a></li>
+              <li><a href="./lookbook.html">룩북</a></li>
+              <li><a href="./style-test.html">스타일 테스트</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="소셜">
+            <p class="footer__col-title">SOCIAL</p>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer">Kakao Channel</a></li>
+              <li><a href="mailto:contact@danhaseoul.com">Email</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__newsletter">
+            <p class="footer__col-title">NEWSLETTER</p>
+            <p class="footer__newsletter-copy">시즌 룩과 캠페인 비하인드를 가장 먼저.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer__newsletter-input" placeholder="이메일을 입력하세요" aria-label="뉴스레터 이메일">
+              <button type="submit" class="footer__newsletter-submit">구독</button>
+            </form>
+            <p class="footer__newsletter-note">언제든 해지 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>© 2026 DANHA. All rights reserved.</p>
+          <ul class="footer__legal">
+            <li><a href="./brand.html#policy">이용약관</a></li>
+            <li><a href="./brand.html#policy"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="./brand.html#policy">사업자정보확인</a></li>
+          </ul>
+          <span aria-label="국가 / 통화">KR / KRW</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

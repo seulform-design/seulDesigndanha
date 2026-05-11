@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DANHA 스토리 | 시즌 무드와 캠페인 시선">
+  <title>DANHA · 스토리</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/story.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./scripts/site.js" defer></script>
+  <script src="./scripts/story.js" defer></script>
+</head>
+<body class="story-page">
+  <div id="wrap">
+    <a class="a11y-skip-link" href="#main">본문 바로가기</a>
+
+    <aside class="top-band" aria-label="프로모션 안내">
+      <div class="top-band__inner">
+        <p class="top-band__text" id="top-band-text" aria-live="polite">단하 뉴 시즌 오픈 · 첫 구매 10% · 스타일 테스트 완료 시 추가 쿠폰</p>
+        <button type="button" class="top-band__close" id="top-band-close" aria-label="프로모션 배너 닫기">닫기</button>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo"><a href="./index.html">DANHA</a></p>
+        <nav class="header__nav" aria-label="주요 메뉴">
+          <div class="nav-item">
+            <a href="./shop.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">쇼핑</a>
+            <div class="mega" role="region" aria-label="쇼핑 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">카테고리</p>
+                  <a href="./shop.html?cat=top">상의</a>
+                  <a href="./shop.html?cat=skirt">스커트</a>
+                  <a href="./shop.html?cat=onepiece">원피스</a>
+                  <a href="./shop.html?cat=outer">아우터</a>
+                  <a href="./shop.html?cat=set">셋업</a>
+                  <a href="./shop.html?cat=acc">액세서리</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">스타일</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                  <a href="./style.html?mood=travel">여행 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">소재</p>
+                  <a href="./shop.html?fabric=linen">린넨 블렌드</a>
+                  <a href="./shop.html?fabric=silk">소프트 실크</a>
+                  <a href="./shop.html?fabric=cotton">데일리 코튼</a>
+                  <a href="./shop.html?fabric=light">라이트 웨이트</a>
+                </div>
+                <a class="mega__featured" href="./lookbook.html">
+                  <img src="./images/lookbook.jpg" alt="단하 룩북 미리보기">
+                  <span class="mega__featured-label">추천</span>
+                  <strong>데일리 헤리티지 룩</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./style.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스타일</a>
+            <div class="mega mega--compact" role="region" aria-label="스타일 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">빠른 진입</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">무드</p>
+                  <a href="./style.html?mood=cafe">카페 가는 날</a>
+                  <a href="./style.html?mood=rainy">비 오는 날</a>
+                  <a href="./style.html?mood=travel">여행 가는 날</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./lookbook.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">룩북</a>
+            <div class="mega mega--compact" role="region" aria-label="룩북 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">에디션</p>
+                  <a href="./lookbook.html">룩북 홈</a>
+                  <a href="./lookbook.html#editorial">에디토리얼</a>
+                  <a href="./lookbook.html#campaign">캠페인</a>
+                  <a href="./lookbook.html#scene">씬</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">함께 보기</p>
+                  <a href="./style-test.html">스타일 테스트</a>
+                  <a href="./shop.html">쇼핑 바로가기</a>
+                  <a href="./style.html">스타일 가이드</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./story.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false" aria-current="page">스토리</a>
+            <div class="mega mega--compact" role="region" aria-label="스토리 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">읽을거리</p>
+                  <a href="./story.html">스토리 홈</a>
+                  <a href="./story.html#season">시즌 노트</a>
+                  <a href="./story.html#chapters">챕터</a>
+                  <a href="./story.html#campaign">캠페인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">연결</p>
+                  <a href="./brand.html">브랜드</a>
+                  <a href="./lookbook.html">룩북</a>
+                  <a href="./style.html">스타일</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./brand.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">브랜드</a>
+            <div class="mega mega--compact" role="region" aria-label="브랜드 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">소개</p>
+                  <a href="./brand.html">브랜드 홈</a>
+                  <a href="./brand.html#identity">단하가 보는 한복</a>
+                  <a href="./brand.html#values">4가지 가치</a>
+                  <a href="./brand.html#timeline">타임라인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">더 알아보기</p>
+                  <a href="./brand.html#sustain">지속가능성</a>
+                  <a href="./brand.html#contact">문의</a>
+                  <a href="./story.html">스토리</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__utils" aria-label="빠른 기능">
+          <a href="./shop.html" aria-label="검색">검색</a>
+          <a href="./shop.html" aria-label="위시리스트">위시</a>
+          <a href="./cart.html" aria-label="장바구니">장바구니</a>
+        </div>
+        <button class="mobile-toggle" type="button" aria-label="모바일 메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">메뉴</button>
+      </div>
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+          <details>
+            <summary>쇼핑</summary>
+            <a href="./shop.html">전체</a>
+            <a href="./shop.html?cat=top">상의</a>
+            <a href="./shop.html?cat=skirt">스커트</a>
+            <a href="./shop.html?cat=onepiece">원피스</a>
+            <a href="./shop.html?cat=outer">아우터</a>
+            <a href="./shop.html?cat=set">셋업</a>
+            <a href="./shop.html?cat=acc">액세서리</a>
+          </details>
+          <details>
+            <summary>스타일</summary>
+            <a href="./style.html?type=office">오피스 무드</a>
+            <a href="./style.html?type=date">데이트 무드</a>
+            <a href="./style.html?type=daily">데일리 무드</a>
+            <a href="./style.html?mood=cafe">카페 가는 날</a>
+            <a href="./style.html?mood=rainy">비 오는 날</a>
+            <a href="./style.html?mood=travel">여행 가는 날</a>
+          </details>
+          <details>
+            <summary>룩북</summary>
+            <a href="./lookbook.html">룩북 홈</a>
+            <a href="./lookbook.html#editorial">에디토리얼</a>
+            <a href="./lookbook.html#campaign">캠페인</a>
+            <a href="./lookbook.html#scene">씬</a>
+          </details>
+          <details>
+            <summary>스토리</summary>
+            <a href="./story.html">스토리 홈</a>
+            <a href="./story.html#season">시즌 노트</a>
+            <a href="./story.html#chapters">챕터</a>
+            <a href="./story.html#campaign">캠페인</a>
+            <a href="./brand.html">브랜드</a>
+          </details>
+          <details>
+            <summary>브랜드</summary>
+            <a href="./brand.html">브랜드 홈</a>
+            <a href="./brand.html#identity">단하가 보는 한복</a>
+            <a href="./brand.html#values">4가지 가치</a>
+            <a href="./brand.html#timeline">타임라인</a>
+            <a href="./brand.html#contact">문의</a>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-dim" id="mobile-dim" hidden></div>
+
+    <main id="main">
+
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <div class="container breadcrumb__inner">
+          <a href="./index.html">홈</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="page">스토리 | 시즌 무드</span>
+        </div>
+      </nav>
+
+      <!-- ===== 1. PAGE HERO ===== -->
+      <section class="page-hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="content">
+            <div class="content__text">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Story · 시즌의 시선</p>
+                <h1 id="hero-title" class="title page-hero__title">시즌이 바뀌어도<br>이어지는 시선</h1>
+                <p class="desc">단하는 시즌마다 한 장면을 정의합니다. 오늘의 한복은 어디에서 어떻게 입히는지, 그 시선을 정리합니다.</p>
+              </div>
+              <ul class="page-hero__meta" aria-label="시즌 지표">
+                <li><strong>26SS</strong><span>현재 시즌</span></li>
+                <li><strong>3</strong><span>캠페인 챕터</span></li>
+                <li><strong>12</strong><span>비주얼 컷</span></li>
+              </ul>
+              <div class="season-sig" aria-label="시즌 시그니처">
+                <div>
+                  <span class="season-sig__title">5 PALETTE</span>
+                  <div class="season-palette" aria-label="시즌 컬러 팔레트">
+                    <span class="season-palette__bone" title="Bone Beige"></span>
+                    <span class="season-palette__sage" title="Soft Sage"></span>
+                    <span class="season-palette__navy" title="Deep Navy"></span>
+                    <span class="season-palette__rose" title="Rose Beige"></span>
+                    <span class="season-palette__earth" title="Earthy Brown"></span>
+                  </div>
+                </div>
+                <div>
+                  <span class="season-sig__title">3 CHAPTERS</span>
+                  <ul class="season-chapters">
+                    <li><span>CH 01 · 덜어낸 라인</span><strong>92pt</strong></li>
+                    <li><span>CH 02 · 한 톤의 균형</span><strong>91pt</strong></li>
+                    <li><span>CH 03 · 오늘의 장면</span><strong>88pt</strong></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="#season">시즌 무드 읽기</a>
+                <a class="btn btn--secondary" href="./lookbook.html">룩북에서 보기</a>
+              </div>
+            </div>
+            <figure class="page-hero__collage" aria-hidden="true">
+              <img src="./images/tradition1.jpg" alt="">
+              <img src="./images/Collection2.jpg" alt="">
+              <img src="./images/mood3.jpg" alt="">
+              <span class="page-hero__sticker">SCENE 26SS</span>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. TOC ===== -->
+      <section class="page-toc" aria-labelledby="toc-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Contents</p>
+                <h2 id="toc-title" class="title">목차부터 골라봐</h2>
+                <p class="desc">한 챕터씩 끊어 읽어도 OK. 원하는 데서 시작하면 돼.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="toc-grid">
+                <a href="#season" class="toc-card">
+                  <p class="toc-card__no">CH 01</p>
+                  <h3 class="toc-card__title">26SS 가벼움과 균형</h3>
+                  <p class="toc-card__hint">시즌의 무드를 정의하는 3챕터의 시작</p>
+                </a>
+                <a href="#campaign" class="toc-card">
+                  <p class="toc-card__no">CH 02</p>
+                  <h3 class="toc-card__title">캠페인 같은 시선</h3>
+                  <p class="toc-card__hint">한 시즌의 톤 위에 얹힌 12 컷의 장면</p>
+                </a>
+                <a href="#chapters" class="toc-card">
+                  <p class="toc-card__no">CH 03</p>
+                  <h3 class="toc-card__title">비주얼 챕터</h3>
+                  <p class="toc-card__hint">덜어낸 라인 / 한 톤의 균형 / 오늘의 장면</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. SEASON STORY ===== -->
+      <section id="season" class="page-season" aria-labelledby="season-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Season Story</p>
+                <h2 id="season-title" class="title">26SS 가벼움과 균형</h2>
+                <p class="desc">올봄 단하의 무드는 "가벼움과 균형". 라인은 정돈, 무게는 덜고, 색은 한 톤으로.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="narrative-grid">
+                <article class="narrative-block">
+                  <p class="narrative-block__index">CHAPTER 01</p>
+                  <h3 class="narrative-block__title">덜어낸 라인</h3>
+                  <p class="narrative-block__body">전통의 곡선을 오늘의 일상 핏에 맞게 다시 그렸습니다. 어깨선은 정돈하고, 기장은 활동성에 맞춥니다.</p>
+                  <p class="narrative-block__quote">"불필요한 장식 대신, 라인 하나에 의미를 담는다."</p>
+                </article>
+                <article class="narrative-block">
+                  <p class="narrative-block__index">CHAPTER 02</p>
+                  <h3 class="narrative-block__title">한 톤의 균형</h3>
+                  <p class="narrative-block__body">시즌 컬러는 베이지·세이지·딥네이비 세 톤으로 좁혔습니다. 한 룩 안에서 톤이 부딪히지 않도록 밀도를 조정합니다.</p>
+                  <p class="narrative-block__quote">"색을 줄이면, 실루엣이 보인다."</p>
+                </article>
+                <article class="narrative-block">
+                  <p class="narrative-block__index">CHAPTER 03</p>
+                  <h3 class="narrative-block__title">오늘의 장면</h3>
+                  <p class="narrative-block__body">출근, 약속, 여행 장면이 달라도 인상이 끊기지 않도록 룩과 룩 사이를 설계했습니다.</p>
+                  <p class="narrative-block__quote">"한 벌이 아니라 한 장면을 만든다."</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. PALETTE ===== -->
+      <section class="page-palette" aria-labelledby="palette-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Season Palette</p>
+                <h2 id="palette-title" class="title">시즌 컬러 5톤</h2>
+                <p class="desc">두 톤만 섞어도 균형이 잘 맞도록 좁혀둔 팔레트.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="palette-grid">
+                <article class="palette-card">
+                  <div class="palette-card__chip palette-card__chip--bone"></div>
+                  <div class="palette-card__meta">
+                    <p class="palette-card__name">Bone Beige</p>
+                    <p class="palette-card__hex">#F4EFE8</p>
+                    <p class="palette-card__role">기본 베이스 / 톤 다운</p>
+                  </div>
+                </article>
+                <article class="palette-card">
+                  <div class="palette-card__chip palette-card__chip--sage"></div>
+                  <div class="palette-card__meta">
+                    <p class="palette-card__name">Soft Sage</p>
+                    <p class="palette-card__hex">#C4C8B5</p>
+                    <p class="palette-card__role">자연 / 일상 무드</p>
+                  </div>
+                </article>
+                <article class="palette-card">
+                  <div class="palette-card__chip palette-card__chip--navy"></div>
+                  <div class="palette-card__meta">
+                    <p class="palette-card__name">Deep Navy</p>
+                    <p class="palette-card__hex">#2C3E50</p>
+                    <p class="palette-card__role">정돈 / 오피스 톤</p>
+                  </div>
+                </article>
+                <article class="palette-card">
+                  <div class="palette-card__chip palette-card__chip--rose"></div>
+                  <div class="palette-card__meta">
+                    <p class="palette-card__name">Rose Beige</p>
+                    <p class="palette-card__hex">#E8C5C5</p>
+                    <p class="palette-card__role">포인트 / 데이트 톤</p>
+                  </div>
+                </article>
+                <article class="palette-card">
+                  <div class="palette-card__chip palette-card__chip--earth"></div>
+                  <div class="palette-card__meta">
+                    <p class="palette-card__name">Earthy Brown</p>
+                    <p class="palette-card__hex">#5D4037</p>
+                    <p class="palette-card__role">아우터 / 톤 마감</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. CAMPAIGN ===== -->
+      <section id="campaign" class="page-campaign" aria-label="시즌 캠페인">
+        <div class="container">
+          <div class="collage-grid">
+            <figure class="collage-main">
+              <img src="./images/season1.jpg" alt="시즌 캠페인 커버 컷">
+              <span class="collage-main__label">CAMPAIGN COVER</span>
+            </figure>
+            <figure class="collage-thumb">
+              <img src="./images/season2.jpg" alt="캠페인 컷 A">
+              <figcaption>자연광 새벽</figcaption>
+            </figure>
+            <article class="collage-note">
+              <p class="eyebrow">Campaign</p>
+              <h2 class="title">한 시즌의<br>같은 시선</h2>
+              <p class="desc">3 챕터, 12 컷. 같은 톤 위에 다른 장면이 얹힙니다. 어디에 입히는지보다, 어떤 시선으로 보는지에 가깝습니다.</p>
+              <a class="btn btn--secondary btn--sm" href="./lookbook.html">캠페인 룩북 보기</a>
+            </article>
+            <figure class="collage-thumb">
+              <img src="./images/season3.jpg" alt="캠페인 컷 B">
+              <figcaption>움직임 노을</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. CHAPTERS ===== -->
+      <section id="chapters" class="page-chapters" aria-labelledby="chapters-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Visual Chapters</p>
+                <h2 id="chapters-title" class="title">시즌 챕터 3편</h2>
+                <p class="desc">각 챕터는 룩, 무드, 추천 코디로 이어져.</p>
+              </div>
+            </div>
+            <div class="chapter-list">
+              <article class="chapter">
+                <div class="chapter__media">
+                  <img src="./images/chapter1.jpg" alt="챕터 01 비주얼">
+                  <span class="chapter__sticker">CH 01</span>
+                </div>
+                <div class="chapter__body">
+                  <p class="chapter__tag">덜어낸 라인</p>
+                  <h3 class="chapter__title">단정한 시작</h3>
+                  <p class="chapter__desc">새벽 톤의 베이지와 정돈된 어깨선. 출근 동선에서 가장 먼저 만나는 무드입니다.</p>
+                  <ul class="chapter__meta">
+                    <li>· 대표 룩 · 모던 저고리 재킷</li>
+                    <li>· 분위기 · 단정 · 가벼움</li>
+                    <li>· 추천 · 출근 / 미팅</li>
+                  </ul>
+                  <div class="btn-group">
+                    <a class="btn btn--primary btn--sm" href="./style.html?type=office">스타일 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?cat=top">상품 비교</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="chapter chapter--reverse">
+                <div class="chapter__media">
+                  <img src="./images/chapter2.jpg" alt="챕터 02 비주얼">
+                  <span class="chapter__sticker">CH 02</span>
+                </div>
+                <div class="chapter__body">
+                  <p class="chapter__tag">한 톤의 균형</p>
+                  <h3 class="chapter__title">흐름이 닿는 자리</h3>
+                  <p class="chapter__desc">한 톤 안에서 부드러운 라인이 흐르는 시간. 약속과 모임으로 이어지는 무드입니다.</p>
+                  <ul class="chapter__meta">
+                    <li>· 대표 룩 · 실크 랩 스커트</li>
+                    <li>· 분위기 · 부드러움 · 정돈</li>
+                    <li>· 추천 · 데이트 / 모임</li>
+                  </ul>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?type=date">스타일 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?cat=skirt">상품 비교</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="chapter">
+                <div class="chapter__media">
+                  <img src="./images/chapter3.jpg" alt="챕터 03 비주얼">
+                  <span class="chapter__sticker">CH 03</span>
+                </div>
+                <div class="chapter__body">
+                  <p class="chapter__tag">오늘의 장면</p>
+                  <h3 class="chapter__title">이어지는 인상</h3>
+                  <p class="chapter__desc">장면이 바뀌어도 시선이 끊기지 않도록. 주말과 여행으로 흐르는 무드입니다.</p>
+                  <ul class="chapter__meta">
+                    <li>· 대표 룩 · 데일리 한복 셔츠</li>
+                    <li>· 분위기 · 자연 · 활동</li>
+                    <li>· 추천 · 주말 / 여행</li>
+                  </ul>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?mood=travel">스타일 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?cat=set">상품 비교</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. QUOTES ===== -->
+      <section class="page-quotes" aria-labelledby="quotes-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Voice</p>
+                <h2 id="quotes-title" class="title">단하의 시선</h2>
+                <p class="desc">시즌을 만들며 남긴 짧은 메모들.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="quotes-grid">
+                <blockquote class="quote-card">
+                  <p class="quote-card__text">"전통은 박제하는 것이 아니라, 오늘의 호흡으로 다시 써내는 것이다."</p>
+                  <cite class="quote-card__author">단하 디자인 노트</cite>
+                </blockquote>
+                <blockquote class="quote-card">
+                  <p class="quote-card__text">"한 벌이 아니라 한 장면을 만든다. 옷은 도구이고, 장면은 결과다."</p>
+                  <cite class="quote-card__author">시즌 컨셉 메모</cite>
+                </blockquote>
+                <blockquote class="quote-card">
+                  <p class="quote-card__text">"색을 줄이면 실루엣이 보이고, 실루엣이 보이면 사람이 보인다."</p>
+                  <cite class="quote-card__author">컬러 디렉션</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. NEXT SEASON ===== -->
+      <section class="page-next" aria-labelledby="next-title">
+        <div class="container">
+          <article class="director-note">
+            <p class="director-note__label">Next Season</p>
+            <div>
+              <h2 id="next-title" class="director-note__title">26FW 안으로 흐르는 선</h2>
+              <p class="director-note__body">다음 시즌은 "안으로 흐르는 선"을 키워드로 진행됩니다. 외부 디테일을 덜고 이너 레이어와 텍스처에 집중합니다. 컬러는 짙은 톤 두 가지를 추가해, 가을 빛 아래에서도 라인이 살아있도록 설계했습니다. 9월 첫 주 룩북 오픈 예정.</p>
+              <span class="director-note__signoff">DESIGN DIRECTOR · 윤지하 / 2026 FW preview</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== 9. PAGE CTA ===== -->
+      <section class="page-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-board">
+            <header class="cta-head">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">From Story · To Look</p>
+                <h2 id="cta-title" class="title">시즌의 시선이 마음에 들었다면,<br>이제 룩으로 이어가세요</h2>
+                <p class="desc">스토리는 시즌의 무드를 정리한 시선이고, 룩북은 그 시선을 옷으로 옮긴 결과입니다. 챕터마다 어떤 룩이 그 무드를 이어받았는지, 한 흐름으로 연결해드립니다.</p>
+              </div>
+              <div class="cta-metrics" role="list" aria-label="시즌 매칭 지표">
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">시즌 챕터</p>
+                  <p class="cta-metric__value">3 / 26SS</p>
+                  <p class="cta-metric__hint">덜어낸 라인 · 한 톤 · 장면</p>
+                </article>
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">매칭 룩</p>
+                  <p class="cta-metric__value">12 룩</p>
+                  <p class="cta-metric__hint">코디 점수 평균 88.4</p>
+                </article>
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">시즌 톤</p>
+                  <p class="cta-metric__value">5 컬러</p>
+                  <p class="cta-metric__hint">베이지·세이지·네이비·로즈·브라운</p>
+                </article>
+              </div>
+            </header>
+
+            <div class="cta-body">
+              <div>
+                <p class="eyebrow">챕터 → 룩 매핑</p>
+                <div class="cta-shortcuts">
+                  <a class="cta-shortcut" href="./lookbook.html#editorial">
+                    <span class="cta-shortcut__thumb cta-shortcut__thumb--ch1" aria-hidden="true"></span>
+                    <span>
+                      <span class="cta-shortcut__tag">CH 01 · 덜어낸 라인</span>
+                      <strong class="cta-shortcut__name">단정한 시작 → 오피스 시그니처 룩</strong>
+                      <span class="cta-shortcut__hint">새벽 톤 베이지와 정돈된 어깨선이 그대로 옷으로</span>
+                    </span>
+                    <span class="cta-shortcut__meta"><strong>92점</strong><span>코디 점수</span></span>
+                  </a>
+                  <a class="cta-shortcut" href="./lookbook.html#editorial">
+                    <span class="cta-shortcut__thumb cta-shortcut__thumb--ch2" aria-hidden="true"></span>
+                    <span>
+                      <span class="cta-shortcut__tag">CH 02 · 한 톤의 균형</span>
+                      <strong class="cta-shortcut__name">흐름이 닿는 자리 → 이브닝 토널 룩</strong>
+                      <span class="cta-shortcut__hint">한 톤 안에서 부드러운 라인이 흐르는 시간</span>
+                    </span>
+                    <span class="cta-shortcut__meta"><strong>91점</strong><span>코디 점수</span></span>
+                  </a>
+                  <a class="cta-shortcut" href="./lookbook.html#scene">
+                    <span class="cta-shortcut__thumb cta-shortcut__thumb--ch3" aria-hidden="true"></span>
+                    <span>
+                      <span class="cta-shortcut__tag">CH 03 · 오늘의 장면</span>
+                      <strong class="cta-shortcut__name">이어지는 인상 → 위켄드 라이트 룩</strong>
+                      <span class="cta-shortcut__hint">장면이 바뀌어도 시선이 끊기지 않도록</span>
+                    </span>
+                    <span class="cta-shortcut__meta"><strong>88점</strong><span>코디 점수</span></span>
+                  </a>
+                </div>
+              </div>
+
+              <aside class="cta-decide" aria-label="룩북으로 이어가는 안내">
+                <p class="cta-decide__tag">Season · Continue</p>
+                <p class="cta-decide__title">시즌의 무드를<br><em>옷으로 입어보는</em> 다음 단계.</p>
+                <p class="cta-decide__line">스토리는 시선의 정리, 룩북은 그 시선의 적용입니다. 챕터의 무드가 옷의 라인과 컬러로 어떻게 옮겨졌는지 확인하세요.</p>
+                <div class="cta-decide__stat">
+                  <strong>3 → 12</strong>
+                  3 챕터가 12 룩으로 이어지는 한 흐름
+                </div>
+                <ul class="cta-decide__proof">
+                  <li>· 챕터별 대표 룩 자동 매칭</li>
+                  <li>· 룩에서 본 그대로 코디 단위 구매</li>
+                  <li>· 시즌 컬러 5톤 그대로 적용</li>
+                </ul>
+                <div class="btn-group">
+                  <a class="btn btn--primary" href="./lookbook.html">룩북에서 이어보기</a>
+                  <a class="link-cta" href="./brand.html">브랜드의 시선 더 →</a>
+                </div>
+              </aside>
+            </div>
+
+            <p class="cta-caption">챕터→룩 매핑은 시즌 디렉터가 직접 큐레이션한 결과입니다</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-logo">DANHA</p>
+            <p class="footer__brand-copy">전통의 실루엣을 오늘의 일상 속으로 연결하는 모던 한복 브랜드</p>
+            <ul class="footer__brand-meta">
+              <li>상호: 주식회사 단하 | 대표: 김남경</li>
+              <li>전화: 02-6952-8383 | contact@danhaseoul.com</li>
+              <li>주소: 서울시 종로구 팔판길 39-7 메종단하</li>
+              <li>사업자등록번호: 380-87-03073</li>
+            </ul>
+          </div>
+          <nav class="footer__col" aria-label="쇼핑">
+            <p class="footer__col-title">SHOP</p>
+            <ul class="footer__links">
+              <li><a href="./shop.html">전체 상품</a></li>
+              <li><a href="./shop.html?cat=top">상의</a></li>
+              <li><a href="./shop.html?cat=skirt">스커트</a></li>
+              <li><a href="./shop.html?cat=outer">아우터</a></li>
+              <li><a href="./shop.html?cat=set">셋업</a></li>
+              <li><a href="./shop.html?cat=acc">액세서리</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="컴퍼니">
+            <p class="footer__col-title">COMPANY</p>
+            <ul class="footer__links">
+              <li><a href="./brand.html">브랜드 소개</a></li>
+              <li><a href="./story.html">스토리</a></li>
+              <li><a href="./lookbook.html">룩북</a></li>
+              <li><a href="./style-test.html">스타일 테스트</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="소셜">
+            <p class="footer__col-title">SOCIAL</p>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer">Kakao Channel</a></li>
+              <li><a href="mailto:contact@danhaseoul.com">Email</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__newsletter">
+            <p class="footer__col-title">NEWSLETTER</p>
+            <p class="footer__newsletter-copy">시즌 룩과 캠페인 비하인드를 가장 먼저.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer__newsletter-input" placeholder="이메일을 입력하세요" aria-label="뉴스레터 이메일">
+              <button type="submit" class="footer__newsletter-submit">구독</button>
+            </form>
+            <p class="footer__newsletter-note">언제든 해지 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>© 2026 DANHA. All rights reserved.</p>
+          <ul class="footer__legal">
+            <li><a href="./brand.html#policy">이용약관</a></li>
+            <li><a href="./brand.html#policy"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="./brand.html#policy">사업자정보확인</a></li>
+          </ul>
+          <span aria-label="국가 / 통화">KR / KRW</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

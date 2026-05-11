@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <defs>
+    <linearGradient id="cb" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e6d2c8"/>
+      <stop offset="100%" stop-color="#f8eee6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#cb)"/>
+  <rect x="170" y="124" width="560" height="840" rx="54" fill="#ceb1a5"/>
+  <circle cx="450" cy="338" r="96" fill="#f2ddd3"/>
+  <path d="M250 734c58-84 122-124 200-124s146 40 210 124" fill="#a98376"/>
+  <text x="450" y="1040" text-anchor="middle" fill="#5f4a42" font-family="serif" font-size="48">SOFT EDIT</text>
+</svg>

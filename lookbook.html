@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DANHA 룩북 | 에디토리얼·캠페인·씬으로 이어지는 단하 룩북">
+  <title>DANHA · 룩북</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/lookbook.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./scripts/site.js" defer></script>
+  <script src="./scripts/lookbook.js" defer></script>
+</head>
+<body class="lookbook-page">
+  <div id="wrap">
+    <a class="a11y-skip-link" href="#main">본문 바로가기</a>
+
+    <aside class="top-band" aria-label="프로모션 안내">
+      <div class="top-band__inner">
+        <p class="top-band__text" id="top-band-text" aria-live="polite">단하 뉴 시즌 오픈 · 첫 구매 10% · 스타일 테스트 완료 시 추가 쿠폰</p>
+        <button type="button" class="top-band__close" id="top-band-close" aria-label="프로모션 배너 닫기">닫기</button>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo"><a href="./index.html">DANHA</a></p>
+        <nav class="header__nav" aria-label="주요 메뉴">
+          <div class="nav-item">
+            <a href="./shop.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">쇼핑</a>
+            <div class="mega" role="region" aria-label="쇼핑 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">카테고리</p>
+                  <a href="./shop.html?cat=top">상의</a>
+                  <a href="./shop.html?cat=skirt">스커트</a>
+                  <a href="./shop.html?cat=onepiece">원피스</a>
+                  <a href="./shop.html?cat=outer">아우터</a>
+                  <a href="./shop.html?cat=set">셋업</a>
+                  <a href="./shop.html?cat=acc">액세서리</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">스타일</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                  <a href="./style.html?mood=travel">여행 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">소재</p>
+                  <a href="./shop.html?fabric=linen">린넨 블렌드</a>
+                  <a href="./shop.html?fabric=silk">소프트 실크</a>
+                  <a href="./shop.html?fabric=cotton">데일리 코튼</a>
+                  <a href="./shop.html?fabric=light">라이트 웨이트</a>
+                </div>
+                <a class="mega__featured" href="./lookbook.html">
+                  <img src="./images/lookbook.jpg" alt="단하 룩북 미리보기">
+                  <span class="mega__featured-label">추천</span>
+                  <strong>데일리 헤리티지 룩</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./style.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스타일</a>
+            <div class="mega mega--compact" role="region" aria-label="스타일 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">빠른 진입</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">무드</p>
+                  <a href="./style.html?mood=cafe">카페 가는 날</a>
+                  <a href="./style.html?mood=rainy">비 오는 날</a>
+                  <a href="./style.html?mood=travel">여행 가는 날</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./lookbook.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false" aria-current="page">룩북</a>
+            <div class="mega mega--compact" role="region" aria-label="룩북 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">에디션</p>
+                  <a href="./lookbook.html">룩북 홈</a>
+                  <a href="./lookbook.html#editorial">에디토리얼</a>
+                  <a href="./lookbook.html#campaign">캠페인</a>
+                  <a href="./lookbook.html#scene">씬</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">함께 보기</p>
+                  <a href="./style-test.html">스타일 테스트</a>
+                  <a href="./shop.html">쇼핑 바로가기</a>
+                  <a href="./style.html">스타일 가이드</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./story.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스토리</a>
+            <div class="mega mega--compact" role="region" aria-label="스토리 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">읽을거리</p>
+                  <a href="./story.html">스토리 홈</a>
+                  <a href="./story.html#season">시즌 노트</a>
+                  <a href="./story.html#chapters">챕터</a>
+                  <a href="./story.html#campaign">캠페인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">연결</p>
+                  <a href="./brand.html">브랜드</a>
+                  <a href="./lookbook.html">룩북</a>
+                  <a href="./style.html">스타일</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./brand.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">브랜드</a>
+            <div class="mega mega--compact" role="region" aria-label="브랜드 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">소개</p>
+                  <a href="./brand.html">브랜드 홈</a>
+                  <a href="./brand.html#identity">단하가 보는 한복</a>
+                  <a href="./brand.html#values">4가지 가치</a>
+                  <a href="./brand.html#timeline">타임라인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">더 알아보기</p>
+                  <a href="./brand.html#sustain">지속가능성</a>
+                  <a href="./brand.html#contact">문의</a>
+                  <a href="./story.html">스토리</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__utils" aria-label="빠른 기능">
+          <a href="./shop.html" aria-label="검색">검색</a>
+          <a href="./shop.html" aria-label="위시리스트">위시</a>
+          <a href="./cart.html" aria-label="장바구니">장바구니</a>
+        </div>
+        <button class="mobile-toggle" type="button" aria-label="모바일 메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">메뉴</button>
+      </div>
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+          <details>
+            <summary>쇼핑</summary>
+            <a href="./shop.html">전체</a>
+            <a href="./shop.html?cat=top">상의</a>
+            <a href="./shop.html?cat=skirt">스커트</a>
+            <a href="./shop.html?cat=onepiece">원피스</a>
+            <a href="./shop.html?cat=outer">아우터</a>
+            <a href="./shop.html?cat=set">셋업</a>
+            <a href="./shop.html?cat=acc">액세서리</a>
+          </details>
+          <details>
+            <summary>스타일</summary>
+            <a href="./style.html?type=office">오피스 무드</a>
+            <a href="./style.html?type=date">데이트 무드</a>
+            <a href="./style.html?type=daily">데일리 무드</a>
+            <a href="./style.html?mood=cafe">카페 가는 날</a>
+            <a href="./style.html?mood=rainy">비 오는 날</a>
+            <a href="./style.html?mood=travel">여행 가는 날</a>
+          </details>
+          <details>
+            <summary>룩북</summary>
+            <a href="./lookbook.html">룩북 홈</a>
+            <a href="./lookbook.html#editorial">에디토리얼</a>
+            <a href="./lookbook.html#campaign">캠페인</a>
+            <a href="./lookbook.html#scene">씬</a>
+          </details>
+          <details>
+            <summary>스토리</summary>
+            <a href="./story.html">스토리 홈</a>
+            <a href="./story.html#season">시즌 노트</a>
+            <a href="./story.html#chapters">챕터</a>
+            <a href="./story.html#campaign">캠페인</a>
+            <a href="./brand.html">브랜드</a>
+          </details>
+          <details>
+            <summary>브랜드</summary>
+            <a href="./brand.html">브랜드 홈</a>
+            <a href="./brand.html#identity">단하가 보는 한복</a>
+            <a href="./brand.html#values">4가지 가치</a>
+            <a href="./brand.html#timeline">타임라인</a>
+            <a href="./brand.html#contact">문의</a>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-dim" id="mobile-dim" hidden></div>
+
+    <main id="main">
+
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <div class="container breadcrumb__inner">
+          <a href="./index.html">홈</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="page">룩북 시즌 코디 기록</span>
+        </div>
+      </nav>
+
+      <!-- ===== 1. PAGE HERO ===== -->
+      <section class="page-hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="content">
+            <div class="content__text">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Lookbook</p>
+                <h1 id="hero-title" class="title page-hero__title">룩북에서<br>바로 구매까지</h1>
+                <p class="desc">감상에서 끝나지 않습니다. 상황 설명과 코디 점수로 확신을 주고, 룩 단위로 바로 구매할 수 있게 연결합니다.</p>
+              </div>
+              <ul class="page-hero__meta" aria-label="룩북 지표">
+                <li><strong>3</strong><span>에디션</span></li>
+                <li><strong>12</strong><span>큐레이션 룩</span></li>
+                <li><strong>4.8</strong><span>평균 평점</span></li>
+              </ul>
+              <div class="edition-track" aria-label="에디션 트랙">
+                <a class="edition-track__node" href="#editorial">
+                  <span class="edition-track__dot" aria-hidden="true"></span>
+                  <strong class="edition-track__name">EDITORIAL</strong>
+                  <span class="edition-track__hint">시즌 코어 룩</span>
+                </a>
+                <a class="edition-track__node" href="#campaign">
+                  <span class="edition-track__dot" aria-hidden="true"></span>
+                  <strong class="edition-track__name">CAMPAIGN</strong>
+                  <span class="edition-track__hint">12 비주얼 컷</span>
+                </a>
+                <a class="edition-track__node" href="#scene">
+                  <span class="edition-track__dot" aria-hidden="true"></span>
+                  <strong class="edition-track__name">SCENE</strong>
+                  <span class="edition-track__hint">상황별 룩</span>
+                </a>
+              </div>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="#editorial">코어 룩부터 보기</a>
+                <a class="btn btn--secondary" href="./style-test.html">3초 스타일 테스트</a>
+              </div>
+            </div>
+            <figure class="page-hero__collage" aria-hidden="true">
+              <img src="./images/lookbook.jpg" alt="">
+              <img src="./images/Style1.jpg" alt="">
+              <img src="./images/look2.jpg" alt="">
+              <span class="page-hero__sticker">SHOP THE LOOK</span>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. BEHIND THE LOOK ===== -->
+      <section class="page-behind section" aria-labelledby="behind-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Behind the Look</p>
+                <h2 id="behind-title" class="title">한 룩이 나오기까지</h2>
+                <p class="desc">콘셉부터 검수까지 4단계. 룩 하나가 어떻게 완성되는지.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="process-grid">
+                <article class="process-card">
+                  <p class="process-card__step">STEP 01</p>
+                  <h3 class="process-card__title">컨셉 정의</h3>
+                  <p class="process-card__hint">시즌 코어 무드 1개 + 변형 무드 2개로 톤을 좁힘</p>
+                </article>
+                <article class="process-card">
+                  <p class="process-card__step">STEP 02</p>
+                  <h3 class="process-card__title">패턴 / 핏 검수</h3>
+                  <p class="process-card__hint">158·165·172cm 3 모델 핏 테스트로 권장 사이즈 확정</p>
+                </article>
+                <article class="process-card">
+                  <p class="process-card__step">STEP 03</p>
+                  <h3 class="process-card__title">씬 큐레이션</h3>
+                  <p class="process-card__hint">출근·약속·여행 3 씬으로 동일 룩 변형 가이드 제작</p>
+                </article>
+                <article class="process-card">
+                  <p class="process-card__step">STEP 04</p>
+                  <h3 class="process-card__title">코디 점수 산출</h3>
+                  <p class="process-card__hint">색·실루엣·활용도 가중 평균. 85점 이상만 룩북 등재</p>
+                </article>
+              </div>
+              <p class="pull-quote">"우리는 한 시즌에 200벌을 만들고, 룩북에 12벌만 올립니다. 다 좋은 옷이지만, 같이 입을 가치가 가장 큰 12벌입니다."<cite>단하 디자인 노트 / 2026 SS</cite></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. EDITION SELECT ===== -->
+      <section class="page-edition" aria-labelledby="edition-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Edition</p>
+                <h2 id="edition-title" class="title">3가지 방식으로 보는 룩북</h2>
+                <p class="desc">에디토리얼 · 캠페인 · 씬 원하는 입구로 들어가봐.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="edition-grid">
+                <a href="#editorial" class="edition-card">
+                  <p class="edition-card__tag">EDITION 01</p>
+                  <h3 class="edition-card__title">Editorial</h3>
+                  <p class="edition-card__desc">시즌의 코어 룩 3개. 코디 점수 90점 이상 콜라주로 정리.</p>
+                  <span class="edition-card__cta">에디션 보기 →</span>
+                </a>
+                <a href="#campaign" class="edition-card">
+                  <p class="edition-card__tag">EDITION 02</p>
+                  <h3 class="edition-card__title">Campaign</h3>
+                  <p class="edition-card__desc">시즌 캠페인의 무드와 메시지. 자연광·움직임 컷 12장.</p>
+                  <span class="edition-card__cta">에디션 보기 →</span>
+                </a>
+                <a href="#scene" class="edition-card">
+                  <p class="edition-card__tag">EDITION 03</p>
+                  <h3 class="edition-card__title">Scene</h3>
+                  <p class="edition-card__desc">상황별 룩 3종 (Office / Date / Daily) 구매로 바로 연결.</p>
+                  <span class="edition-card__cta">에디션 보기 →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. EDITORIAL COLLECTION ===== -->
+      <section id="editorial" class="page-editorial" aria-labelledby="editorial-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Editorial</p>
+                <h2 id="editorial-title" class="title">시즌 코어 룩</h2>
+                <p class="desc">룩 보고 마음에 들면 그대로 한 번에 담을 수 있어.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="lookbook-flow">
+                <article class="lookbook-flow__item">
+                  <div class="lookbook-flow__media">
+                    <img src="./images/core.jpg" alt="에디토리얼 룩 01">
+                  </div>
+                  <div class="lookbook-flow__body">
+                    <div class="lookbook-flow__head">
+                      <p class="lookbook-flow__title">오피스 시그니처 룩</p>
+                      <span class="lookbook-flow__badge">SET 10%</span>
+                    </div>
+                    <p class="lookbook-flow__rank-note">코디 점수 92% · BEST SELLER 포함</p>
+                    <p class="lookbook-flow__desc">저고리 셔츠 + 랩 스커트 + 미니백</p>
+                    <p class="lookbook-flow__fit-note">출근/미팅 · 158-168cm 비율 보정 90%</p>
+                    <ul class="lookbook-flow__links">
+                      <li><a href="./detail.html?id=1">상의</a></li>
+                      <li><a href="./detail.html?id=2">하의</a></li>
+                      <li><a href="./detail.html?id=6">가방</a></li>
+                    </ul>
+                    <div class="lookbook-flow__price-row">
+                      <p class="lookbook-flow__price"><del>₩402,000</del><strong>₩359,000</strong></p>
+                      <p class="lookbook-flow__benefit">세트 10% + 무료배송</p>
+                    </div>
+                    <p class="lookbook-flow__ops">내일 도착 · 무료 사이즈 교환 1회</p>
+                    <div class="btn-group">
+                      <a class="btn btn--primary btn--sm" href="./detail.html?id=2">코디 전체 구매</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?type=office">스타일 보드</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="lookbook-flow__item">
+                  <div class="lookbook-flow__media">
+                    <img src="./images/core2.jpg" alt="에디토리얼 룩 02">
+                  </div>
+                  <div class="lookbook-flow__body">
+                    <div class="lookbook-flow__head">
+                      <p class="lookbook-flow__title">위켄드 라이트 룩</p>
+                      <span class="lookbook-flow__badge">NEW</span>
+                    </div>
+                    <p class="lookbook-flow__rank-note">코디 점수 88% · 신상 조합</p>
+                    <p class="lookbook-flow__desc">크롭 재킷 + 와이드 팬츠 + 로퍼</p>
+                    <p class="lookbook-flow__fit-note">주말 외출·갤러리 · 160cm 이상 와이드 안정</p>
+                    <ul class="lookbook-flow__links">
+                      <li><a href="./detail.html?id=8">아우터</a></li>
+                      <li><a href="./detail.html?id=4">하의</a></li>
+                      <li><a href="./detail.html?id=12">신발</a></li>
+                    </ul>
+                    <div class="lookbook-flow__price-row">
+                      <p class="lookbook-flow__price"><del>₩390,000</del><strong>₩349,000</strong></p>
+                      <p class="lookbook-flow__benefit">세트 11% + 당일출고</p>
+                    </div>
+                    <p class="lookbook-flow__ops">오늘 출고 · 컬러 교차 교환 지원</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=8">코디 전체 구매</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?mood=travel">스타일링</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="lookbook-flow__item">
+                  <div class="lookbook-flow__media">
+                    <img src="./images/core3.jpg" alt="에디토리얼 룩 03">
+                  </div>
+                  <div class="lookbook-flow__body">
+                    <div class="lookbook-flow__head">
+                      <p class="lookbook-flow__title">이브닝 토널 룩</p>
+                      <span class="lookbook-flow__badge">EDITOR'S PICK</span>
+                    </div>
+                    <p class="lookbook-flow__rank-note">코디 점수 91% · 한 톤 마감</p>
+                    <p class="lookbook-flow__desc">실크 블라우스 + 플레어 미디 + 펄 포인트 백</p>
+                    <p class="lookbook-flow__fit-note">약속/모임 · 158-170cm 사진 비율 우선</p>
+                    <ul class="lookbook-flow__links">
+                      <li><a href="./detail.html?id=11">상의</a></li>
+                      <li><a href="./detail.html?id=10">하의</a></li>
+                      <li><a href="./detail.html?id=6">가방</a></li>
+                    </ul>
+                    <div class="lookbook-flow__price-row">
+                      <p class="lookbook-flow__price"><del>₩384,000</del><strong>₩342,000</strong></p>
+                      <p class="lookbook-flow__benefit">세트 11% + 무료배송</p>
+                    </div>
+                    <p class="lookbook-flow__ops">내일 도착 · 같은 톤 매칭 보장</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=10">코디 전체 구매</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?type=date">스타일링</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. CAMPAIGN ===== -->
+      <section id="campaign" class="page-campaign" aria-label="시즌 캠페인 콜라주">
+        <div class="container">
+          <div class="collage-grid">
+            <figure class="collage-main">
+              <img src="./images/scene.jpg" alt="시즌 캠페인 메인 컷">
+              <span class="collage-main__label">SEASON CAMPAIGN</span>
+            </figure>
+            <figure class="collage-thumb">
+              <img src="./images/scene1.jpg" alt="캠페인 컷 A">
+              <figcaption>자연광 컷 A</figcaption>
+            </figure>
+            <article class="collage-note">
+              <p class="eyebrow">Campaign</p>
+              <h2 class="title">장면은 전환되고<br>무드는 이어집니다</h2>
+              <p class="desc">한 시즌의 톤을 유지한 채, 룩에서 룩으로 자연스럽게 이어지도록 구성했습니다.</p>
+              <a class="btn btn--secondary btn--sm" href="./shop.html">시즌 상품 보기</a>
+            </article>
+            <figure class="collage-thumb">
+              <img src="./images/scene3.jpg" alt="캠페인 컷 B">
+              <figcaption>움직임 살린 컷 B</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. SCENE ===== -->
+      <section id="scene" class="page-scene section" aria-labelledby="scene-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Scene</p>
+                <h2 id="scene-title" class="title">상황별 룩</h2>
+                <p class="desc">자주 찾는 장면 모음. 보고 마음에 들면 그대로 담아.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="scene-grid">
+                <article class="scene-card">
+                  <div class="scene-card__media">
+                    <img src="./images/situation.jpg" alt="오피스 씬">
+                  </div>
+                  <div class="scene-card__body">
+                    <h3 class="scene-card__title">Office</h3>
+                    <p class="scene-card__desc">단정함과 활동성을 함께 가져가는 출근 씬.</p>
+                    <p class="scene-card__products">재킷 · 스커트 · 백</p>
+                    <p class="scene-card__meta">코디 점수 92% · 리뷰 412건</p>
+                    <div class="btn-group">
+                      <a class="btn btn--primary btn--sm" href="./detail.html?id=1">코디 전체 구매</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?scene=office">스타일</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="scene-card">
+                  <div class="scene-card__media">
+                    <img src="./images/situation1.jpg" alt="데이트 씬">
+                  </div>
+                  <div class="scene-card__body">
+                    <h3 class="scene-card__title">Date</h3>
+                    <p class="scene-card__desc">부드러운 흐름으로 완성하는 데이트 씬.</p>
+                    <p class="scene-card__products">블라우스 · 플레어 · 로퍼</p>
+                    <p class="scene-card__meta">코디 점수 89% · 리뷰 365건</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=2">코디 전체 구매</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?scene=date">스타일</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="scene-card">
+                  <div class="scene-card__media">
+                    <img src="./images/situation3.webp" alt="데일리 씬">
+                  </div>
+                  <div class="scene-card__body">
+                    <h3 class="scene-card__title">Daily</h3>
+                    <p class="scene-card__desc">한복을 가장 가볍게 입는 평일 씬.</p>
+                    <p class="scene-card__products">셔츠 · 데님 · 스니커즈</p>
+                    <p class="scene-card__meta">코디 점수 86% · 리뷰 298건</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=7">코디 전체 구매</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?type=daily">스타일</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. MODEL FIT ===== -->
+      <section class="page-fit" aria-labelledby="fit-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Model Fit</p>
+                <h2 id="fit-title" class="title">키 다른 모델이 입어봤어</h2>
+                <p class="desc">같은 룩, 키별로 인상이 어떻게 다른지 한눈에.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="compare-wrap">
+                <table class="compare-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">모델</th>
+                      <th scope="col">키 / 체형</th>
+                      <th scope="col">착용 사이즈</th>
+                      <th scope="col">스커트 기장</th>
+                      <th scope="col">코디 인상</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">민지</th><td>158 / 슬림</td><td>S / FREE</td><td>무릎 위 2cm</td><td>단정 · 비율 살림</td></tr>
+                    <tr><th scope="row">서연</th><td>165 / 평균</td><td>M / FREE</td><td>무릎 라인</td><td>안정적 표준 핏</td></tr>
+                    <tr><th scope="row">하린</th><td>172 / 슬림 롱</td><td>L / FREE</td><td>무릎 아래 4cm</td><td>롱 실루엣 강조</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. FAQ ===== -->
+      <section class="page-faq section" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Lookbook FAQ</p>
+                <h2 id="faq-title" class="title">룩북에서 자주 묻는 것</h2>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="faq-list">
+                <details open>
+                  <summary>룩에서 본 그대로 한 번에 살 수 있나요?</summary>
+                  <p>네. 각 룩의 "코디 전체 구매" 버튼은 상세 페이지의 STYLE MIX와 같은 동선으로 이어집니다. 3개 이상 동반 구매 시 자동 세트 10% 할인이 적용됩니다.</p>
+                </details>
+                <details>
+                  <summary>코디 점수는 어떻게 계산되나요?</summary>
+                  <p>색 균형 30% / 실루엣 일치 40% / 상황 활용도 30%의 가중 평균입니다. 85점 이상 룩만 룩북에 등재하며, 90점 이상은 BEST SELLER 후보로 분류됩니다.</p>
+                </details>
+                <details>
+                  <summary>캠페인 컷의 의상도 같은 가격인가요?</summary>
+                  <p>캠페인 컷은 시즌 룩북과 동일 라인 상품으로 구성됩니다. 가격 변동 없이 시즌 전체 기간 동안 동일한 정상가로 판매됩니다.</p>
+                </details>
+                <details>
+                  <summary>룩북에 없는 색상도 살 수 있나요?</summary>
+                  <p>일부 컬러는 캠페인 한정으로 운영됩니다. 일반 판매 컬러는 상세 페이지의 컬러 옵션에서 확인 가능하며, 한정 컬러는 별도 표기됩니다.</p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9. PAGE CTA ===== -->
+      <section class="page-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-board">
+            <header class="cta-head">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Shop the Look · One-Shot</p>
+                <h2 id="cta-title" class="title">마음에 드는 룩이 있다면,<br>코디 그대로 가져가세요</h2>
+                <p class="desc">룩북에서 본 그 조합이 장바구니로 그대로 들어갑니다. 옵션은 룩 단위로 한 번에 선택, 가격과 출고는 자동 계산됩니다.</p>
+              </div>
+              <div class="cta-metrics" role="list" aria-label="룩 단위 구매 지표">
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">큐레이션 룩</p>
+                  <p class="cta-metric__value">12 / 200+</p>
+                  <p class="cta-metric__hint">85점 이상만 등재</p>
+                </article>
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">세트 평균 할인</p>
+                  <p class="cta-metric__value">11%</p>
+                  <p class="cta-metric__hint">3 아이템 동반 시 자동</p>
+                </article>
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">출고 시간</p>
+                  <p class="cta-metric__value">평균 6h</p>
+                  <p class="cta-metric__hint">결제 후 당일 출고</p>
+                </article>
+              </div>
+            </header>
+
+            <div class="cta-body">
+              <div>
+                <p class="eyebrow">지금 구매로 이어가기 좋은 3 룩</p>
+                <div class="cta-look-list">
+                  <a class="cta-look" href="./detail.html?id=2">
+                    <span class="cta-look__thumb cta-look__thumb--01" aria-hidden="true"></span>
+                    <span>
+                      <span class="cta-look__tag">EDITORIAL · BEST</span>
+                      <strong class="cta-look__name">오피스 시그니처 룩</strong>
+                      <span class="cta-look__hint">저고리 셔츠 + 랩 스커트 + 미니백 · 출근/미팅</span>
+                    </span>
+                    <span class="cta-look__meta"><strong>₩359,000</strong><span>10% 적용</span></span>
+                  </a>
+                  <a class="cta-look" href="./detail.html?id=10">
+                    <span class="cta-look__thumb cta-look__thumb--02" aria-hidden="true"></span>
+                    <span>
+                      <span class="cta-look__tag">EDITOR'S PICK</span>
+                      <strong class="cta-look__name">이브닝 토널 룩</strong>
+                      <span class="cta-look__hint">실크 블라우스 + 플레어 미디 + 펄 백 · 약속/모임</span>
+                    </span>
+                    <span class="cta-look__meta"><strong>₩342,000</strong><span>11% 적용</span></span>
+                  </a>
+                  <a class="cta-look" href="./detail.html?id=8">
+                    <span class="cta-look__thumb cta-look__thumb--03" aria-hidden="true"></span>
+                    <span>
+                      <span class="cta-look__tag">EDITORIAL · NEW</span>
+                      <strong class="cta-look__name">위켄드 라이트 룩</strong>
+                      <span class="cta-look__hint">크롭 재킷 + 와이드 팬츠 + 로퍼 · 주말 외출</span>
+                    </span>
+                    <span class="cta-look__meta"><strong>₩349,000</strong><span>11% 적용</span></span>
+                  </a>
+                </div>
+              </div>
+
+              <aside class="cta-decide" aria-label="룩 단위 구매 안내">
+                <p class="cta-decide__tag">Shop the Look · Bundle</p>
+                <p class="cta-decide__title">룩북에서 본 <em>그대로</em>,<br>장바구니로 옮겨드릴게요.</p>
+                <p class="cta-decide__line">룩의 모든 코어 아이템이 같은 옵션 페이지에서 한 번에 선택됩니다. 빠진 사이즈가 있으면 즉시 알림.</p>
+                <div class="cta-decide__stat">
+                  <strong>₩42,000+</strong>
+                  세트 결합 시 자동 절약 + 무료배송 + 적립 2%
+                </div>
+                <ul class="cta-decide__proof">
+                  <li>· 한 룩의 3 아이템 동시 담기</li>
+                  <li>· 품절 사이즈는 RESTOCK 알림 자동 등록</li>
+                  <li>· 코디 점수 85점 이상 룩만 노출</li>
+                </ul>
+                <div class="btn-group">
+                  <a class="btn btn--primary" href="./detail.html?id=2">대표 룩 그대로 담기</a>
+                  <a class="link-cta" href="./shop.html">개별 상품으로 비교 →</a>
+                </div>
+              </aside>
+            </div>
+
+            <p class="cta-caption">가격은 세트 자동 할인 적용가 · 룩별 보유 컬러는 상세 페이지에서 확인</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-logo">DANHA</p>
+            <p class="footer__brand-copy">전통의 실루엣을 오늘의 일상 속으로 연결하는 모던 한복 브랜드</p>
+            <ul class="footer__brand-meta">
+              <li>상호: 주식회사 단하 | 대표: 김남경</li>
+              <li>전화: 02-6952-8383 | contact@danhaseoul.com</li>
+              <li>주소: 서울시 종로구 팔판길 39-7 메종단하</li>
+              <li>사업자등록번호: 380-87-03073</li>
+            </ul>
+          </div>
+          <nav class="footer__col" aria-label="쇼핑">
+            <p class="footer__col-title">SHOP</p>
+            <ul class="footer__links">
+              <li><a href="./shop.html">전체 상품</a></li>
+              <li><a href="./shop.html?cat=top">상의</a></li>
+              <li><a href="./shop.html?cat=skirt">스커트</a></li>
+              <li><a href="./shop.html?cat=outer">아우터</a></li>
+              <li><a href="./shop.html?cat=set">셋업</a></li>
+              <li><a href="./shop.html?cat=acc">액세서리</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="컴퍼니">
+            <p class="footer__col-title">COMPANY</p>
+            <ul class="footer__links">
+              <li><a href="./brand.html">브랜드 소개</a></li>
+              <li><a href="./story.html">스토리</a></li>
+              <li><a href="./lookbook.html">룩북</a></li>
+              <li><a href="./style-test.html">스타일 테스트</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="소셜">
+            <p class="footer__col-title">SOCIAL</p>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer">Kakao Channel</a></li>
+              <li><a href="mailto:contact@danhaseoul.com">Email</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__newsletter">
+            <p class="footer__col-title">NEWSLETTER</p>
+            <p class="footer__newsletter-copy">시즌 룩과 캠페인 비하인드를 가장 먼저.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer__newsletter-input" placeholder="이메일을 입력하세요" aria-label="뉴스레터 이메일">
+              <button type="submit" class="footer__newsletter-submit">구독</button>
+            </form>
+            <p class="footer__newsletter-note">언제든 해지 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>© 2026 DANHA. All rights reserved.</p>
+          <ul class="footer__legal">
+            <li><a href="./brand.html#policy">이용약관</a></li>
+            <li><a href="./brand.html#policy"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="./brand.html#policy">사업자정보확인</a></li>
+          </ul>
+          <span aria-label="국가 / 통화">KR / KRW</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

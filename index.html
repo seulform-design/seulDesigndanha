@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="단하 | 오늘 입을 한복, 그냥 우리 스타일대로">
+  <title>DANHA · 오늘 입을 스타일</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./scripts/site.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <a class="a11y-skip-link" href="#main">본문 바로가기</a>
+
+    <!-- ===== TOP BAND ===== -->
+    <aside class="top-band" aria-label="프로모션 안내">
+      <div class="top-band__inner">
+        <p class="top-band__text" id="top-band-text" aria-live="polite">단하 뉴 시즌 오픈 · 첫 구매 10% · 스타일 테스트 완료 시 추가 쿠폰</p>
+        <button type="button" class="top-band__close" id="top-band-close" aria-label="프로모션 배너 닫기">닫기</button>
+      </div>
+    </aside>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo"><a href="./index.html">DANHA</a></p>
+
+        <nav class="header__nav" aria-label="주요 메뉴">
+          <div class="nav-item">
+            <a href="./shop.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">쇼핑</a>
+            <div class="mega" role="region" aria-label="쇼핑 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">카테고리</p>
+                  <a href="./shop.html?cat=top">상의</a>
+                  <a href="./shop.html?cat=skirt">스커트</a>
+                  <a href="./shop.html?cat=onepiece">원피스</a>
+                  <a href="./shop.html?cat=outer">아우터</a>
+                  <a href="./shop.html?cat=set">셋업</a>
+                  <a href="./shop.html?cat=acc">액세서리</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">스타일</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                  <a href="./style.html?mood=travel">여행 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">소재</p>
+                  <a href="./shop.html?fabric=linen">린넨 블렌드</a>
+                  <a href="./shop.html?fabric=silk">소프트 실크</a>
+                  <a href="./shop.html?fabric=cotton">데일리 코튼</a>
+                  <a href="./shop.html?fabric=light">라이트 웨이트</a>
+                </div>
+                <a class="mega__featured" href="./lookbook.html">
+                  <img src="./images/lookbook.jpg" alt="단하 룩북 미리보기">
+                  <span class="mega__featured-label">추천</span>
+                  <strong>데일리 헤리티지 룩</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./style.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스타일</a>
+            <div class="mega mega--compact" role="region" aria-label="스타일 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">빠른 진입</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">무드</p>
+                  <a href="./style.html?mood=cafe">카페 가는 날</a>
+                  <a href="./style.html?mood=rainy">비 오는 날</a>
+                  <a href="./style.html?mood=travel">여행 가는 날</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./lookbook.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">룩북</a>
+            <div class="mega mega--compact" role="region" aria-label="룩북 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">에디션</p>
+                  <a href="./lookbook.html">룩북 홈</a>
+                  <a href="./lookbook.html#editorial">에디토리얼</a>
+                  <a href="./lookbook.html#campaign">캠페인</a>
+                  <a href="./lookbook.html#scene">씬</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">함께 보기</p>
+                  <a href="./style-test.html">스타일 테스트</a>
+                  <a href="./shop.html">쇼핑 바로가기</a>
+                  <a href="./style.html">스타일 가이드</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./story.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스토리</a>
+            <div class="mega mega--compact" role="region" aria-label="스토리 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">읽을거리</p>
+                  <a href="./story.html">스토리 홈</a>
+                  <a href="./story.html#season">시즌 노트</a>
+                  <a href="./story.html#chapters">챕터</a>
+                  <a href="./story.html#campaign">캠페인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">연결</p>
+                  <a href="./brand.html">브랜드</a>
+                  <a href="./lookbook.html">룩북</a>
+                  <a href="./style.html">스타일</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./brand.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">브랜드</a>
+            <div class="mega mega--compact" role="region" aria-label="브랜드 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">소개</p>
+                  <a href="./brand.html">브랜드 홈</a>
+                  <a href="./brand.html#identity">단하가 보는 한복</a>
+                  <a href="./brand.html#values">4가지 가치</a>
+                  <a href="./brand.html#timeline">타임라인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">더 알아보기</p>
+                  <a href="./brand.html#sustain">지속가능성</a>
+                  <a href="./brand.html#contact">문의</a>
+                  <a href="./story.html">스토리</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header__utils" aria-label="빠른 기능">
+          <a href="./shop.html" aria-label="검색">검색</a>
+          <a href="./shop.html" aria-label="위시리스트">위시</a>
+          <a href="./shop.html" aria-label="장바구니">장바구니</a>
+        </div>
+
+        <button class="mobile-toggle" type="button" aria-label="모바일 메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">메뉴</button>
+      </div>
+
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+          <details>
+            <summary>쇼핑</summary>
+            <a href="./shop.html">전체</a>
+            <a href="./shop.html?cat=top">상의</a>
+            <a href="./shop.html?cat=skirt">스커트</a>
+            <a href="./shop.html?cat=onepiece">원피스</a>
+            <a href="./shop.html?cat=outer">아우터</a>
+            <a href="./shop.html?cat=set">셋업</a>
+            <a href="./shop.html?cat=acc">액세서리</a>
+          </details>
+          <details>
+            <summary>스타일</summary>
+            <a href="./style.html?type=office">오피스 무드</a>
+            <a href="./style.html?type=date">데이트 무드</a>
+            <a href="./style.html?type=daily">데일리 무드</a>
+            <a href="./style.html?mood=cafe">카페 가는 날</a>
+            <a href="./style.html?mood=rainy">비 오는 날</a>
+            <a href="./style.html?mood=travel">여행 가는 날</a>
+          </details>
+          <details>
+            <summary>룩북</summary>
+            <a href="./lookbook.html">룩북 홈</a>
+            <a href="./lookbook.html#editorial">에디토리얼</a>
+            <a href="./lookbook.html#campaign">캠페인</a>
+            <a href="./lookbook.html#scene">씬</a>
+          </details>
+          <details>
+            <summary>스토리</summary>
+            <a href="./story.html">스토리 홈</a>
+            <a href="./story.html#season">시즌 노트</a>
+            <a href="./story.html#chapters">챕터</a>
+            <a href="./story.html#campaign">캠페인</a>
+            <a href="./brand.html">브랜드</a>
+          </details>
+          <details>
+            <summary>브랜드</summary>
+            <a href="./brand.html">브랜드 홈</a>
+            <a href="./brand.html#identity">단하가 보는 한복</a>
+            <a href="./brand.html#values">4가지 가치</a>
+            <a href="./brand.html#timeline">타임라인</a>
+            <a href="./brand.html#contact">문의</a>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-dim" id="mobile-dim" hidden></div>
+
+    <!-- ===== MAIN ===== -->
+    <main id="main">
+
+      <!-- ===== 1. HERO ===== -->
+      <section class="section section--hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true">
+          <img src="./images/hero.png" alt="" decoding="async" fetchpriority="high">
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="content__text">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">2026 Spring · 단하</p>
+                <h1 id="hero-title" class="title">한복? 그냥<br>우리 스타일대로 입는 거야</h1>
+                <p class="desc">데님에도, 스니커즈에도 자연스럽게. 오늘 입을 스타일, 단하에서 골라봐.</p>
+                <ul class="hero__trust" aria-label="구매 신뢰 정보">
+                  <li>5만원 이상 무료배송</li>
+                  <li>7일 내 교환 · 반품</li>
+                  <li>오늘 출고 가능</li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="./style.html">오늘 뭐 입지?</a>
+                <a class="btn btn--secondary" href="./style-test.html">3초 스타일 테스트</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. ENTRY · 분위기 탐색 ===== -->
+      <section class="section section--entry" aria-labelledby="entry-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Style Entry</p>
+                <h2 id="entry-title" class="title">오늘 너 어떤 분위기야?</h2>
+                <p class="desc">분위기로 먼저 고르면 더 쉬워. 카테고리는 그 다음에 봐도 늦지 않아.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ul class="card-list card-list--col-4" role="list">
+                <li class="card" data-href="./style.html?type=office">
+                  <div class="card__media"><img src="./images/Collection1.jpg" alt="오간자 마고자 볼레로_베이지"></div>
+                  <div class="card__body">
+                    <span class="card__badge">월요일 첫 미팅 1초 컷</span>
+                    <h3 class="card__title">오간자 마고자 볼레로_베이지</h3>
+                    <p class="card__price">₩280,000</p>
+                    <p class="card__reason">정장 재킷 대신 걸치면 <br> 분위기 1톤이 달라져요.</p>
+                    <p class="card__cue"><strong>이런 날</strong>처음 보는 사람과의 첫 미팅 <br> 단정함이 무기가 되는 자리</p>
+                    <p class="card__meta">오피스 무드 <br> 폴리50% 린넨50% · 핸드워시 OK · 잔여 12</p>
+                    <p class="colorway" aria-label="구매 가능 색상">
+                      <span class="color-dot color-dot--cream" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--charcoal" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--navy" aria-hidden="true"></span>
+                      <em>크림 · 차콜 · 네이비</em>
+                    </p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./style.html?type=office">스타일 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./style.html?type=date">
+                  <div class="card__media"><img src="./images/Collection2.jpg" alt="대슘 화이트 랩스커트"></div>
+                  <div class="card__body">
+                    <span class="card__badge">데이트 30초 전 자신감 충전</span>
+                    <h3 class="card__title">대슘 화이트 랩스커트</h3>
+                    <p class="card__price">₩220,000</p>
+                    <p class="card__reason">걸을 때마다 라인이 살아 흔들려서 <br> 거울 앞 망설임이 줄어요.</p>
+                    <p class="card__cue"><strong>이런 날</strong>오랜만에 보는 사람 <br> 한 컷이라도 잘 나오고 싶은 저녁</p>
+                    <p class="card__meta">로맨틱 무드 <br> 폴리100% 사틴 · 드라이 권장 · 잔여 7</p>
+                    <p class="colorway" aria-label="구매 가능 색상">
+                      <span class="color-dot color-dot--rose" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--black" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--sage" aria-hidden="true"></span>
+                      <em>로즈베이지 · 블랙 · 세이지</em>
+                    </p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./style.html?type=date">스타일 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./style.html?type=daily">
+                  <div class="card__media"><img src="./images/Collection3.jpg" alt="궁보 가방"></div>
+                  <div class="card__body">
+                    <span class="card__badge">셔츠+청바지에 한 끗 추가</span>
+                    <h3 class="card__title">궁보 가방</h3>
+                    <p class="card__price">₩28,000</p>
+                    <p class="card__reason">손에 한 점만 올려도 <br> 평범한 데일리에 무드가 잡혀요.</p>
+                    <p class="card__cue"><strong>이런 날</strong>후드 입은 주말 <br> 사진 한 장은 남기고 싶은 날</p>
+                    <p class="card__meta">데일리 무드 <br> 한산모시 100% · 폴딩 OK · 오늘 출고 · 잔여 21</p>
+                    <p class="colorway" aria-label="구매 가능 색상">
+                      <span class="color-dot color-dot--cream" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--navy" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--black" aria-hidden="true"></span>
+                      <em>크림 · 네이비 · 블랙</em>
+                    </p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./style.html?type=daily">스타일 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./style.html?mood=travel">
+                  <div class="card__media"><img src="./images/Collection4.jpg" alt="화조도 로브"></div>
+                  <div class="card__body">
+                    <span class="card__badge">셔터 누르면 화보 되는 룩</span>
+                    <h3 class="card__title">[Share] 화조도 로브</h3>
+                    <p class="card__price">₩58,000</p>
+                    <p class="card__reason">옷이 먼저 자세를 잡아줘서 <br> 어색한 포즈 고민이 사라져요.</p>
+                    <p class="card__cue"><strong>이런 날</strong>카페·공원·야외 어디든 <br> 사진 1컷이 목표인 날</p>
+                    <p class="card__meta">여행 무드 <br> 면100% 워싱 · 구김 자국 강함 · 당일 출고 · 잔여 5</p>
+                    <p class="colorway" aria-label="구매 가능 색상">
+                      <span class="color-dot color-dot--sand" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--charcoal" aria-hidden="true"></span>
+                      <span class="color-dot color-dot--black" aria-hidden="true"></span>
+                      <em>샌드 · 먹색 · 블랙</em>
+                    </p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./style.html?mood=travel">스타일 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. FEATURED STORY ===== -->
+      <section id="featured-story" class="section section--featured" aria-labelledby="featured-title">
+        <div class="container">
+          <div class="content">
+            <div class="content__text">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Featured Story</p>
+                <h2 id="featured-title" class="title">전통을 입는 방법은<br>생각보다 간단해</h2>
+                <p class="desc">특별한 날이 아니라, 그냥 오늘 입으면 되는 거니까. <br> 아침부터 저녁까지 같은 톤으로 자연스럽게 이어져.</p>
+                <div class="featured-tags">
+                  <span>시즌 시그니처</span>
+                  <span>코디 구매 가능</span>
+                </div>
+                <dl class="featured-facts">
+                  <div><dt>내러티브</dt><dd>전통 라인을 덜어내고 일상 착장에 맞춘 모던 밸런스</dd></div>
+                  <div><dt>혜택</dt><dd>세트 10% 할인 + 무료배송</dd></div>
+                  <div><dt>반응</dt><dd>실착 리뷰 4.8 / 5.0</dd></div>
+                </dl>
+                <div class="featured-price-row">
+                  <p class="featured-price"><del>₩402,000</del><strong>₩359,000</strong></p>
+                  <p>재고 잔여 18 · 오늘 출고</p>
+                </div>
+              </div>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="./detail.html?id=2">코디 세트 담기</a>
+                <a class="btn btn--secondary" href="./lookbook.html">룩북 보기</a>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="featured-collage">
+                <img src="./images/tradition1.jpg" alt="시즌 비주얼 카드 1">
+                <img src="./images/apdls.jpg" alt="시즌 메인 비주얼">
+                <img src="./images/tradition3.jpg" alt="시즌 비주얼 카드 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. RECOMMENDED · MD PICK ===== -->
+      <section class="section section--recommended" aria-labelledby="recommended-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">MD Pick</p>
+                <h2 id="recommended-title" class="title">너 이거 좋아할 것 같아서 골랐어</h2>
+                <p class="desc">최근 본 스타일이랑 톤이 비슷해서 골라봤어. <br> 처음 입기 좋은 조합 위주로.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ul class="card-list" role="list">
+                <li class="card" data-href="./detail.html?id=1">
+                  <div class="card__media">
+                    <img src="./images/MD1.jpg" alt="오간자 마고자 볼레로 블랙">
+                    <img class="card__media-secondary" src="./images/md1-1.jpg" alt="">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">출근룩 BEST · 재구매 38%</span>
+                    <h3 class="card__title">오간자 마고자 볼레로_블랙</h3>
+                    <p class="card__price">₩280,000</p>
+                    <p class="card__reason">구겨도 라인이 살아있어 30대 직장인 재구매율이 가장 높아요.</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>회의 전후 톤을 흩뜨리고 싶지 않은 분</p>
+                    <p class="card__meta">M-L <br> 폴리50% 린넨50% · 핸드워시 OK · 오늘 출고</p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./detail.html?id=1">상세 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=2">
+                  <div class="card__media">
+                    <img src="./images/md2.jpg" alt="3단 무지기 리본 플리츠 스커트">
+                    <img class="card__media-secondary" src="./images/md2-1.jpg" alt="">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">26SS NEW · 3주 클릭 1위</span>
+                    <h3 class="card__title">3단 무지기 리본 플리츠 스커트</h3>
+                    <p class="card__price">₩290,000</p>
+                    <p class="card__reason">한복을 모르는 친구도 'A라인 예쁘다'고 먼저 물어봐요.</p>
+                    <p class="card__cue"><strong>이런 분께</strong> <br>평소 미디 길이를 자주 입는, 비율 안전한 분</p>
+                    <p class="card__meta">S-L <br> 폴리100% 무지기 3단 · 드라이 권장 · 무료 반품</p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./detail.html?id=2">상세 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=3">
+                  <div class="card__media">
+                    <img src="./images/tradition3.jpg" alt="SCENE#003 블랙">
+                    <img class="card__media-secondary" src="./images/md-3.jpg" alt="">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">RESTOCK · 알림 1,830건</span>
+                    <h3 class="card__title">[리우앤비우x단하] SCENE#003 블랙</h3>
+                    <p class="card__price">₩300,000</p>
+                    <p class="card__reason">한복 신발 같지 않게 가벼워서 7만보 걷기 후기까지 있어요.</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>평소 로퍼 자주 신는 분, 데일리 1켤레만 더 사고 싶은 분</p>
+                    <p class="card__meta">225-250mm <br> 가죽 100% · 인솔 메모리폼 · 당일 출고</p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./detail.html?id=3">상세 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=4">
+                  <div class="card__media">
+                    <img src="./images/md04.jpg" alt="화조도 리버서블 자켓">
+                    <img class="card__media-secondary" src="./images/md-04.jpg" alt="">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">NEW · 1+1 양면 활용</span>
+                    <h3 class="card__title">화조도 리버서블 자켓 차콜</h3>
+                    <p class="card__price">₩390,000</p>
+                    <p class="card__reason">한쪽은 화조 패턴, 한쪽은 무지. 한 벌로 두 룩이 나와요.</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>외투 한 벌로 평일+주말까지 끝내고 싶은 분</p>
+                    <p class="card__meta">FREE <br> 안감 한산모시 · 양면 착장 · 선물 박스 가능</p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./detail.html?id=4">상세 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=5">
+                  <div class="card__media">
+                    <img src="./images/md05.jpg" alt="업사이클 에코백">
+                    <img class="card__media-secondary" src="./images/md-05.jpg" alt="">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">BEST · 후기 평점 4.9</span>
+                    <h3 class="card__title">업사이클 에코백</h3>
+                    <p class="card__price">₩38,000</p>
+                    <p class="card__reason">노트북+텀블러+우산까지 들어가서 출근가방 1순위 후기 다수.</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>가방을 도구로 보는, 정리 잘 되는 가방을 찾는 분</p>
+                    <p class="card__meta">M(13인치) · XL(15인치) <br> 한복 자투리 업사이클 · 2장 5%</p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./detail.html?id=5">상세 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=6">
+                  <div class="card__media">
+                    <img src="./images/md06.jpg" alt="태평성대 로브 ver.2">
+                    <img class="card__media-secondary" src="./images/md06-4.jpg" alt="">
+                  </div>
+                  <div class="card__body">
+                    <span class="card__badge">RESTOCK · 1차 1주 만에 완판</span>
+                    <h3 class="card__title">태평성대 로브 ver.2</h3>
+                    <p class="card__price">₩185,000</p>
+                    <p class="card__reason">원단을 두툼하게 바꾼 ver.2. 봄·가을 모두 OK라는 후기.</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>한 벌로 두 계절을 가볍게 끝내고 싶은 분</p>
+                    <p class="card__meta">FREE <br> 면80% 모달20% · 손빨래 OK · 1:1 코디 상담</p>
+                    <div class="card__cta">
+                      <a class="link-cta" href="./detail.html?id=6">상세 보기 →</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. BESTSELLER ===== -->
+      <section class="section section--bestseller" aria-labelledby="bestseller-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="section__head section__head--row">
+                <div class="text-wrap">
+                  <p class="eyebrow">실시간 랭킹</p>
+                  <h2 id="bestseller-title" class="title">지금 가장 많이<br>선택된 스타일</h2>
+                  <p class="desc">괜히 인기 있는 게 아니니까. 2시간마다 갱신.</p>
+                </div>
+                <p class="bestseller-updated">업데이트 기준 시각 <time id="bestseller-updated-time" datetime="">--:--</time></p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ol class="rank-list">
+                <li>
+                  <article class="rank-card">
+                    <p class="rank-card__rank"><strong>#1</strong><span>전주 대비 ↑2</span></p>
+                    <h3 class="rank-card__name">실크 랩 스커트</h3>
+                    <p class="rank-card__metric">재구매율 38% · 브랜드 평균 2.4배 · 30대 직장인 비중 67%</p>
+                    <p class="card__quote">"한 번 입어보고 색깔별로 다 사게 됐어요." 김** / 키 162</p>
+                    <div class="rank-card__bottom">
+                      <p class="rank-card__price">₩172,000</p>
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=2">담기</a>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="rank-card">
+                    <p class="rank-card__rank"><strong>#2</strong><span>전주 대비 동일</span></p>
+                    <h3 class="rank-card__name">모던 저고리 재킷</h3>
+                    <p class="rank-card__metric">리뷰 1,240건 · 평점 4.9 · 회사원 후기 비중 67%</p>
+                    <p class="card__quote">"정장 자켓 자리에 그대로 들어가서 매일 입게 돼요."</p>
+                    <div class="rank-card__bottom">
+                      <p class="rank-card__price">₩154,000</p>
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=1">담기</a>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="rank-card">
+                    <p class="rank-card__rank"><strong>#3</strong><span>전주 대비 ↑1</span></p>
+                    <h3 class="rank-card__name">[리우앤비우x단하] SCENE#003 블랙</h3>
+                    <p class="rank-card__metric">찜 +32% · 인스타 #danha_scene 누적 8.2K 태그</p>
+                    <p class="card__quote">"한복 신발이라고 안 보여서 모임 갈 때마다 신어요."</p>
+                    <div class="rank-card__bottom">
+                      <p class="rank-card__price">₩89,000</p>
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=3">담기</a>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+              <details class="rank-expand">
+                <summary>#4~#10 랭킹 더 보기</summary>
+                <ol class="rank-expand__list">
+                  <li><a href="./detail.html?id=4"><strong>#4</strong><span>펄 포인트 백</span><em>선물 수요 증가</em></a></li>
+                  <li><a href="./detail.html?id=5"><strong>#5</strong><span>데일리 한복 셔츠</span><em>리뷰 평점 4.9</em></a></li>
+                  <li><a href="./detail.html?id=6"><strong>#6</strong><span>레이어드 아우터 로브</span><em>재입고 알림 급증</em></a></li>
+                  <li><a href="./detail.html?id=2"><strong>#7</strong><span>실크 랩 스커트 (로즈베이지)</span><em>옵션 판매 비중 상승</em></a></li>
+                  <li><a href="./detail.html?id=1"><strong>#8</strong><span>모던 저고리 재킷 (차콜)</span><em>신규 유입 전환 우수</em></a></li>
+                  <li><a href="./detail.html?id=3"><strong>#9</strong><span>소프트 무드 스니커즈 (그레이)</span><em>찜 대비 구매율 증가</em></a></li>
+                  <li><a href="./detail.html?id=5"><strong>#10</strong><span>데일리 한복 셔츠 (세이지)</span><em>재구매 동반 구매 높음</em></a></li>
+                </ol>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. CHAPTER 01 · DISCOVERY ===== -->
+      <section class="section section--chapter section--chapter--01" aria-labelledby="chapter-01-title">
+        <div class="content">
+          <div class="content__media">
+            <span class="chapter__num-label">CHAPTER</span>
+            <span class="chapter__num" aria-hidden="true">01</span>
+          </div>
+          <div class="content__text">
+            <div class="text-wrap text-wrap--wide">
+              <p class="eyebrow">Discovery · 발견</p>
+              <h2 id="chapter-01-title" class="title">오늘 무드, 여기서 가볍게 시작해</h2>
+              <p class="desc">어렵게 고를 필요 없어. 지금 보던 톤 그대로, 다음 챕터에서 룩 단위로 바로 이어서 보면 돼.</p>
+            </div>
+            <div class="chapter__meta" aria-hidden="true">
+              <span>SS · Vol. 01</span>
+              <span class="chapter__meta-dot"></span>
+              <span>Soft Linen Weave</span>
+              <span class="chapter__meta-dot"></span>
+              <span>Daily Ease</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. LOOKBOOK CAMPAIGN ===== -->
+      <section class="section section--lookbook-campaign" aria-labelledby="lookbook-campaign-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Lookbook Preview</p>
+                <h2 id="lookbook-campaign-title" class="title">룩북에서 고른 착장 <br> 바로 구매까지</h2>
+                <p class="desc">룩을 하나의 그룹으로 묶어 보여줘 <br> 어떤 아이템이 연결되는지 직관적으로 확인할 수 있어.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="lookbook-flow">
+                <article class="lookbook-flow__item">
+                  <div class="card__media"><img src="./images/look1.jpg" alt="오피스 시그니처 룩"></div>
+                  <div class="lookbook-flow__body">
+                    <div class="lookbook-flow__head">
+                      <p class="lookbook-flow__title">오피스 시그니처 룩</p>
+                      <span class="lookbook-flow__badge">세트 인기 #1</span>
+                    </div>
+                    <p class="lookbook-flow__rank-note">BEST SELLER #1 스커트 포함 코디 · 회사원 49% 선택</p>
+                    <p class="lookbook-flow__desc">린넨 저고리 셔츠 + 랩 스커트 + 미니백</p>
+                    <p class="lookbook-flow__fit-note">첫 미팅·면접·반기 보고 자리 · 158-168cm 비율 보정 90%</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>'준비된 사람'으로 보이고 싶은 평일 회의실</p>
+                    <ul class="lookbook-flow__links">
+                      <li><a href="./detail.html?id=1">상의 보기</a></li>
+                      <li><a href="./detail.html?id=2">하의 보기</a></li>
+                      <li><a href="./detail.html?id=4">가방 보기</a></li>
+                    </ul>
+                    <div class="lookbook-flow__price-row">
+                      <p class="lookbook-flow__price"><del>₩402,000</del><strong>₩359,000</strong></p>
+                      <p class="lookbook-flow__benefit">세트 10% + 무료배송</p>
+                    </div>
+                    <p class="lookbook-flow__ops">내일 도착 · 무료 사이즈 교환 1회 · 1:1 코디 컨설팅</p>
+                    <div class="btn-group">
+                      <a class="btn btn--primary" href="./detail.html?id=2">코디 세트 담기</a>
+                      <a class="btn btn--ghost" href="./style.html?type=office">코디 상세 보기</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="lookbook-flow__item">
+                  <div class="card__media"><img src="./images/look2.jpg" alt="위켄드 라이트 룩"></div>
+                  <div class="lookbook-flow__body">
+                    <div class="lookbook-flow__head">
+                      <p class="lookbook-flow__title">위켄드 라이트 룩</p>
+                      <span class="lookbook-flow__badge">신상 · 26SS</span>
+                    </div>
+                    <p class="lookbook-flow__rank-note">BEST SELLER #2 재킷 무드 대체 코디 · 첫 시즌 동반 구매율 41%</p>
+                    <p class="lookbook-flow__desc">크롭 재킷 + 와이드 팬츠 + 로퍼</p>
+                    <p class="lookbook-flow__fit-note">주말 외출·갤러리·브런치 · 160cm 이상 와이드 라인 안정</p>
+                    <p class="card__cue"><strong>이런 분께</strong><br>한 톤으로 정리된 캐주얼이 필요한 토요일 오후</p>
+                    <ul class="lookbook-flow__links">
+                      <li><a href="./detail.html?id=6">아우터 보기</a></li>
+                      <li><a href="./detail.html?id=3">신발 보기</a></li>
+                      <li><a href="./detail.html?id=5">이너 보기</a></li>
+                    </ul>
+                    <div class="lookbook-flow__price-row">
+                      <p class="lookbook-flow__price"><del>₩390,000</del><strong>₩349,000</strong></p>
+                      <p class="lookbook-flow__benefit">세트 11% + 당일출고</p>
+                    </div>
+                    <p class="lookbook-flow__ops">오늘 출고 가능 · 컬러 교차 교환 지원</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary" href="./detail.html?id=6">코디 세트 담기</a>
+                      <a class="btn btn--ghost" href="./style.html?mood=travel">스타일링 보기</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. EDITORIAL SPLIT ===== -->
+      <section class="section section--editorial" aria-labelledby="editorial-title">
+        <div class="container">
+          <div class="content content--reverse">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Editorial Message</p>
+                <h2 id="editorial-title" class="title">장면이 바뀌어도 <br> 이어지는 실루엣</h2>
+                <p class="desc">출근, 모임, 주말 이동까지 장면이 달라도 <br> 룩의 인상이 끊기지 않게 설계했습니다.</p>
+              </div>
+              <ul class="editorial-keypoints">
+                <li>상·하의 톤을 맞추고 소재 대비만 조절해 장면 전환 시 이질감을 줄였습니다.</li>
+                <li>베스트셀러 아이템을 중심축으로 두어 신규 코디도 실패 확률을 낮췄습니다.</li>
+                <li>코디별 배송/교환 조건을 먼저 보여 구매 리스크를 줄였습니다.</li>
+              </ul>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="./style.html?type=office">시그니처 룩 전체 보기</a>
+                <a class="btn btn--secondary" href="./shop.html">구성 상품 비교</a>
+              </div>
+            </div>
+            <div class="content__media">
+              <figure>
+                <img src="./images/silhouette (2).jpg" alt="같은 실루엣으로 출근과 주말 장면을 연결한 캠페인 비주얼">
+                <figcaption class="editorial-caption">OFFICE TO WEEKEND / 실루엣 유지 기반 스타일 전환</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9. STYLEMIX ===== -->
+      <section class="section section--stylemix" aria-labelledby="stylemix-title">
+        <div class="container">
+          <div class="content">
+            <div class="content__media">
+              <img src="./images/lookbook.jpg" alt="풀 아웃핏 스타일 이미지">
+            </div>
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Style Mix</p>
+                <h2 id="stylemix-title" class="title">코디 고민?<br>그냥 이대로 입어</h2>
+                <p class="desc">위아래 고민할 필요 없이, 그대로 입으면 완성되는 조합.</p>
+              </div>
+              <ul class="stylemix-items">
+                <li><span>상의</span><strong>모던 한복 셔츠</strong><em>₩154,000</em></li>
+                <li><span>하의</span><strong>로열블루 도배문 드레스</strong><em>₩420,000</em></li>
+                <li><span>신발</span><strong>SCENE#003 블랙</strong><em>₩300,000</em></li>
+              </ul>
+              <div class="stylemix-mini-grid">
+                <article class="stylemix-mini-card">
+                  <div class="card__media"><img src="./images/tradition1.jpg" alt="모던 한복 셔츠"></div>
+                  <div class="stylemix-mini-card__body">
+                    <p class="stylemix-mini-card__type">상의</p>
+                    <p class="stylemix-mini-card__name">모던 한복 셔츠</p>
+                    <p class="stylemix-mini-card__price">₩154,000</p>
+                  </div>
+                </article>
+                <article class="stylemix-mini-card">
+                  <div class="card__media"><img src="./images/dress.jpg" alt="로열블루 도배문 드레스"></div>
+                  <div class="stylemix-mini-card__body">
+                    <p class="stylemix-mini-card__type">하의</p>
+                    <p class="stylemix-mini-card__name">로열블루 도배문 드레스</p>
+                    <p class="stylemix-mini-card__price">₩172,000</p>
+                  </div>
+                </article>
+                <article class="stylemix-mini-card">
+                  <div class="card__media"><img src="./images/tradition3.jpg" alt="SCENE#003 블랙"></div>
+                  <div class="stylemix-mini-card__body">
+                    <p class="stylemix-mini-card__type">신발</p>
+                    <p class="stylemix-mini-card__name">SCENE#003 블랙</p>
+                    <p class="stylemix-mini-card__price">₩300,000</p>
+                  </div>
+                </article>
+              </div>
+              <p class="stylemix-summary"><del>₩415,000</del><strong>₩369,000</strong><span>세트 11% 할인 + 무료배송</span></p>
+              <p class="stylemix-copy">왜 잘 맞는지 설명되는, 오피스-데일리 겸용 조합</p>
+              <p class="stylemix-score">스타일 완성도 92% · 내일 도착 가능 · 무료 사이즈 교환 1회</p>
+              <div class="btn-group">
+                <a class="btn btn--primary" href="./detail.html?id=2">이 스타일 바로 구매</a>
+                <a class="btn btn--secondary" href="./shop.html">구성 아이템 비교</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 10. COMPLETE LOOK ===== -->
+      <section class="section section--complete" aria-labelledby="complete-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">코디 세트 혜택</p>
+                <h2 id="complete-title" class="title">이 코디 그대로 보기</h2>
+                <p class="desc">룩 단위로 묶어둬서 한 번에 담을 수 있어. <br>세트로 사면 더 저렴해지는 건 덤.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="complete-grid">
+                <article class="complete-card">
+                  <p class="complete-card__tag">OFFICE CORE · 출근 9-18시</p>
+                  <h3 class="complete-card__title">오피스 시그니처 세트</h3>
+                  <p class="complete-card__items">저고리 자켓 + 랩 스커트 + 포인트 백</p>
+                  <p class="complete-card__price"><del>₩402,000</del><strong>₩359,000</strong></p>
+                  <p class="complete-card__saving">₩43,000 절약 · 단품 대비 10.6% ↓</p>
+                  <p class="complete-card__benefit">세트 10% + 무료배송 + 1:1 코디 컨설팅 무료</p>
+                  <p class="card__cue"><strong>이런 분께</strong><br>평일 회의실에서 '준비된 사람'으로 보이고 싶은 분</p>
+                  <p class="complete-card__ops">내일 도착 가능 · 무료 사이즈 교환 1회 · 회사 배송 가능</p>
+                  <div class="btn-group">
+                    <a class="btn btn--primary btn--sm" href="./detail.html?id=2">담기</a>
+                    <a class="btn btn--ghost btn--sm" href="./style.html?type=office">구성 비교</a>
+                  </div>
+                </article>
+                <article class="complete-card">
+                  <p class="complete-card__tag">DATE SIGNATURE · 저녁 7시 이후</p>
+                  <h3 class="complete-card__title">데이트 시그니처 세트</h3>
+                  <p class="complete-card__items">실크 탑 + 플레어 스커트 + 스니커즈</p>
+                  <p class="complete-card__price"><del>₩415,000</del><strong>₩369,000</strong></p>
+                  <p class="complete-card__saving">₩46,000 절약 · 단품 대비 11.1% ↓</p>
+                  <p class="complete-card__benefit">세트 11% + 오늘 출고 + 사진 잘 찍히는 톤 검증</p>
+                  <p class="card__cue"><strong>이런 분께</strong><br>한 톤 룩으로 사진 잘 나오는 게 가장 중요한 분</p>
+                  <p class="complete-card__ops">오늘 출고 · 컬러 교차 교환 1회 · 데이트 D-1 케어팁 발송</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./detail.html?id=3">담기</a>
+                    <a class="btn btn--ghost btn--sm" href="./style.html?mood=date">구성 비교</a>
+                  </div>
+                </article>
+                <article class="complete-card">
+                  <p class="complete-card__tag">DAILY LIGHT · 평일 OFF</p>
+                  <h3 class="complete-card__title">데일리 무드 세트</h3>
+                  <p class="complete-card__items">데일리 한복 셔츠 + 데님 팬츠 + 미니 백</p>
+                  <p class="complete-card__price"><del>₩347,000</del><strong>₩309,000</strong></p>
+                  <p class="complete-card__saving">₩38,000 절약 · 단품 대비 10.9% ↓</p>
+                  <p class="complete-card__benefit">세트 10% + 리뷰 쿠폰 5% + 첫 구매자 추가 5%</p>
+                  <p class="card__cue"><strong>이런 분께</strong><br>매일 같은 청바지+티셔츠가 지겨워진 분</p>
+                  <p class="complete-card__ops">익일 출고 · 구매 후기 쿠폰 자동 · 컬러 미스매칭 1회 무료</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./detail.html?id=5">담기</a>
+                    <a class="btn btn--ghost btn--sm" href="./style.html?type=daily">구성 비교</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 11. FIT GUIDE ===== -->
+      <section class="section section--fitguide" aria-labelledby="fitguide-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">핏 가이드</p>
+                <h2 id="fitguide-title" class="title">키 알려주면, <br> 핏은 우리가 골라줄게</h2>
+                <p class="desc">긴 설명 없이, 키별로 잘 맞는 조합만 먼저.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="fitguide-grid">
+                <article class="fitguide-card">
+                  <p class="fitguide-card__height">~155cm · PETITE</p>
+                  <h3 class="fitguide-card__title">비율 살리는 쇼트 밸런스</h3>
+                  <p class="fitguide-card__desc">쇼트 상의 + 하이웨이스트 조합으로 다리가 길어 보이는 비율을 잡아줍니다.</p>
+                  <p class="fitguide-card__meta">쇼트 저고리 · 하이웨이스트 스커트 · 미니백 (가방 위치 골반선)</p>
+                  <p class="card__quote">"152cm인데 처음으로 한복이 안 끌려서 좋았어요." 후기 발췌</p>
+                  <p class="fitguide-card__score">추천 정확도 93% · 리뷰 382건 · 반품률 2.1%</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?fit=petite">추천 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?fit=petite">아이템 비교</a>
+                  </div>
+                </article>
+                <article class="fitguide-card">
+                  <p class="fitguide-card__height">160cm 전후 · BALANCED</p>
+                  <h3 class="fitguide-card__title">제일 무난한 밸런스 핏</h3>
+                  <p class="fitguide-card__desc">레귤러 기장이 가장 안정적. 어떤 상의를 매치해도 위아래 비율이 흐트러지지 않습니다.</p>
+                  <p class="fitguide-card__meta">레귤러 저고리 · 미디 스커트 · 로퍼 (체형 보정 0% 그대로 입기)</p>
+                  <p class="card__quote">"고민 없이 사이즈만 보고 사도 실패가 없어요." 후기 발췌</p>
+                  <p class="fitguide-card__score">추천 정확도 95% · 리뷰 524건 · 재구매율 41%</p>
+                  <div class="btn-group">
+                    <a class="btn btn--primary btn--sm" href="./style.html?fit=balanced">추천 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?fit=balanced">아이템 비교</a>
+                  </div>
+                </article>
+                <article class="fitguide-card">
+                  <p class="fitguide-card__height">165cm+ · TALL</p>
+                  <h3 class="fitguide-card__title">길게 떨어지는 롱 실루엣</h3>
+                  <p class="fitguide-card__desc">롱 아우터로 라인을 끝까지 끌어내려, 키가 큰 분만 살릴 수 있는 분위기를 만들어줍니다.</p>
+                  <p class="fitguide-card__meta">롱 아우터 · 와이드 팬츠 · 토트백 (옷이 먼저 보이는 비율)</p>
+                  <p class="card__quote">"168이라 어울릴 한복이 거의 없었는데 여기서 찾았어요." 후기 발췌</p>
+                  <p class="fitguide-card__score">추천 정확도 92% · 리뷰 301건 · 키 165+ 비중 78%</p>
+                  <div class="btn-group">
+                    <a class="btn btn--secondary btn--sm" href="./style.html?fit=tall">추천 룩 보기</a>
+                    <a class="btn btn--ghost btn--sm" href="./shop.html?fit=tall">아이템 비교</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 12. SCENE ===== -->
+      <section class="section section--scene" aria-labelledby="scene-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">상황별 룩보드</p>
+                <h2 id="scene-title" class="title">상황별로 보면 더 쉬워</h2>
+                <p class="desc">출근할 때, 데이트할 때, 카페 갈 때, 여행 갈 때 골라봐.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="scene-grid">
+                <article class="scene-card">
+                  <div class="scene-card__media"><img src="./images/attendance.jpg" alt="오피스 무드 스타일 보드"></div>
+                  <div class="scene-card__body">
+                    <h3 class="scene-card__title">출근할 때 · 9-18시</h3>
+                    <p class="scene-card__desc">단정한데 지루하지 않게. <br> 미팅과 점심 자리 사이에서 톤이 흐트러지지 않습니다.</p>
+                    <p class="scene-card__products">재킷 · 스커트 · 미니백 (가방 위치 손에서 떨어지지 않는 사이즈)</p>
+                    <p class="card__cue"><strong>장면</strong><br>월~금 회의실 / 점심 외근 / 퇴근 후 가벼운 약속</p>
+                    <p class="scene-card__meta">리뷰 412건 · 회사원 후기 비중 68% · 평균 평점 4.8</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./style.html?scene=office">이 장면으로</a>
+                      <a class="btn btn--ghost btn--sm" href="./shop.html?scene=office">구성 비교</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="scene-card">
+                  <div class="scene-card__media"><img src="./images/date.jpg" alt="데이트 무드 스타일 보드"></div>
+                  <div class="scene-card__body">
+                    <h3 class="scene-card__title">데이트할 때 · 19시 이후</h3>
+                    <p class="scene-card__desc">부드러운 라인으로 살짝 설레게. <br> 식당 조명 아래에서 가장 잘 살아나는 톤입니다.</p>
+                    <p class="scene-card__products">블라우스 · 플레어 스커트 · 로퍼 (사진 비율 우선 매치)</p>
+                    <p class="card__cue"><strong>장면</strong><br>주말 저녁 식사 / 와인바 / 한 컷 남기고 싶은 모임</p>
+                    <p class="scene-card__meta">리뷰 365건 · 사진 만족도 4.9 · 추천 거리 1.5m 사진</p>
+                    <div class="btn-group">
+                      <a class="btn btn--primary btn--sm" href="./style.html?scene=date">이 장면으로</a>
+                      <a class="btn btn--ghost btn--sm" href="./shop.html?scene=date">구성 비교</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="scene-card">
+                  <div class="scene-card__media"><img src="./images/travel.jpg" alt="주말 무드 스타일 보드"></div>
+                  <div class="scene-card__body">
+                    <h3 class="scene-card__title">여행 갈 때 · 종일</h3>
+                    <p class="scene-card__desc">한복을 가장 가볍게 입는 방법. <br> 7만보 걸어도 옷이 먼저 지치지 않습니다.</p>
+                    <p class="scene-card__products">셔츠 · 데님 · 스니커즈 (구김 자국 적은 소재 우선)</p>
+                    <p class="card__cue"><strong>장면</strong><br>주말 카페투어 / 1박 2일 여행 / 야외 사진 찍기 좋은 날</p>
+                    <p class="scene-card__meta">리뷰 298건 · 활동성 만족도 4.8 · 캐리어 폴딩 OK</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./style.html?scene=weekend">이 장면으로</a>
+                      <a class="btn btn--ghost btn--sm" href="./shop.html?scene=weekend">구성 비교</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 13. CHAPTER 02 · RESONANCE ===== -->
+      <section class="section section--chapter section--chapter--02" aria-labelledby="chapter-02-title">
+        <div class="content">
+          <div class="content__media">
+            <span class="chapter__num-label">CHAPTER</span>
+            <span class="chapter__num" aria-hidden="true">02</span>
+          </div>
+          <div class="content__text">
+            <div class="text-wrap text-wrap--wide">
+              <p class="eyebrow">Resonance · 공명</p>
+              <h2 id="chapter-02-title" class="title">한 벌만 잘 골라도 오늘 룩은 끝</h2>
+              <p class="desc">상황별로 봤다면 이제 더 쉬워. 무드랑 카테고리만 고르면 너한테 맞는 흐름이 바로 보여.</p>
+            </div>
+            <div class="chapter__meta" aria-hidden="true">
+              <span>SS · Vol. 02</span>
+              <span class="chapter__meta-dot"></span>
+              <span>Daily Rhythm</span>
+              <span class="chapter__meta-dot"></span>
+              <span>Layered Tone</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 14. STYLEPLAY ===== -->
+      <section class="section section--styleplay" aria-labelledby="styleplay-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">무드 탐색</p>
+                <h2 id="styleplay-title" class="title">무드부터 가볍게 고르기</h2>
+                <p class="desc">자주 찾는 상황을 먼저 고르면, 무드에 맞는 코디 세트와 구성 아이템을 바로 비교할 수 있습니다.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="styleplay-grid">
+                <article class="styleplay-card">
+                  <p class="styleplay-card__tag">CAFE MOOD</p>
+                  <h3 class="styleplay-card__title">카페 갈 때</h3>
+                  <p class="styleplay-card__desc">가볍고 단정하게. <br> 카페 의자에 1시간 앉아도 라인이 무너지지 않아요.</p>
+                  <p class="styleplay-card__meta">셔츠 · 미디 스커트 · 로퍼 · 잔여 코디 24개</p>
+                  <a class="link-cta" href="./style.html?mood=cafe">이 무드로 →</a>
+                </article>
+                <article class="styleplay-card">
+                  <p class="styleplay-card__tag">RAINY DAY</p>
+                  <h3 class="styleplay-card__title">비 오는 날</h3>
+                  <p class="styleplay-card__desc">구김이 덜한 소재로 <br> 비에 젖어도 라인 망가짐 최소.</p>
+                  <p class="styleplay-card__meta">방수 아우터 · 워싱 팬츠 · 스니커즈 · 잔여 코디 12개</p>
+                  <a class="link-cta" href="./style.html?mood=rainy">이 무드로 →</a>
+                </article>
+                <article class="styleplay-card">
+                  <p class="styleplay-card__tag">TRAVEL</p>
+                  <h3 class="styleplay-card__title">여행 가는 날</h3>
+                  <p class="styleplay-card__desc">사진 비율 살리면서 활동성 끝까지. <br> 캐리어 폴딩에도 강해요.</p>
+                  <p class="styleplay-card__meta">린넨 셔츠 · 데님 · 스니커즈 · 잔여 코디 18개</p>
+                  <a class="link-cta" href="./style.html?mood=travel">이 무드로 →</a>
+                </article>
+                <article class="styleplay-card">
+                  <p class="styleplay-card__tag">TREND</p>
+                  <h3 class="styleplay-card__title">트렌드 무드로 가는 날</h3>
+                  <p class="styleplay-card__desc">포인트 한 개로 분위기를 <br> 바꾸는 26SS 시즌 룩.</p>
+                  <p class="styleplay-card__meta">크롭 재킷 · 미니백 · 로퍼 · 신상 9개 포함</p>
+                  <a class="link-cta" href="./style.html?mood=y2k">이 무드로 →</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 15. COLLAGE BREAK ===== -->
+      <section class="section section--collage" aria-label="에디토리얼 콜라주 브레이크">
+        <div class="container">
+          <div class="collage-grid">
+            <figure class="collage-main">
+              <img src="./images/mood1.jpg" alt="단하 시즌 무드 보드 메인">
+              <span class="collage-main__label">SEASON MOOD BOARD</span>
+            </figure>
+            <figure class="collage-thumb">
+              <img src="./images/mood3.jpg" alt="컷아웃 제품 포인트">
+              <figcaption>컷아웃 제품 포인트</figcaption>
+            </figure>
+            <article class="collage-note">
+              <p class="eyebrow">campaign break</p>
+              <h2 class="title title--lg">같은 무드로<br>계속 가볼래?</h2>
+              <p class="desc">지금 보던 톤 유지하면서, <br> 카테고리별로 자연스럽게 이어서 봐봐.</p>
+              <a class="btn btn--secondary btn--sm" href="#category-title">계속 보기</a>
+            </article>
+            <figure class="collage-thumb">
+              <img src="./images/mood.jpg" alt="그래픽 스티커 무드">
+              <figcaption>그래픽 무드 스티커</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 16. CATEGORY ===== -->
+      <section class="section section--category" aria-labelledby="category-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">카테고리 큐레이션</p>
+                <h2 id="category-title" class="title">이런 느낌으로 찾아볼래?</h2>
+                <p class="desc">셔츠처럼, 살랑이게, 편하게, 가볍게 느낌으로 골라봐.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="category-grid">
+                <a href="./shop.html?cat=top" class="category-card">
+                  <p class="category-card__tag">TOP · 18 styles</p>
+                  <h3 class="category-card__title">셔츠처럼 입는 한복</h3>
+                  <p class="category-card__desc">가볍게 시작하기 좋아. <br> 데님에 그대로 매치 가능합니다.</p>
+                  <p class="category-card__meta">대표: 모던 저고리 재킷 <br> 평점 4.8 · 판매 1,240+</p>
+                  <span class="category-card__cta">바로 보기 →</span>
+                </a>
+                <a href="./shop.html?cat=skirt" class="category-card">
+                  <p class="category-card__tag">SKIRT · 24 styles</p>
+                  <h3 class="category-card__title">살랑이는 실루엣</h3>
+                  <p class="category-card__desc">자연스럽게 흐르는 라인. <br> 사진 잘 받히는 미디 길이 위주.</p>
+                  <p class="category-card__meta">대표: 실크 랩 스커트 <br> 재구매율 38% · 색상 평균 5</p>
+                  <span class="category-card__cta">바로 보기 →</span>
+                </a>
+                <a href="./shop.html?cat=outer" class="category-card">
+                  <p class="category-card__tag">OUTER · 15 styles</p>
+                  <h3 class="category-card__title">가볍게 걸치는 아우터</h3>
+                  <p class="category-card__desc">한 장 더 걸치면 분위기 완성. <br> 사이즈 표준화로 실패 적음.</p>
+                  <p class="category-card__meta">대표: 화조도 리버서블 자켓 <br> 26SS 신상 9개 포함</p>
+                  <span class="category-card__cta">바로 보기 →</span>
+                </a>
+                <a href="./shop.html?cat=set" class="category-card">
+                  <p class="category-card__tag">SET · 12 styles</p>
+                  <h3 class="category-card__title">편하게 입는 세트</h3>
+                  <p class="category-card__desc">고민 없이 한 번에 완성. <br> 단품 대비 평균 11% 저렴.</p>
+                  <p class="category-card__meta">대표: 오피스 시그니처 세트 <br> 세트 평균 ₩42,000 절약</p>
+                  <span class="category-card__cta">바로 보기 →</span>
+                </a>
+                <a href="./shop.html?cat=acc" class="category-card">
+                  <p class="category-card__tag">ACC · 30 styles</p>
+                  <h3 class="category-card__title">작은 포인트 액세서리</h3>
+                  <p class="category-card__desc">감도의 정리된 마무리. <br> 코디에 한 점만 더해도 무드가 잡혀요.</p>
+                  <p class="category-card__meta">대표: 궁보 가방 <br> 선물 추천 1위 · 선물 박스 무료</p>
+                  <span class="category-card__cta">바로 보기 →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 17. STYLETEST ===== -->
+      <section class="section section--styletest" aria-labelledby="styletest-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="styletest-intro">
+                <div class="text-wrap">
+                  <p class="eyebrow">Style Test</p>
+                  <h2 id="styletest-title" class="title">너한테 어울리는 스타일<br>아직 몰라?</h2>
+                  <p class="desc">딱 3초면 충분해. <br> 3문항만 답하면 결과 타입과 추천 코디까지 바로 나와.</p>
+                </div>
+                <ol class="styletest-steps">
+                  <li><span class="styletest-steps__label">Q1</span><span>오늘 원하는 무드</span></li>
+                  <li><span class="styletest-steps__label">Q2</span><span>주로 입을 상황</span></li>
+                  <li><span class="styletest-steps__label">Q3</span><span>선호하는 핏 실루엣</span></li>
+                </ol>
+                <p class="styletest-microcopy">빠름 · 가벼움 · 로그인 없이 OK · 언제든 다시 가능</p>
+                <div class="btn-group">
+                  <a class="btn btn--primary" href="./style-test.html">스타일 테스트 시작</a>
+                  <a class="btn btn--secondary" href="./style.html">추천 룩 먼저 보기</a>
+                </div>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="styletest-results">
+                <div class="text-wrap">
+                  <p class="eyebrow">Test Result Pick</p>
+                  <p class="desc">테스트 답 + 최근 구매 데이터로 어떤 게 먼저 추천될지 미리 보여줄게.</p>
+                </div>
+                <ul class="card-list" data-style-result role="list">
+                  <li class="card" data-result-mood="Minimal Daily" data-result-scene="데일리" data-result-score="92" data-href="./detail.html?id=11">
+                    <div class="card__media"><img src="./images/shirts.jpg" alt="오간자 마고자 볼레로_베이지"></div>
+                    <div class="card__body">
+                      <p class="styletest-rank">TOP PICK 1 · 일치도 92%</p>
+                      <h3 class="card__title">오간자 마고자 볼레로_베이지</h3>
+                      <p class="card__price">₩280,000</p>
+                      <p class="card__meta">Minimal Daily · 평일 회의실 / 점심 외근</p>
+                      <p class="card__reason">선택한 무드(미니멀)와 핏 선호(정돈 라인)가 <br> 가장 많이 일치한 상의입니다.</p>
+                      <p class="card__cue"><strong>매칭 근거</strong><br>30일 클릭률 상위 7% · 같은 답변 그룹 재구매율 41%</p>
+                      <a class="link-cta" href="./detail.html?id=11">담기 →</a>
+                    </div>
+                  </li>
+                  <li class="card" data-result-mood="Soft Romantic" data-result-scene="데이트" data-result-score="94" data-href="./detail.html?id=12">
+                    <div class="card__media"><img src="./images/Skirt.jpg" alt="그레이 화조도 그라데이션 리버서블 궁보치마"></div>
+                    <div class="card__body">
+                      <p class="styletest-rank">TOP PICK 2 · 일치도 94%</p>
+                      <h3 class="card__title">그레이 화조도 그라데이션 리버서블 궁보치마</h3>
+                      <p class="card__price">₩290,000</p>
+                      <p class="card__meta">Soft Romantic · 저녁 식사 / 사진 비율 우선</p>
+                      <p class="card__reason">답변한 상황('데이트') 기준 <br> 재구매율이 가장 높은 하의 아이템입니다.</p>
+                      <p class="card__cue"><strong>매칭 근거</strong><br>리뷰 만족도 4.8/5.0 · 같은 답변 그룹 동반 구매율 +33%</p>
+                      <a class="link-cta" href="./detail.html?id=12">담기 →</a>
+                    </div>
+                  </li>
+                  <li class="card" data-result-mood="모던 클래식" data-result-scene="오피스" data-result-score="91" data-href="./detail.html?id=13">
+                    <div class="card__media"><img src="./images/Mule.jpg" alt="SCENE#007 거북문뮬"></div>
+                    <div class="card__body">
+                      <p class="styletest-rank">TOP PICK 3 · 일치도 91%</p>
+                      <h3 class="card__title">[리우앤비우x단하] SCENE#007 거북문뮬</h3>
+                      <p class="card__price">₩300,000</p>
+                      <p class="card__meta">모던 클래식 · 1·2번 코디 마감 신발</p>
+                      <p class="card__reason">스타일 완성도를 높이는 보완 아이템. <br> 위 2개와 함께 사면 톤이 끝납니다.</p>
+                      <p class="card__cue"><strong>매칭 근거</strong><br>세트 동반 구매율 +19% · 평균 룩 완성도 92%</p>
+                      <a class="link-cta" href="./detail.html?id=13">담기 →</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 18. TRUST · 실착 리뷰 ===== -->
+      <section class="section section--trust" aria-labelledby="trust-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">실착 리뷰</p>
+                <h2 id="trust-title" class="title">입어본 사람들 얘기</h2>
+                <p class="desc">너랑 비슷한 키/사이즈인 사람들이 어떻게 입었는지부터 봐.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="review-grid">
+                <article class="review-card">
+                  <div class="review-card__media"><img src="./images/real.jpg" alt="실사용자 착용 1"></div>
+                  <div class="review-card__body">
+                    <p class="review-card__info">키 160 / M 착용 · 30대 직장인 · 출근 5회 착용</p>
+                    <p class="review-card__quote">"생각보다 훨씬 편해서 자주 입게 돼요. <br> 정장 자켓 자리에 그대로 들어가요."</p>
+                    <p class="review-card__tags">#데일리 #편함 #핏예쁨 #회의룩</p>
+                    <p class="review-card__score">평점 4.8 · 재구매 의향 96% · 착용 환경 사무실/지하철</p>
+                    <p class="review-card__meta">만족: 핏 안정감 · 구김 적음 · 5회 착용 후에도 라인 유지</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=1">같은 착장 담기</a>
+                      <a class="btn btn--ghost btn--sm" href="./detail.html?id=1">사이즈 비교</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="review-card">
+                  <div class="review-card__media"><img src="./images/real2.jpg" alt="실사용자 착용 2"></div>
+                  <div class="review-card__body">
+                    <p class="review-card__info">키 165 / L 착용 · 마케터 · 출근/약속 8회 착용</p>
+                    <p class="review-card__quote">"셔츠랑 같이 입으니까 부담 없어요. <br> 미팅 후에 그대로 약속 가도 위화감 없음."</p>
+                    <p class="review-card__tags">#출근룩 #라인감 #재구매 #한톤매치</p>
+                    <p class="review-card__score">평점 4.9 · 오피스 활용도 상위 8% · 사진 만족도 4.9</p>
+                    <p class="review-card__meta">만족: 실루엣 안정 · 촬영 무드 · 색상 변색 0회</p>
+                    <div class="btn-group">
+                      <a class="btn btn--primary btn--sm" href="./detail.html?id=2">같은 착장 담기</a>
+                      <a class="btn btn--ghost btn--sm" href="./style.html?scene=office">사이즈 비교</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="review-card">
+                  <div class="review-card__media"><img src="./images/real3.jpg" alt="실사용자 착용 3"></div>
+                  <div class="review-card__body">
+                    <p class="review-card__info">키 158 / S 착용 · 프리랜서 · 1박 2일 여행 착용</p>
+                    <p class="review-card__quote">"사진 찍을 때 진짜 예쁘게 나와요. <br> 캐리어에 접어 넣어도 구김 별로 없었어요."</p>
+                    <p class="review-card__tags">#여행룩 #사진맛집 #가벼움 #포토핏</p>
+                    <p class="review-card__score">평점 4.7 · 활동성 만족도 4.8 · 캐리어 폴딩 OK</p>
+                    <p class="review-card__meta">만족: 활동성 · 포토핏 · 152km 도보 후에도 라인 OK</p>
+                    <div class="btn-group">
+                      <a class="btn btn--secondary btn--sm" href="./detail.html?id=3">같은 착장 담기</a>
+                      <a class="btn btn--ghost btn--sm" href="./shop.html?mood=travel">사이즈 비교</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 19. LOOKBOOK PREVIEW ===== -->
+      <section class="section section--lookbook" aria-labelledby="lookbook-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="section__head section__head--row">
+                <div class="text-wrap">
+                  <p class="eyebrow">Lookbook</p>
+                  <h2 id="lookbook-title" class="title">단하가 제안하는 오늘의 스타일</h2>
+                  <p class="desc">룩 보고 마음에 들면 그대로 담으면 끝.</p>
+                </div>
+                <div class="lookbook-preview-summary">
+                  <ul>
+                    <li>대표 구성: 저고리 재킷 + 랩 스커트 + 미니 백</li>
+                    <li>세트가: <del>₩402,000</del> <strong>₩359,000</strong></li>
+                    <li>혜택: 10% 할인 + 무료배송 + 오늘 출고</li>
+                  </ul>
+                  <p class="lookbook-preview-note">세트 할인/배송 혜택은 결제 단계에서 자동 적용됩니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="lookbook-preview-grid">
+                <figure>
+                  <img src="./images/Style.jpg" alt="현대 한복 착장 룩북 가로형">
+                  <figcaption>자연광 룩북 컷</figcaption>
+                </figure>
+                <figure>
+                  <img src="./images/Style1.jpg" alt="움직임이 있는 세로형 룩북">
+                  <figcaption>움직임이 살아있는 실루엣</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="btn-group btn-group--center">
+              <a class="btn btn--primary" href="./detail.html?id=2">코디 세트 담기</a>
+              <a class="btn btn--secondary" href="./lookbook.html">룩북 전체 보기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 20. MORE PRODUCTS ===== -->
+      <section class="section section--more" aria-labelledby="more-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">More to Shop</p>
+                <h2 id="more-title" class="title">요즘 가장 핫한 스타일</h2>
+                <p class="desc">지금 반응 좋은 트렌드만 모아왔어. 혜택까지 같이 봐.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ul class="card-list" role="list">
+                <li class="card" data-href="./detail.html?id=11">
+                  <div class="card__media"><img src="./images/trend1.jpg" alt="스탠드칼라 블라우스"></div>
+                  <div class="card__body">
+                    <span class="card__badge">TREND #1 · 클릭률 +47%</span>
+                    <h3 class="card__title">스탠드칼라 블라우스 긴팔_블랙</h3>
+                    <p class="card__price">₩195,000</p>
+                    <p class="card__reason">목 라인이 정돈되어 회의룩으로 처음 입어도 안정적인 톤이 나와요.</p>
+                    <p class="card__cue"><strong>트렌드 근거</strong><br>26SS 하이넥 블라우스 검색량 3주 연속 1위</p>
+                    <p class="card__meta">7% 할인 · 폴리100% · 오늘 출고 · 잔여 11</p>
+                    <a class="link-cta" href="./detail.html?id=11">담기 →</a>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=12">
+                  <div class="card__media"><img src="./images/trend2.jpg" alt="쉘핑크 뉴봉황문 방령깃 철릭"></div>
+                  <div class="card__body">
+                    <span class="card__badge">TREND #2 · 인스타 인용 1.2K</span>
+                    <h3 class="card__title">[Share] 쉘핑크 뉴봉황문 방령깃 철릭</h3>
+                    <p class="card__price">₩130,000</p>
+                    <p class="card__reason">밝은 톤이라 어두운 코트 위에 한 장 더해도 분위기가 살아나요.</p>
+                    <p class="card__cue"><strong>트렌드 근거</strong><br>26SS 봉황문 패턴 SNS 노출 +180%</p>
+                    <p class="card__meta">무료배송 · 면80% 모달20% · 리뷰 4.8/5 · 잔여 8</p>
+                    <a class="link-cta" href="./detail.html?id=12">담기 →</a>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=13">
+                  <div class="card__media"><img src="./images/trend3.jpeg" alt="노랑국화 플레어 원피스"></div>
+                  <div class="card__body">
+                    <span class="card__badge">TREND #3 · 한 벌 완성</span>
+                    <h3 class="card__title">[Share] 노랑국화 플레어 원피스</h3>
+                    <p class="card__price">₩75,000</p>
+                    <p class="card__reason">한 벌만 입어도 코디 끝. 야외 사진에 가장 잘 받히는 라인입니다.</p>
+                    <p class="card__cue"><strong>트렌드 근거</strong><br>봄 야외 화보 검색 1위 키워드 '플레어 원피스'</p>
+                    <p class="card__meta">2개 이상 5% · 폴리100% 사틴 · 내일 도착 · 잔여 14</p>
+                    <a class="link-cta" href="./detail.html?id=13">담기 →</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content content--stack you-may-like">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Personalized</p>
+                <h2 class="title">너 이런 것도 좋아할 거야</h2>
+                <p class="desc">최근 본 상품이랑 비슷한 무드로 골라봤어.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ul class="card-list" role="list">
+                <li class="card" data-href="./detail.html?id=21">
+                  <div class="card__media"><img src="./images/ver2.jpg" alt="쉘핑크 홀리데이 크롭탑"></div>
+                  <div class="card__body">
+                    <span class="card__badge">FOR YOU · 첫 구매</span>
+                    <h3 class="card__title">쉘핑크 홀리데이 크롭탑 ver2</h3>
+                    <p class="card__price">₩62,000</p>
+                    <p class="card__reason">최근 본 베이지 톤 상의와 색감 같은 라인. 처음 사기 좋아요.</p>
+                    <p class="card__cue"><strong>추천 근거</strong><br>방금 본 #1 상의와 색온도 95% 일치 · 첫 구매 10%</p>
+                    <p class="card__meta">S-L · 폴리100% 사틴 · 첫 구매 10% 적용</p>
+                    <a class="link-cta" href="./detail.html?id=21">담기 →</a>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=22">
+                  <div class="card__media"><img src="./images/ver3.jpeg" alt="쉘핑크 홀리데이 플리츠 미니 허리치마"></div>
+                  <div class="card__body">
+                    <span class="card__badge">FOR YOU · 무드 매치</span>
+                    <h3 class="card__title">[Share] 쉘핑크 홀리데이 플리츠 미니 허리치마</h3>
+                    <p class="card__price">₩158,000</p>
+                    <p class="card__reason">오늘 본 랩 스커트와 핏 라인이 유사. 위에 입은 상의 그대로 어울려요.</p>
+                    <p class="card__cue"><strong>추천 근거</strong><br>오늘 본 랩 스커트 동반 구매율 38% · 무드 일치 92%</p>
+                    <p class="card__meta">S-L · 폴리100% 플리츠 · 드라이 권장</p>
+                    <a class="link-cta" href="./detail.html?id=22">담기 →</a>
+                  </div>
+                </li>
+                <li class="card" data-href="./detail.html?id=23">
+                  <div class="card__media"><img src="./images/ver4.jpg" alt="업사이클 에코백"></div>
+                  <div class="card__body">
+                    <span class="card__badge">FOR YOU · 동반 1위</span>
+                    <h3 class="card__title">업사이클 에코백</h3>
+                    <p class="card__price">₩38,000</p>
+                    <p class="card__reason">위 두 코디에 마지막 한 점만 더하면 룩 완성. 가방 위치 손에서 떨어지지 않아요.</p>
+                    <p class="card__cue"><strong>추천 근거</strong><br>코디 동반 구매율 1위 · 위 코디 + 가방 세트 평균 ₩38,000 절약</p>
+                    <p class="card__meta">M(13인치) / XL(15인치) · 한복 자투리 업사이클</p>
+                    <a class="link-cta" href="./detail.html?id=23">담기 →</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 21. CHAPTER 03 · DECISION ===== -->
+      <section class="section section--chapter section--chapter--03" aria-labelledby="chapter-03-title">
+        <div class="content">
+          <div class="content__media">
+            <span class="chapter__num-label">CHAPTER</span>
+            <span class="chapter__num" aria-hidden="true">03</span>
+          </div>
+          <div class="content__text">
+            <div class="text-wrap text-wrap--wide">
+              <p class="eyebrow">Decision · 결정</p>
+              <h2 id="chapter-03-title" class="title">오늘 입을 옷, 여기서 바로 결정해</h2>
+              <p class="desc">끝까지 봤다면 지금 고르면 돼. 출고/혜택 확인하고 마음에 드는 한 벌만 담자.</p>
+            </div>
+            <div class="chapter__actions">
+              <a class="chapter__cta" href="./brand.html">브랜드 이야기 →</a>
+              <a class="chapter__link" href="./lookbook.html">룩북 전체 보기</a>
+            </div>
+            <div class="chapter__meta" aria-hidden="true">
+              <span>SS · Vol. 03</span>
+              <span class="chapter__meta-dot"></span>
+              <span>Final Chapter</span>
+              <span class="chapter__meta-dot"></span>
+              <span>Decision Closer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 22. FINAL CTA ===== -->
+      <section class="section section--final" aria-labelledby="final-title">
+        <div class="container">
+          <div class="final-board">
+            <header class="final-head">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Decision Closer · 24SS</p>
+                <h2 id="final-title" class="title">오늘 입을 옷,<br>여기서 끝내자</h2>
+                <p class="desc">고민할 시간 줄이고, 그냥 입고 나가면 되니까. <br> 옵션만 고르면 다음 단계는 단하가 빠르게 마감.</p>
+              </div>
+              <div class="final-metrics" role="list" aria-label="결정 보조 지표">
+                <article class="final-metric" role="listitem">
+                  <p class="final-metric__label">오늘 출고 가능</p>
+                  <p class="final-metric__value">142 <span class="final-metric__suffix">/ 184</span></p>
+                  <p class="final-metric__hint">23:00 이전 결제 기준</p>
+                </article>
+                <article class="final-metric" role="listitem">
+                  <p class="final-metric__label">세트 할인율</p>
+                  <p class="final-metric__value">평균 11%</p>
+                  <p class="final-metric__hint">3개 이상 동반 구매 자동</p>
+                </article>
+                <article class="final-metric" role="listitem">
+                  <p class="final-metric__label">평균 평점</p>
+                  <p class="final-metric__value">4.8 / 5.0</p>
+                  <p class="final-metric__hint">리뷰 12,400건 누적</p>
+                </article>
+              </div>
+            </header>
+
+            <div class="final-body">
+              <div class="final-decision">
+                <p class="eyebrow">상황으로 빠르게 진입</p>
+                <div class="final-shortcuts" role="group" aria-label="상황별 빠른 진입">
+                  <a class="final-shortcut" href="./style.html?type=office">
+                    <span class="final-shortcut__no">01</span>
+                    <span>
+                      <strong class="final-shortcut__name">출근 / 미팅</strong>
+                      <span class="final-shortcut__hint">정돈 라인 · 활동 편한 핏</span>
+                    </span>
+                    <span class="final-shortcut__arrow" aria-hidden="true">→</span>
+                  </a>
+                  <a class="final-shortcut" href="./style.html?type=date">
+                    <span class="final-shortcut__no">02</span>
+                    <span>
+                      <strong class="final-shortcut__name">데이트 / 모임</strong>
+                      <span class="final-shortcut__hint">한 톤 흐름 · 부드러운 라인</span>
+                    </span>
+                    <span class="final-shortcut__arrow" aria-hidden="true">→</span>
+                  </a>
+                  <a class="final-shortcut" href="./style.html?type=daily">
+                    <span class="final-shortcut__no">03</span>
+                    <span>
+                      <strong class="final-shortcut__name">평일 데일리</strong>
+                      <span class="final-shortcut__hint">가벼운 한복 · 쉬운 매치</span>
+                    </span>
+                    <span class="final-shortcut__arrow" aria-hidden="true">→</span>
+                  </a>
+                  <a class="final-shortcut" href="./style.html?mood=travel">
+                    <span class="final-shortcut__no">04</span>
+                    <span>
+                      <strong class="final-shortcut__name">여행 / 주말</strong>
+                      <span class="final-shortcut__hint">활동성 · 사진 비율</span>
+                    </span>
+                    <span class="final-shortcut__arrow" aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+
+              <aside class="final-decide" aria-label="당일 출고 마감 안내">
+                <p class="final-decide__tag">Today Order · Cutoff</p>
+                <p class="final-decide__line">지금 결정하면 <strong>당일 출고</strong>됩니다.</p>
+                <div class="final-countdown" role="timer" aria-label="당일 출고 마감까지 남은 시간">
+                  <span class="final-countdown__block">
+                    <span class="final-countdown__num">07</span>
+                    <span class="final-countdown__tag">HOURS</span>
+                  </span>
+                  <span class="final-countdown__sep" aria-hidden="true">:</span>
+                  <span class="final-countdown__block">
+                    <span class="final-countdown__num">42</span>
+                    <span class="final-countdown__tag">MIN</span>
+                  </span>
+                  <span class="final-countdown__sep" aria-hidden="true">:</span>
+                  <span class="final-countdown__block">
+                    <span class="final-countdown__num">15</span>
+                    <span class="final-countdown__tag">SEC</span>
+                  </span>
+                </div>
+                <div class="btn-group">
+                  <a class="btn btn--primary" href="./shop.html">지금 바로 고르기</a>
+                  <a class="link-cta" href="./style-test.html">스타일 먼저 테스트 →</a>
+                </div>
+              </aside>
+            </div>
+
+            <ul class="final-trust" aria-label="구매 트러스트">
+              <li><strong>5만원 이상 무료배송</strong>도서산간 추가 비용 별도</li>
+              <li><strong>7일 내 교환 / 반품</strong>사이즈 교환 1회 무료</li>
+              <li><strong>무이자 3개월</strong>5만원 이상 결제 시 자동</li>
+              <li><strong>적립금 2% 즉시 적용</strong>스타일 테스트 시 추가 쿠폰</li>
+            </ul>
+
+            <p class="final-caption">결정 보조 지표는 매일 09:00 갱신됩니다 · 카운트다운은 당일 출고 마감까지</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="home-about">
+      <div class="container footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-logo">DANHA</p>
+            <p class="footer__brand-copy">전통의 실루엣을 오늘의 일상 속으로 연결하는 모던 한복 브랜드</p>
+            <ul class="footer__brand-meta">
+              <li>상호: 주식회사 단하 | 대표: 김남경 | 개인정보관리책임자: 김남경</li>
+              <li>전화: 02-6952-8383 | 이메일: contact@danhaseoul.com</li>
+              <li>주소: 서울시 종로구 팔판길 39-7 메종단하</li>
+              <li>사업자등록번호: 380-87-03073 | 통신판매: 2024-서울종로-0241</li>
+            </ul>
+          </div>
+          <nav class="footer__col" aria-label="쇼핑">
+            <p class="footer__col-title">SHOP</p>
+            <ul class="footer__links">
+              <li><a href="./shop.html">전체 상품</a></li>
+              <li><a href="./shop.html?cat=top">상의</a></li>
+              <li><a href="./shop.html?cat=skirt">스커트</a></li>
+              <li><a href="./shop.html?cat=onepiece">원피스</a></li>
+              <li><a href="./shop.html?cat=outer">아우터</a></li>
+              <li><a href="./shop.html?cat=set">셋업</a></li>
+              <li><a href="./shop.html?cat=acc">액세서리</a></li>
+              <li><a href="./shop.html?collection=season2">시즌 컬렉션</a></li>
+              <li><a href="./shop.html?collection=gift">코퍼레이트 기프트</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="컴퍼니">
+            <p class="footer__col-title">COMPANY</p>
+            <ul class="footer__links">
+              <li><a href="./brand.html">브랜드 소개</a></li>
+              <li><a href="./story.html">스토리</a></li>
+              <li><a href="./lookbook.html">룩북</a></li>
+              <li><a href="./style-test.html">스타일 테스트</a></li>
+              <li><a href="./brand.html#contact">문의 / 협업</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="소셜">
+            <p class="footer__col-title">SOCIAL</p>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer">Kakao Channel</a></li>
+              <li><a href="mailto:contact@danhaseoul.com">Email</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__newsletter">
+            <p class="footer__col-title">NEWSLETTER</p>
+            <p class="footer__newsletter-copy">시즌 룩과 캠페인 비하인드를 가장 먼저 받아보세요.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer__newsletter-input" placeholder="이메일을 입력하세요" aria-label="뉴스레터 구독 이메일">
+              <button type="submit" class="footer__newsletter-submit">구독</button>
+            </form>
+            <p class="footer__newsletter-note">구독 정보는 마케팅 수신에만 사용되며 언제든 해지할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>© 2026 DANHA. All rights reserved.</p>
+          <ul class="footer__legal">
+            <li><a href="./brand.html#policy">이용약관</a></li>
+            <li><a href="./brand.html#policy"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="./brand.html#policy">사업자정보확인</a></li>
+          </ul>
+          <span aria-label="국가 / 통화">KR / KRW</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+/* ============================================================
+   DANHA STYLE-TEST — pages.css
+   ============================================================ */
+
+/* ============================================================
+   1. PAGE HERO
+============================================================ */
+.page-hero {
+  padding: 80px 0 60px;
+  background-color: var(--color-bg-soft);
+  background-image:
+    radial-gradient(ellipse 85% 55% at 50% 0%, rgba(212, 198, 245, 0.12) 0%, transparent 52%),
+    linear-gradient(180deg, var(--color-bg-soft) 0%, var(--color-bg) 100%);
+  text-align: center;
+}
+.page-hero .text-wrap { margin: 0 auto; }
+.page-hero__title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.page-hero__meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 32px auto 0;
+  max-width: 720px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+.page-hero__meta li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.page-hero__meta strong {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.page-hero__meta span { font-size: 11px; color: var(--color-sub); }
+
+.step-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--color-sub);
+  margin-top: 20px;
+}
+.step-indicator__bar {
+  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-line);
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+}
+.step-indicator__bar::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%;
+  background: var(--color-text);
+  border-radius: 999px;
+  transition: width 0.3s var(--ease);
+}
+.step-indicator__bar--step0::before { width: 0; }
+.step-indicator__bar--step1::before { width: 33%; }
+.step-indicator__bar--step2::before { width: 66%; }
+.step-indicator__bar--step3::before { width: 100%; }
+
+/* ============================================================
+   2. DIRECTOR
+============================================================ */
+.page-director { padding: 80px 0; }
+.director-note {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.director-note__label {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--color-sub);
+}
+.director-note__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.director-note__body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text);
+  max-width: 720px;
+}
+.director-note__signoff {
+  display: block;
+  font-size: 12px;
+  color: var(--color-sub);
+  margin-top: 16px;
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   3. TEST FORM
+============================================================ */
+.page-test { padding: 80px 0; background: var(--color-bg-soft); }
+.test-board {
+  background: #fff;
+  border-radius: 12px;
+  padding: 60px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-line);
+}
+.question:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.question__label {
+  font-size: 16px;
+  font-weight: 600;
+}
+.question__label strong {
+  display: inline-block;
+  width: 32px; height: 32px;
+  background: var(--color-text);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  margin-right: 12px;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.options button {
+  padding: 16px;
+  background: var(--color-bg-soft);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.options button:hover {
+  border-color: var(--color-text);
+  transform: translateY(-2px);
+}
+.options button.is-active,
+.options button[aria-pressed="true"] {
+  background: var(--color-text);
+  color: #fff;
+  border-color: var(--color-text);
+}
+
+.test-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-line);
+}
+
+.result-box {
+  padding: 24px;
+  background: var(--color-bg-soft);
+  border-radius: 12px;
+  border: 2px dashed var(--color-line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.result-box__label {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--color-sub);
+}
+.result-box__text { font-size: 15px; line-height: 1.6; color: var(--color-sub); }
+.result-box.is-active {
+  border-style: solid;
+  border-color: var(--color-text);
+  background: #fff;
+}
+.result-box.is-active .result-box__text { color: var(--color-text); }
+
+/* ============================================================
+   4. EXAMPLE TYPES
+============================================================ */
+.page-types { padding: 80px 0; }
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  align-items: stretch;
+}
+.type-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px;
+  background: var(--color-bg-soft);
+  border-radius: 12px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.type-card:hover { transform: translateY(-6px); }
+.type-card__tag {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--color-sub);
+}
+.type-card__title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.type-card__desc { font-size: 14px; color: var(--color-sub); line-height: 1.6; }
+.type-card__meta { font-size: 12px; color: var(--color-sub); }
+.type-card .btn-group { margin-top: auto; }
+
+/* ============================================================
+   5. FAQ
+============================================================ */
+.page-faq { padding: 80px 0; background: var(--color-bg-soft); }
+.faq-list {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0 24px;
+}
+.faq-list details {
+  border-bottom: 1px solid var(--color-line);
+  padding: 20px 0;
+}
+.faq-list details:last-child { border-bottom: 0; }
+.faq-list summary {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-list summary::after { content: "+"; font-size: 20px; color: var(--color-sub); }
+.faq-list details[open] summary::after { content: "−"; }
+.faq-list details p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-sub);
+}
+
+/* ============================================================
+   6. PAGE CTA
+============================================================ */
+.page-cta { padding: 80px 0 120px; }
+.cta-board {
+  background: var(--color-text);
+  color: #fff;
+  border-radius: 12px;
+  padding: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.cta-board .eyebrow { color: rgba(255,255,255,0.6); }
+.cta-board .title { color: #fff; max-width: 720px; margin: 0 auto; }
+.cta-board .desc { color: rgba(255,255,255,0.75); max-width: 640px; margin: 0 auto; font-size: 15px; }
+
+.cta-proof {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+  padding: 16px 24px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+}
+.cta-proof li {
+  position: relative;
+  padding-right: 12px;
+}
+.cta-proof li + li::before {
+  content: "";
+  position: absolute;
+  left: -12px; top: 50%;
+  width: 1px; height: 12px;
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-50%);
+}
+
+.cta-board .btn--primary { background: #fff; color: var(--color-text); }
+.cta-board .btn--primary:hover { background: var(--color-bg-soft); }
+.cta-board .btn--secondary {
+  background: transparent;
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+.cta-board .btn--secondary:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,0.06);
+}

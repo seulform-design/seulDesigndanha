@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DANHA 브랜드 | 단하 아이덴티티·가치·타임라인">
+  <title>DANHA · 브랜드</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/brand.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./scripts/site.js" defer></script>
+  <script src="./scripts/brand.js" defer></script>
+</head>
+<body class="brand-page">
+  <div id="wrap">
+    <a class="a11y-skip-link" href="#main">본문 바로가기</a>
+
+    <aside class="top-band" aria-label="프로모션 안내">
+      <div class="top-band__inner">
+        <p class="top-band__text" id="top-band-text" aria-live="polite">단하 뉴 시즌 오픈 · 첫 구매 10% · 스타일 테스트 완료 시 추가 쿠폰</p>
+        <button type="button" class="top-band__close" id="top-band-close" aria-label="프로모션 배너 닫기">닫기</button>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo"><a href="./index.html">DANHA</a></p>
+        <nav class="header__nav" aria-label="주요 메뉴">
+          <div class="nav-item">
+            <a href="./shop.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">쇼핑</a>
+            <div class="mega" role="region" aria-label="쇼핑 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">카테고리</p>
+                  <a href="./shop.html?cat=top">상의</a>
+                  <a href="./shop.html?cat=skirt">스커트</a>
+                  <a href="./shop.html?cat=onepiece">원피스</a>
+                  <a href="./shop.html?cat=outer">아우터</a>
+                  <a href="./shop.html?cat=set">셋업</a>
+                  <a href="./shop.html?cat=acc">액세서리</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">스타일</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                  <a href="./style.html?mood=travel">여행 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">소재</p>
+                  <a href="./shop.html?fabric=linen">린넨 블렌드</a>
+                  <a href="./shop.html?fabric=silk">소프트 실크</a>
+                  <a href="./shop.html?fabric=cotton">데일리 코튼</a>
+                  <a href="./shop.html?fabric=light">라이트 웨이트</a>
+                </div>
+                <a class="mega__featured" href="./lookbook.html">
+                  <img src="./images/lookbook.jpg" alt="단하 룩북 미리보기">
+                  <span class="mega__featured-label">추천</span>
+                  <strong>데일리 헤리티지 룩</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./style.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스타일</a>
+            <div class="mega mega--compact" role="region" aria-label="스타일 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">빠른 진입</p>
+                  <a href="./style.html?type=office">오피스 무드</a>
+                  <a href="./style.html?type=date">데이트 무드</a>
+                  <a href="./style.html?type=daily">데일리 무드</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">무드</p>
+                  <a href="./style.html?mood=cafe">카페 가는 날</a>
+                  <a href="./style.html?mood=rainy">비 오는 날</a>
+                  <a href="./style.html?mood=travel">여행 가는 날</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./lookbook.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">룩북</a>
+            <div class="mega mega--compact" role="region" aria-label="룩북 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">에디션</p>
+                  <a href="./lookbook.html">룩북 홈</a>
+                  <a href="./lookbook.html#editorial">에디토리얼</a>
+                  <a href="./lookbook.html#campaign">캠페인</a>
+                  <a href="./lookbook.html#scene">씬</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">함께 보기</p>
+                  <a href="./style-test.html">스타일 테스트</a>
+                  <a href="./shop.html">쇼핑 바로가기</a>
+                  <a href="./style.html">스타일 가이드</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./story.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false">스토리</a>
+            <div class="mega mega--compact" role="region" aria-label="스토리 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">읽을거리</p>
+                  <a href="./story.html">스토리 홈</a>
+                  <a href="./story.html#season">시즌 노트</a>
+                  <a href="./story.html#chapters">챕터</a>
+                  <a href="./story.html#campaign">캠페인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">연결</p>
+                  <a href="./brand.html">브랜드</a>
+                  <a href="./lookbook.html">룩북</a>
+                  <a href="./style.html">스타일</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="./brand.html" class="nav-item__trigger" aria-haspopup="true" aria-expanded="false" aria-current="page">브랜드</a>
+            <div class="mega mega--compact" role="region" aria-label="브랜드 메뉴">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <p class="mega__col-title">소개</p>
+                  <a href="./brand.html">브랜드 홈</a>
+                  <a href="./brand.html#identity">단하가 보는 한복</a>
+                  <a href="./brand.html#values">4가지 가치</a>
+                  <a href="./brand.html#timeline">타임라인</a>
+                </div>
+                <div class="mega__col">
+                  <p class="mega__col-title">더 알아보기</p>
+                  <a href="./brand.html#sustain">지속가능성</a>
+                  <a href="./brand.html#contact">문의</a>
+                  <a href="./story.html">스토리</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__utils" aria-label="빠른 기능">
+          <a href="./shop.html" aria-label="검색">검색</a>
+          <a href="./shop.html" aria-label="위시리스트">위시</a>
+          <a href="./cart.html" aria-label="장바구니">장바구니</a>
+        </div>
+        <button class="mobile-toggle" type="button" aria-label="모바일 메뉴 열기" aria-controls="mobile-panel" aria-expanded="false">메뉴</button>
+      </div>
+      <div class="mobile-panel" id="mobile-panel" hidden>
+        <nav class="mobile-nav" aria-label="모바일 주요 메뉴">
+          <details>
+            <summary>쇼핑</summary>
+            <a href="./shop.html">전체</a>
+            <a href="./shop.html?cat=top">상의</a>
+            <a href="./shop.html?cat=skirt">스커트</a>
+            <a href="./shop.html?cat=onepiece">원피스</a>
+            <a href="./shop.html?cat=outer">아우터</a>
+            <a href="./shop.html?cat=set">셋업</a>
+            <a href="./shop.html?cat=acc">액세서리</a>
+          </details>
+          <details>
+            <summary>스타일</summary>
+            <a href="./style.html?type=office">오피스 무드</a>
+            <a href="./style.html?type=date">데이트 무드</a>
+            <a href="./style.html?type=daily">데일리 무드</a>
+            <a href="./style.html?mood=cafe">카페 가는 날</a>
+            <a href="./style.html?mood=rainy">비 오는 날</a>
+            <a href="./style.html?mood=travel">여행 가는 날</a>
+          </details>
+          <details>
+            <summary>룩북</summary>
+            <a href="./lookbook.html">룩북 홈</a>
+            <a href="./lookbook.html#editorial">에디토리얼</a>
+            <a href="./lookbook.html#campaign">캠페인</a>
+            <a href="./lookbook.html#scene">씬</a>
+          </details>
+          <details>
+            <summary>스토리</summary>
+            <a href="./story.html">스토리 홈</a>
+            <a href="./story.html#season">시즌 노트</a>
+            <a href="./story.html#chapters">챕터</a>
+            <a href="./story.html#campaign">캠페인</a>
+            <a href="./brand.html">브랜드</a>
+          </details>
+          <details>
+            <summary>브랜드</summary>
+            <a href="./brand.html">브랜드 홈</a>
+            <a href="./brand.html#identity">단하가 보는 한복</a>
+            <a href="./brand.html#values">4가지 가치</a>
+            <a href="./brand.html#timeline">타임라인</a>
+            <a href="./brand.html#contact">문의</a>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-dim" id="mobile-dim" hidden></div>
+
+    <main id="main">
+
+      <nav class="breadcrumb" aria-label="현재 위치">
+        <div class="container breadcrumb__inner">
+          <a href="./index.html">홈</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="page">브랜드 단하 아이덴티티</span>
+        </div>
+      </nav>
+
+      <!-- ===== 1. PAGE HERO ===== -->
+      <section class="page-hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="content">
+            <div class="content__text">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Brand · 단하의 시선</p>
+                <h1 id="hero-title" class="title page-hero__title">전통은 박제되지 않습니다</h1>
+                <p class="desc">단하는 한복의 라인을 오늘의 일상으로 옮기는 모던 한복 브랜드입니다. 한 벌이 아닌 한 장면을 제안합니다.</p>
+              </div>
+              <ul class="page-hero__meta" aria-label="브랜드 지표">
+                <li><strong>2018</strong><span>창업 연도</span></li>
+                <li><strong>4.8</strong><span>평균 평점</span></li>
+                <li><strong>12,400+</strong><span>누적 리뷰</span></li>
+              </ul>
+              <div class="value-mini" aria-label="3 코어 가치">
+                <article class="value-mini__card">
+                  <span class="value-mini__card-tag">VALUE 01</span>
+                  <h3 class="value-mini__card-title">균형 · Balance</h3>
+                  <p class="value-mini__card-desc">전통과 일상, 라인과 무게의 균형. 어느 한쪽에 치우치지 않습니다.</p>
+                </article>
+                <article class="value-mini__card">
+                  <span class="value-mini__card-tag">VALUE 02</span>
+                  <h3 class="value-mini__card-title">정직 · Honesty</h3>
+                  <p class="value-mini__card-desc">소재·핏·후기·출고 정보를 먼저 보여드립니다.</p>
+                </article>
+                <article class="value-mini__card">
+                  <span class="value-mini__card-tag">VALUE 03</span>
+                  <h3 class="value-mini__card-title">선택 가능 · Optionality</h3>
+                  <p class="value-mini__card-desc">하나의 정답이 아닌 여러 장면. 각자의 시선으로 선택할 수 있습니다.</p>
+                </article>
+              </div>
+              <div class="page-hero__actions" role="group" aria-label="브랜드 진입 동선">
+                <a class="page-hero__action" href="#identity">
+                  <span class="page-hero__action-no">A</span>
+                  <span>
+                    <strong class="page-hero__action-name">아이덴티티 보기</strong>
+                    <span class="page-hero__action-hint">3 정의 · 가치 · 타임라인</span>
+                  </span>
+                  <span aria-hidden="true">→</span>
+                </a>
+                <a class="page-hero__action" href="#press">
+                  <span class="page-hero__action-no">B</span>
+                  <span>
+                    <strong class="page-hero__action-name">PRESS &amp; AWARDS</strong>
+                    <span class="page-hero__action-hint">VOGUE · ELLE · MAGAZINE B</span>
+                  </span>
+                  <span aria-hidden="true">→</span>
+                </a>
+                <a class="page-hero__action" href="#contact">
+                  <span class="page-hero__action-no">C</span>
+                  <span>
+                    <strong class="page-hero__action-name">함께 일하기</strong>
+                    <span class="page-hero__action-hint">파트너십 · 미디어 · 리테일</span>
+                  </span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+            <figure class="page-hero__collage" aria-hidden="true">
+              <img src="./images/apdls.jpg" alt="">
+              <img src="./images/tradition1.jpg" alt="">
+              <img src="./images/Collection4.jpg" alt="">
+              <span class="page-hero__sticker">SINCE 2018</span>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. IDENTITY ===== -->
+      <section id="identity" class="page-identity" aria-labelledby="identity-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Identity</p>
+                <h2 id="identity-title" class="title">단하가 보는 한복</h2>
+                <p class="desc">박제된 전통이 아니라, 오늘 입는 일상의 라인.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="identity-grid">
+                <article class="identity-card">
+                  <p class="identity-card__index">01</p>
+                  <h3 class="identity-card__title">전통의 라인</h3>
+                  <p class="identity-card__desc">곡선의 기본은 유지하되 어깨와 기장을 일상 핏에 맞게 재정의합니다. 명주의 호흡을 살린 절개 한 줄이 모든 시즌의 출발점입니다.</p>
+                </article>
+                <article class="identity-card">
+                  <p class="identity-card__index">02</p>
+                  <h3 class="identity-card__title">오늘의 일상</h3>
+                  <p class="identity-card__desc">출근, 약속, 여행 한복이 일상 안에서 자연스럽게 작동하도록 설계합니다. 청바지·스니커즈와 매치할 수 있어야 비로소 시작입니다.</p>
+                </article>
+                <article class="identity-card">
+                  <p class="identity-card__index">03</p>
+                  <h3 class="identity-card__title">스타일의 제안</h3>
+                  <p class="identity-card__desc">개별 상품이 아닌 한 장면을 제안합니다. 룩 단위로 결정할 수 있게, 사이트의 모든 동선이 코디 단위로 흐릅니다.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. VALUES ===== -->
+      <section id="values" class="page-values" aria-labelledby="values-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Values</p>
+                <h2 id="values-title" class="title">단하가 지키는 4가지</h2>
+                <p class="desc">옷을 만들고 페이지를 설계할 때 항상 보는 기준.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="values-grid">
+                <article class="value-card">
+                  <p class="value-card__tag">VALUE 01</p>
+                  <h3 class="value-card__title">균형 (Balance)</h3>
+                  <p class="value-card__desc">전통과 일상, 라인과 무게, 색과 색 사이의 균형. 어느 한쪽에 치우치지 않습니다.</p>
+                </article>
+                <article class="value-card">
+                  <p class="value-card__tag">VALUE 02</p>
+                  <h3 class="value-card__title">정직 (Honesty)</h3>
+                  <p class="value-card__desc">소재, 핏, 후기, 출고 정보. 보여줄 수 있는 데이터를 먼저 보여드립니다.</p>
+                </article>
+                <article class="value-card">
+                  <p class="value-card__tag">VALUE 03</p>
+                  <h3 class="value-card__title">선택 가능 (Optionality)</h3>
+                  <p class="value-card__desc">한 가지 정답이 아닌 여러 장면. 사용자가 자신의 시선으로 선택하도록.</p>
+                </article>
+                <article class="value-card">
+                  <p class="value-card__tag">VALUE 04</p>
+                  <h3 class="value-card__title">지속 (Continuity)</h3>
+                  <p class="value-card__desc">시즌을 넘어가는 라인. 다음 시즌과도 자연스럽게 연결됩니다.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. PRESS ===== -->
+      <section id="press" class="page-press" aria-labelledby="press-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Press &amp; Awards</p>
+                <h2 id="press-title" class="title">단하가 소개된 곳</h2>
+                <p class="desc">미디어, 어워드, 협업 파트너의 흐름.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="press-strip">
+                <div class="press-strip__cell"><strong>VOGUE KOREA</strong>2025.03</div>
+                <div class="press-strip__cell"><strong>ELLE</strong>2025.05</div>
+                <div class="press-strip__cell"><strong>HARPER'S BAZAAR</strong>2025.09</div>
+                <div class="press-strip__cell"><strong>MAGAZINE B</strong>2025.11</div>
+                <div class="press-strip__cell"><strong>DESIGN AWARD</strong>2025 Finalist</div>
+                <div class="press-strip__cell"><strong>SEOUL FW</strong>2026 Official</div>
+              </div>
+              <p class="pull-quote">"전통의 단어를 빌리지 않고 전통을 말한다. 단하의 시선은 그 자체로 동시대적이다."<cite>Magazine B, 2025.11</cite></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. SUSTAIN ===== -->
+      <section id="sustain" class="page-sustain" aria-labelledby="sustain-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Sustainability</p>
+                <h2 id="sustain-title" class="title">지속가능성을 위한 3가지 실천</h2>
+                <p class="desc">Material · Upcycling · Package</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="sustain-grid">
+                <article class="sustain-card">
+                  <p class="sustain-card__index">01</p>
+                  <p class="sustain-card__eyebrow">Material</p>
+                  <p>Organic Cotton, Recycled Polyester 등 사람과 자연에 무해하며 환경문제를 최소화한 친환경 소재로 만들어집니다.</p>
+                  <p>Recycled Fabric은 폐 페트병에서 추출한 원사를 사용, Organic Cotton과 혼합 또는 100% Polyester로 사용합니다.</p>
+                  <p>2023년에는 의류의 70%를 친환경 원단으로 제작하는 것을 목표로 하며, 대량 생산을 지양합니다.</p>
+                </article>
+                <article class="sustain-card">
+                  <p class="sustain-card__index">02</p>
+                  <p class="sustain-card__eyebrow">Upcycling</p>
+                  <p>폐 웨딩드레스를 활용한 Upcycling 패션을 선보입니다. 평균 4회 착용 후 버려지는 웨딩드레스의 환경 영향을 줄입니다.</p>
+                  <p>단하에서는 버려지는 웨딩드레스를 해체·재가공하여 가치있는 옷으로 재탄생시킵니다.</p>
+                  <p>모든 과정은 단하 아틀리에에서 수작업으로 이루어집니다. 박람회·전시 지속 참여로 인식 확산.</p>
+                </article>
+                <article class="sustain-card">
+                  <p class="sustain-card__index">03</p>
+                  <p class="sustain-card__eyebrow">Package</p>
+                  <p>불필요한 과대포장을 지양하며 친환경 패키지를 사용합니다. 노방 천 '노방 백' + 비접착식 조립형 박스.</p>
+                  <p>택배봉투 사용시 100% 생분해성수지로 제작된 봉투에 담겨 배송됩니다.</p>
+                  <p>'노방 백'은 파우치, 가방 등 일상에서 다방면으로 활용 가능합니다.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. TIMELINE ===== -->
+      <section id="timeline" class="page-timeline" aria-labelledby="timeline-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Timeline</p>
+                <h2 id="timeline-title" class="title">단하가 지나온 시간</h2>
+                <p class="desc">설립부터 오늘까지, 한 장면씩.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <p class="timeline-item__year">2018</p>
+                  <p class="timeline-item__title">브랜드 시작</p>
+                  <ul class="timeline-events">
+                    <li>· 08월 · 단하 창업</li>
+                  </ul>
+                </li>
+                <li class="timeline-item">
+                  <p class="timeline-item__year">2019</p>
+                  <p class="timeline-item__title">커뮤니티와 글로벌 첫 확장</p>
+                  <ul class="timeline-events">
+                    <li>· 03월 · 업사이클링 살롱쇼 '순백의 정원'</li>
+                    <li>· 06월 · 1st 단하한 밤</li>
+                    <li>· 08월 · 와디즈 '플라 치마' 펀딩 1000% 달성</li>
+                    <li>· 10월 · Vancouver Fashion Week 20SS</li>
+                    <li>· 12월 · 서울 디자인 페스티벌 참가</li>
+                  </ul>
+                </li>
+                <li class="timeline-item">
+                  <p class="timeline-item__year">2020</p>
+                  <p class="timeline-item__title">콘텐츠 확산과 리테일 확장</p>
+                  <ul class="timeline-events">
+                    <li>· 05월 · 텀블벅 '궁보 치마' 펀딩 8000% 달성</li>
+                    <li>· 06월 · 블랙핑크 'How You Like That' 한복 협업</li>
+                    <li>· 09월 · 신세계백화점 강남점 5F 팝업</li>
+                    <li>· 12월 · 현대백화점 판교점 메인 스트릿 팝업</li>
+                  </ul>
+                </li>
+                <li class="timeline-item">
+                  <p class="timeline-item__year">2021</p>
+                  <p class="timeline-item__title">협업 다각화와 브랜드 인프라 강화</p>
+                  <ul class="timeline-events">
+                    <li>· 02월 · 현대백화점 압구정본점 더하우스 H 팝업</li>
+                    <li>· 06월 · 메타버스 제페토 콜라보레이션</li>
+                    <li>· 08월 · 메종 단하 사옥 이전</li>
+                    <li>· 11월 · 네이버 라인프렌즈 콜라보레이션</li>
+                  </ul>
+                </li>
+                <li class="timeline-item">
+                  <p class="timeline-item__year">2022</p>
+                  <p class="timeline-item__title">NFT, 글로벌 패션위크, 전시 확장</p>
+                  <ul class="timeline-events">
+                    <li>· 02월 · 카카오 NFT 컬렉션 출시</li>
+                    <li>· 05월 · 'Share Danha' 오픈</li>
+                    <li>· 09월 · Paris Fashion Week 2022</li>
+                    <li>· 09월 · V&amp;A Museum 'HALLYU! THE KOREAN WAVE' 전시</li>
+                    <li>· 12월 · Thai Silk International Fashion Week</li>
+                  </ul>
+                </li>
+                <li class="timeline-item">
+                  <p class="timeline-item__year">2023</p>
+                  <p class="timeline-item__title">해외 박람회 및 브랜드 콜라보 확장</p>
+                  <ul class="timeline-events">
+                    <li>· 01월 · CES 2023 앙트럴리얼리티 전시</li>
+                    <li>· 02월 · 뉴욕 국제 패션 박람회 'COTERIE' 참가</li>
+                    <li>· 09월 · 파리 'Who's Next' / 더바디샵 업사이클링 콜라보</li>
+                    <li>· 10월 · 남한산성 패션쇼</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. CONTACT ===== -->
+      <section id="contact" class="page-contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title" class="title">단하 Information</h2>
+                <p class="desc">메종 위치, 오시는 길, 운영시간, 온라인 C/S, 비즈니스 문의.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="contact-grid">
+                <article class="contact-card">
+                  <p class="contact-card__label">INFORMATION</p>
+                  <h3 class="contact-card__title">메종 단하</h3>
+                  <ul class="contact-card__list">
+                    <li>· 서울특별시 종로구 팔판길 39-7 '메종단하'</li>
+                    <li>· 39-7, Palpan-gil, Jongno-gu, Seoul</li>
+                    <li>· 작은 슈퍼 옆 하얀 건물</li>
+                  </ul>
+                </article>
+                <article class="contact-card">
+                  <p class="contact-card__label">TRANSIT</p>
+                  <h3 class="contact-card__title">오시는 길</h3>
+                  <ul class="contact-card__list">
+                    <li>· 버스 11번 / 삼청동 주민센터 하차</li>
+                    <li>· 버스 1번 / 청와대 춘추문앞 하차</li>
+                    <li>· 지하철 안국역 1번, 광화문역 2번</li>
+                  </ul>
+                </article>
+                <article class="contact-card">
+                  <p class="contact-card__label">MAISON HOURS</p>
+                  <h3 class="contact-card__title">메종 영업시간</h3>
+                  <ul class="contact-card__list">
+                    <li>· 화-일 11:00 - 19:00</li>
+                    <li>· 마지막 예약 18:00</li>
+                    <li>· 토-일 점심 13:00 - 14:00</li>
+                  </ul>
+                </article>
+                <article class="contact-card">
+                  <p class="contact-card__label">ONLINE C/S</p>
+                  <h3 class="contact-card__title">온라인 고객센터</h3>
+                  <ul class="contact-card__list">
+                    <li>· 월-금 10:00 - 19:00</li>
+                    <li>· 점심 13:00 - 14:00</li>
+                    <li>· 카카오톡 @단하주단</li>
+                  </ul>
+                </article>
+                <article class="contact-card">
+                  <p class="contact-card__label">BUSINESS</p>
+                  <h3 class="contact-card__title">비즈니스 문의</h3>
+                  <ul class="contact-card__list">
+                    <li>· contact@danhaseoul.com</li>
+                    <li>· 평일 48시간 내 회신</li>
+                    <li>· 협업 / 미디어 / 리테일</li>
+                  </ul>
+                  <a class="link-cta" href="mailto:contact@danhaseoul.com">메일 보내기 →</a>
+                </article>
+                <article class="contact-card">
+                  <p class="contact-card__label">SOCIAL</p>
+                  <h3 class="contact-card__title">소셜 채널</h3>
+                  <ul class="contact-card__list">
+                    <li>· Instagram @danha.seoul</li>
+                    <li>· KakaoTalk @단하주단</li>
+                    <li>· YouTube DANHA Atelier</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. POLICY ===== -->
+      <section id="policy" class="page-policy" aria-labelledby="policy-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Policy</p>
+                <h2 id="policy-title" class="title">알아두면 좋은 정책</h2>
+                <p class="desc">배송, 교환·반품, 회원 혜택, 개인정보 정리.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="policy-list">
+                <details open>
+                  <summary>배송 안내</summary>
+                  <p>5만원 이상 무료배송. 평일 23:00 이전 결제 시 당일 출고. 도서산간 추가 비용 별도.</p>
+                </details>
+                <details>
+                  <summary>교환 / 반품</summary>
+                  <p>7일 내 교환·반품 보장. 사이즈 교환 1회 무료. 단순 변심 시 왕복 배송비 고객 부담.</p>
+                </details>
+                <details>
+                  <summary>회원 혜택</summary>
+                  <p>첫 구매 10% 쿠폰. 구매 적립 2%. 스타일 테스트 완료 시 추가 쿠폰 자동 발급.</p>
+                </details>
+                <details>
+                  <summary>개인정보 처리 방침</summary>
+                  <p>주문/배송에 필요한 최소 정보만 수집. 보관 기간 종료 후 즉시 파기. 자세한 내용은 <a href="mailto:contact@danhaseoul.com">contact@danhaseoul.com</a> 으로 문의.</p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9. FAQ ===== -->
+      <section class="page-faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="content content--stack">
+            <div class="content__text">
+              <div class="text-wrap">
+                <p class="eyebrow">Brand FAQ</p>
+                <h2 id="faq-title" class="title">자주 들어오는 질문</h2>
+                <p class="desc">파트너 · 미디어 · 처음 만난 분들의 4가지.</p>
+              </div>
+            </div>
+            <div class="content__media">
+              <div class="faq-list">
+                <details open>
+                  <summary>단하는 어떤 브랜드인가요? 한복 브랜드인가요?</summary>
+                  <p>한복 라인을 기반으로 한 "오늘의 스타일 제안 브랜드"입니다. 전통의 실루엣을 일상 핏으로 재해석해, 한 벌이 아닌 한 장면을 제안하는 것을 목표로 합니다.</p>
+                </details>
+                <details>
+                  <summary>협업이나 미디어 노출은 어떻게 진행되나요?</summary>
+                  <p>리테일 / 미디어 / 컨셉 협업 모두 contact@danhaseoul.com으로 1차 문의 부탁드립니다. 평일 48시간 내에 회신드리며, 시즌 일정에 따라 후속 미팅을 진행합니다.</p>
+                </details>
+                <details>
+                  <summary>단하는 어디에서 만들어지나요?</summary>
+                  <p>패브릭의 80%는 국내 직조 파트너에서 공급받고, 봉제는 서울·성남의 소규모 워크숍 4곳과 직접 협업합니다. 모든 워크숍은 공정 단가 공개에 동의한 곳입니다.</p>
+                </details>
+                <details>
+                  <summary>A/S와 보수도 가능한가요?</summary>
+                  <p>가능합니다. 자수, 매듭, 끈 보수는 무상으로 진행하며 봉제 보수는 실비 기준으로 운영됩니다. 보수 신청은 카카오 채널 또는 이메일로 접수해 주세요.</p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 10. PAGE CTA ===== -->
+      <section class="page-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-board">
+            <header class="cta-head">
+              <div class="text-wrap text-wrap--wide">
+                <p class="eyebrow">Brand View · Today's Look</p>
+                <h2 id="cta-title" class="title">단하의 시선이 와 닿았다면,<br>오늘의 룩으로 만나보세요</h2>
+                <p class="desc">브랜드는 시선이고, 룩은 결과입니다. 단하의 3 가치가 사이트의 어디에서 어떻게 작동하는지 한 번에 보여드립니다.</p>
+              </div>
+              <div class="cta-metrics" role="list" aria-label="브랜드 지표">
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">시즌</p>
+                  <p class="cta-metric__value">3 코어</p>
+                  <p class="cta-metric__hint">2018 창업 · 2023 글로벌</p>
+                </article>
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">평균 평점</p>
+                  <p class="cta-metric__value">4.8 / 5.0</p>
+                  <p class="cta-metric__hint">리뷰 12,400건 누적</p>
+                </article>
+                <article class="cta-metric" role="listitem">
+                  <p class="cta-metric__label">A/S</p>
+                  <p class="cta-metric__value">평생 보수</p>
+                  <p class="cta-metric__hint">자수·매듭 무상</p>
+                </article>
+              </div>
+            </header>
+
+            <div class="cta-body">
+              <a class="cta-shortcut" href="./style.html">
+                <span class="cta-shortcut__thumb cta-shortcut__thumb--01" aria-hidden="true"></span>
+                <span>
+                  <span class="cta-shortcut__tag">VALUE 01 · 균형</span>
+                  <strong class="cta-shortcut__name">균형 → 스타일 페이지</strong>
+                  <span class="cta-shortcut__hint">전통과 일상, 라인과 무게의 균형이 보드 위에 정리되어 있습니다.</span>
+                </span>
+                <span class="cta-shortcut__arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="cta-shortcut" href="./detail.html?id=1">
+                <span class="cta-shortcut__thumb cta-shortcut__thumb--02" aria-hidden="true"></span>
+                <span>
+                  <span class="cta-shortcut__tag">VALUE 02 · 정직</span>
+                  <strong class="cta-shortcut__name">정직 → 상세 페이지</strong>
+                  <span class="cta-shortcut__hint">소재·핏·후기·출고 정보가 결제 전 한 번에 노출됩니다.</span>
+                </span>
+                <span class="cta-shortcut__arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="cta-shortcut" href="./lookbook.html">
+                <span class="cta-shortcut__thumb cta-shortcut__thumb--03" aria-hidden="true"></span>
+                <span>
+                  <span class="cta-shortcut__tag">VALUE 03 · 선택 가능</span>
+                  <strong class="cta-shortcut__name">선택 가능 → 룩북 페이지</strong>
+                  <span class="cta-shortcut__hint">에디토리얼·캠페인·씬 3 에디션으로 시선을 골라볼 수 있습니다.</span>
+                </span>
+                <span class="cta-shortcut__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <p class="footer__brand-logo">DANHA</p>
+            <p class="footer__brand-copy">전통의 실루엣을 오늘의 일상 속으로 연결하는 모던 한복 브랜드</p>
+            <ul class="footer__brand-meta">
+              <li>상호: 주식회사 단하 | 대표: 김남경</li>
+              <li>전화: 02-6952-8383 | contact@danhaseoul.com</li>
+              <li>주소: 서울시 종로구 팔판길 39-7 메종단하</li>
+              <li>사업자등록번호: 380-87-03073</li>
+            </ul>
+          </div>
+          <nav class="footer__col" aria-label="쇼핑">
+            <p class="footer__col-title">SHOP</p>
+            <ul class="footer__links">
+              <li><a href="./shop.html">전체 상품</a></li>
+              <li><a href="./shop.html?cat=top">상의</a></li>
+              <li><a href="./shop.html?cat=skirt">스커트</a></li>
+              <li><a href="./shop.html?cat=outer">아우터</a></li>
+              <li><a href="./shop.html?cat=set">셋업</a></li>
+              <li><a href="./shop.html?cat=acc">액세서리</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="컴퍼니">
+            <p class="footer__col-title">COMPANY</p>
+            <ul class="footer__links">
+              <li><a href="./brand.html">브랜드 소개</a></li>
+              <li><a href="./story.html">스토리</a></li>
+              <li><a href="./lookbook.html">룩북</a></li>
+              <li><a href="./style-test.html">스타일 테스트</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="소셜">
+            <p class="footer__col-title">SOCIAL</p>
+            <ul class="footer__social">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://pf.kakao.com/" target="_blank" rel="noopener noreferrer">Kakao Channel</a></li>
+              <li><a href="mailto:contact@danhaseoul.com">Email</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__newsletter">
+            <p class="footer__col-title">NEWSLETTER</p>
+            <p class="footer__newsletter-copy">시즌 룩과 캠페인 비하인드를 가장 먼저.</p>
+            <form class="footer__newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer__newsletter-input" placeholder="이메일을 입력하세요" aria-label="뉴스레터 이메일">
+              <button type="submit" class="footer__newsletter-submit">구독</button>
+            </form>
+            <p class="footer__newsletter-note">언제든 해지 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>© 2026 DANHA. All rights reserved.</p>
+          <ul class="footer__legal">
+            <li><a href="./brand.html#policy">이용약관</a></li>
+            <li><a href="./brand.html#policy"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="./brand.html#policy">사업자정보확인</a></li>
+          </ul>
+          <span aria-label="국가 / 통화">KR / KRW</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
